@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IApplyDataAccess.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,9 @@ namespace iApplyShared.CbsModels
         /// <summary>
         /// Address S/N (integer)
         /// </summary>
-        public int AddressSerialNumber        { get; set; }
+        public int AddressSerialNumber { get; set; }
+
+        public AddressView AddressView { get; set; }
 
         #endregion Public Properties
     }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using IApplyDataAccess.DataModel;
+using iApplyShared.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,6 +31,10 @@ namespace iApplyShared.CbsModels
         /// Date To (datetime)
         /// </summary>
         public DateTime DateTo { get; set; }
+
+        public DrawDownRequestView DrawDownRequestViews { get; set; }
+        public RetrieveDrawDownRequest Request { get; set; }
+        public string AppUser { get; set; }
 
         #endregion Public Properties
     }

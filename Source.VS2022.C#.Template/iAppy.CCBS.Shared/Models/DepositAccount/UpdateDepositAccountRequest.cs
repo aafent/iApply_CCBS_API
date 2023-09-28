@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using iApplyShared.CbsModels;
+using System.Runtime.Serialization;
 
 namespace iApplyShared.Models
 {
@@ -17,5 +18,5 @@ namespace iApplyShared.Models
         public string ApplicationId { get; set; }
 
         #endregion Public Properties
-    }
+}
 }

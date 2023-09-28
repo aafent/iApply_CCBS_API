@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IApplyDataAccess.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -74,6 +75,8 @@ namespace iApplyShared.CbsModels
         /// City (varchar (40))
         /// </summary>
         public string City { get; set; }
+
+        public LGBenefView LGBenefViews { get; set; }
 
         #endregion Public Properties
     }

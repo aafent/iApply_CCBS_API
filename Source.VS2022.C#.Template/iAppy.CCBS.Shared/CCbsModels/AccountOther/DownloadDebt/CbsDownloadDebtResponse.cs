@@ -345,13 +345,13 @@ namespace iApplyShared.CbsModels
         /// Entities: cr_lacola
         /// </summary>
         public decimal co_reserval { get; set; }
-
-        /// <summary>
+/// <summary>
         /// LR Number
         /// Data Type: varchar (150)
         /// Entities: cr_lacola
         /// </summary>
         public string ip_lrnum { get; set; }
+        
 
         /// <summary>
         /// Valuer
@@ -373,5 +373,9 @@ namespace iApplyShared.CbsModels
         /// Entities: cr_lacola
         /// </summary>
         public DateTime co_revdate { get; set; }
+
+        public List<OtherCollateral> OtherCollateralList { get; set; }
+
+        public List<PropertyCollateral> PropertyCollateralList { get; set; }
     }
 }

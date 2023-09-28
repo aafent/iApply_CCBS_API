@@ -4,9 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace iApplyShared.CbsModelss
+namespace iApplyShared.CbsModels
 {
     public class CbsDownloadRepScenarioRequest
     {
+        public string CustomerCBSId { get; set; }
+
+        public int CustomerCBSCd { get; set; }
+
+        public int AmortGPInter { get; set; }
+
     }
 }

@@ -583,7 +583,7 @@ namespace iApplyShared.CbsModels
         /// <summary>
         /// Customer Check Digit (integer)
         /// </summary>
-        public int CustomerCBSCd { get; set; }
+        public int? CustomerCBSCd { get; set; }
 
         /// <summary>
         /// Customer CBS Id (varchar (20))

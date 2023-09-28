@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IApplyDataAccess.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -79,6 +80,7 @@ namespace iApplyShared.CbsModels
         /// LG CBS Id (integer)
         /// </summary>
         public int CbsId { get; set; }
+        public LGBenefView LGBenefViews { get; set; }
 
         #endregion Public Properties
     }

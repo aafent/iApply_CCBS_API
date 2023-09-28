@@ -45,7 +45,7 @@ namespace iApplyShared.CbsModels
         /// <summary>
         /// Percentage (decimal (15,2))
         /// </summary>
-        public decimal RelPerc { get; set; }
+        public decimal? RelPerc { get; set; }
 
         /// <summary>
         /// Comments (varchar)

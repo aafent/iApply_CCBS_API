@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IApplyDataAccess.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -205,5 +206,6 @@ namespace iApplyShared.CbsModels
         /// Entities: v_CBS_MortgageDet
         /// </summary>
         public string MortgageWaiver { get; set; }
+        public MortgageView MortgageViews { get; set; }
     }
 }

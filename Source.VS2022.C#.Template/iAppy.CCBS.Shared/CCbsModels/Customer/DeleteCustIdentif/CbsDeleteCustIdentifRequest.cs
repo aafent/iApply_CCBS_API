@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IApplyDataAccess.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -61,6 +62,7 @@ namespace iApplyShared.CbsModels
         /// Issue Country Description(varchar (200))
         /// </summary>
         public string IdentificationIssueCountryShortDescription { get; set; }
+        public CustomerIdentificationView CustomerIdentificationViews { get; set; }
 
         #endregion Public Properties
     }

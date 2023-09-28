@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IApplyDataAccess.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,13 +21,16 @@ namespace iApplyShared.CbsModels
         /// Description: Collateral Product
         /// Data Type: integer
         /// </summary>
-        public int product { get; set; }
+        public int? product { get; set; }
 
         /// <summary>
         /// Entity: v_CBS_Collateral
         /// Description: Collateral CBS Id
         /// Data Type: integer
         /// </summary>
-        public int collateralSn { get; set; }
+        public int? collateralSn { get; set; }
+
+        public int CollType { get; set; }
+
     }
 }

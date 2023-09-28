@@ -52,5 +52,7 @@ namespace iApplyShared.CbsModels
         /// Gets or sets the Credit Limit Type (varchar (15)).
         /// </summary>
         public string CrType { get; set; }
+
+        public List<CbsRetrieveCreditLineResponse> CbsRetrieveCreditLineResponseModel { get; set; }
     }
 }

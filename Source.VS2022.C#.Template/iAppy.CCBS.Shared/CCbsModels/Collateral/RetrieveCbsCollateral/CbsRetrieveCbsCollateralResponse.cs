@@ -1,6 +1,9 @@
-﻿using System;
+﻿using IApplyDataAccess.DataModel;
+using iApplyShared.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -231,5 +234,7 @@ namespace iApplyShared.CbsModels
         /// Data Type: datetime
         /// </summary>
         public DateTime co_expdate { get; set; }
+        public List<CollateralCbsDetailsView> OutGrp { get; set; }
+        public CollateralCbsDetailItem[] CollateralCbsDetailItems;
     }
 }

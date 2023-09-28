@@ -4,91 +4,12 @@
     {
         #region Public Properties
 
-        /// <summary>
-        /// Accommodation Date
-        /// </summary>
-        public DateTime accdate { get; set; }
-
-        /// <summary>
-        /// Street Name, Address Line 1
-        /// </summary>
-        /// <remarks></remarks>
-        public string addres1 { get; set; }
-
-        /// <summary>
-        /// Plot/Street No, Address Line 2
-        /// </summary>
-        /// <remarks></remarks>
-        public string addres2 { get; set; }
-
-        /// <summary>
-        /// Address S/N
-        /// </summary>
-        /// <remarks>
-        /// This is changed from sn_cbs in order to avoid the same name with CBS SN
-        /// </remarks>
-        public string address_no { get; set; }
-
-        /// <summary>
-        /// Address Status
-        /// </summary>
-        /// <remarks></remarks>
-        public int addstatus { get; set; }
-
-        /// <summary>
-        /// Address Type
-        /// </summary>
-        /// <remarks></remarks>
-        public string addtype { get; set; }
-
-        /// <summary>
-        /// Apartment
-        /// </summary>
-        /// <remarks></remarks>
-        public string apart { get; set; }
+        public CustomerAddress[] Addresses { get; set; }
 
         /// <summary>
         /// Birth Country
         /// </summary>
         public string birthcountry { get; set; }
-
-        /// <summary>
-        /// Building Name
-        /// </summary>
-        /// <remarks></remarks>
-        public string build { get; set; }
-
-        /// <summary>
-        /// Building
-        /// </summary>
-        /// <remarks></remarks>
-        public string buildno { get; set; }
-
-        /// <summary>
-        /// City
-        /// </summary>
-        /// <remarks>
-        /// Select cod cr_comast where grp='G75' and Upper(des)=Upper(OutListGrpOutGrmCustAddressCity)
-        /// If result is not null then cities = result
-        /// else
-        /// Select TOP 1 cod From cr_comast where grp='G75' AND tag ='O'
-        /// cities = result
-        /// city = OutListGrpOutGrmCustAddressCity
-        /// </remarks>
-        public string city { get; set; }
-
-        /// <summary>
-        /// Country
-        /// </summary>
-        /// <remarks>
-        /// For Centenary only
-        /// Select isnull(cps,'') From cr_comast Where grp = 'G83' and cod = OutListGrpOutGrmCountryGenericDetailDescription
-        /// If result is not null then
-        /// tele1_ac = result
-        /// tele2_ac = result
-        /// tele3_ac = result
-        /// </remarks>
-        public string cntry { get; set; }
 
         /// <summary>
         /// CRM Id
@@ -164,42 +85,18 @@
         public string cu_type { get; set; }
 
         /// <summary>
-        /// Address Details SN
-        /// </summary>
-        public int cuadd_sn { get; set; }
-
-        /// <summary>
         /// Customer Status
         /// </summary>
         public string cus_status { get; set; }
 
-        /// <summary>
-        /// custype
-        /// </summary>
-        /// <remarks></remarks>
-        public string custype { get; set; }
+        public CustomerCategory[] CustomerCategories { get; set; }
 
-        /// <summary>
-        /// Email
-        /// </summary>
-        public string email { get; set; }
+        public CustomerIdentification[] CustomerIdentifications { get; set; }
 
         /// <summary>
         /// Email 1
         /// </summary>
-        public string email1 { get; set; }
-
-        /// <summary>
-        /// Fax
-        /// </summary>
-        /// <remarks></remarks>
-        public string fax1 { get; set; }
-
-        /// <summary>
-        /// Floor
-        /// </summary>
-        /// <remarks></remarks>
-        public string floor { get; set; }
+        public string email { get; set; }
 
         /// <summary>
         /// Email 2
@@ -220,24 +117,6 @@
         /// Customer Id
         /// </summary>
         public string id { get; set; }
-
-        /// <summary>
-        /// Issue Country
-        /// </summary>
-        public int idcountry { get; set; }
-
-        /// <summary>
-        /// Communication Address
-        /// </summary>
-        /// <remarks>
-        /// If OutListGrpOutGrmCustAddressCommunicationAddress = '*' then mainadd = '1' else '0'
-        /// </remarks>
-        public string mainadd { get; set; }
-
-        /// <summary>
-        /// Authority
-        /// </summary>
-        public string pe_authority { get; set; }
 
         /// <summary>
         /// Birth Date
@@ -265,16 +144,6 @@
         public int pe_depend_no { get; set; }
 
         /// <summary>
-        /// Document No
-        /// </summary>
-        public string pe_document { get; set; }
-
-        /// <summary>
-        /// Expiry Date
-        /// </summary>
-        public DateTime pe_exp_date { get; set; }
-
-        /// <summary>
         /// Marital Status
         /// </summary>
         public int pe_famst { get; set; }
@@ -288,26 +157,6 @@
         /// First Name
         /// </summary>
         public string pe_finam { get; set; }
-
-        /// <summary>
-        /// Identification Number
-        /// </summary>
-        public string pe_idnbr { get; set; }
-
-        /// <summary>
-        /// Identification Type
-        /// </summary>
-        public string pe_idtyp { get; set; }
-
-        /// <summary>
-        /// Issue Date
-        /// </summary>
-        public DateTime pe_issuon { get; set; }
-
-        /// <summary>
-        /// Main Id
-        /// </summary>
-        public string pe_main { get; set; }
 
         /// <summary>
         /// Nationality
@@ -331,24 +180,6 @@
         /// PIN Country
         /// </summary>
         public string pincountry { get; set; }
-
-        /// <summary>
-        /// P.O. Box
-        /// </summary>
-        /// <remarks></remarks>
-        public string pobox { get; set; }
-
-        /// <summary>
-        /// Postal Code
-        /// </summary>
-        /// <remarks></remarks>
-        public string postal { get; set; }
-
-        /// <summary>
-        /// Province/ Post Office
-        /// </summary>
-        /// <remarks></remarks>
-        public int postoffice { get; set; }
 
         /// <summary>
         /// Contract
@@ -420,38 +251,6 @@
         /// Total Employment
         /// </summary>
         public DateTime pr_totemp { get; set; }
-
-        /// <summary>
-        /// Region
-        /// </summary>
-        /// <remarks></remarks>
-        public string region { get; set; }
-
-        /// <summary>
-        /// CBS SN
-        /// </summary>
-        public int sn_cbs { get; set; }
-
-        /// <summary>
-        /// Telephone 1
-        /// </summary>
-        /// <remarks></remarks>
-        public string tele1 { get; set; }
-
-        /// <summary>
-        /// Telephone 2
-        /// </summary>
-        public string tele2 { get; set; }
-
-        /// <summary>
-        /// Telephone 3
-        /// </summary>
-        public string tele3 { get; set; }
-
-        /// <summary>
-        /// Web Site
-        /// </summary>
-        public string website { get; set; }
 
         #endregion Public Properties
     }

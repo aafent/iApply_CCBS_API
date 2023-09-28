@@ -77,5 +77,7 @@ namespace iApplyShared.CbsModels
         /// Data Type: integer
         /// </summary>
         public int CrType { get; set; }
+
+        public List<CbsRetrieveCreditLineResponse> CbsRetrieveCreditLineResponseModel { get; set; }
     }
 }

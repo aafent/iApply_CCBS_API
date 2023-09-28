@@ -71,7 +71,7 @@ namespace iApplyShared.CbsModels
         /// </summary>
         public string cu_allacc { get; set; }
 
-
+        public List<CustomerRelationshipDetail> Details { get; set; }
 
 
         #endregion Public Properties

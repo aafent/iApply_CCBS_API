@@ -238,5 +238,7 @@ namespace iApplyShared.CbsModels
         /// Data Type: decimal (15,2)
         /// </summary>
         public decimal CollRevValue { get; set; }
+
+        
     }
 }

@@ -8,7 +8,7 @@ namespace iApplyShared.Models
         #region Public Properties
 
         [DataMember]
-        public short? CustomerCBSCd { get; set; }
+        public int? CustomerCBSCd { get; set; }
 
         [DataMember]
         public int? CustomerCBSId { get; set; }

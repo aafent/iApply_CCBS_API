@@ -211,5 +211,7 @@ namespace iApplyShared.CbsModels
         /// Data Type: decimal (15,2)
         /// </summary>
         public decimal Margin { get; set; }
+
+        public GuarantorsList[] GuarantorsList { get; set; }
     }
 }

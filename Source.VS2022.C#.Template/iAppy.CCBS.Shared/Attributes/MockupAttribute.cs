@@ -1,5 +1,8 @@
 ﻿namespace iApplyShared.Attributes
 {
+    /// <summary>
+    /// Used to mark a property or field as mockup key
+    /// </summary>
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Parameter,
         AllowMultiple = false)]
     public class MockupAttribute : Attribute

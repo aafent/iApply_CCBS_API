@@ -5,340 +5,602 @@
         #region Public Properties
 
         /// <summary>
-        /// Account Kind
+        /// Seq: 10
+        /// Entity: cr_cucoba_det
+        /// Description: Account Kind
+        /// Data Type: varchar (15)
+        /// Notes: Agreement (accounType = 19)
+        /// CBS: OutAgreementAgreementAccKind
         /// </summary>
-        /// <remarks>Agreement (accounType = 19)</remarks>
         public string cb_acc_kind { get; set; }
 
         /// <summary>
-        /// Account Number
+        /// Seq: 3
+        /// Entity: cr_cucoba_det | cr_cucoba_ins
+        /// Description: Account Number
+        /// Data Type: varchar (30)
+        /// Notes: N/A | from ValidateAccount
+        /// CBS: OutSelectedProfitsAccountAccountNumber
         /// </summary>
         public string cb_accn { get; set; }
 
         /// <summary>
-        /// Account Type
+        /// Seq: 2
+        /// Entity: cr_cucoba_det | cr_cucoba_ins
+        /// Description: Account Type
+        /// Data Type: integer
+        /// Notes: N/A | from ValidateAccounts
+        /// CBS: accountType | OutSelectedProfitsAccountPrftSystem
         /// </summary>
         public int cb_accountkind { get; set; }
 
         /// <summary>
-        /// Agreement Limit Usage
+        /// Seq: 13
+        /// Entity: cr_cucoba_det
+        /// Description: Agreement Limit Usage
+        /// Data Type: varchar (15)
+        /// Notes: Agreement (accounType = 19)
+        /// CBS: OutAgreementAgreementAgrLimitInd
         /// </summary>
-        /// <remarks>Agreement (accounType = 19)</remarks>
         public string cb_agr_lim_use { get; set; }
 
         /// <summary>
-        /// Agreement Limit
+        /// Seq: 12
+        /// Entity: cr_cucoba_det
+        /// Description: Agreement Limit
+        /// Data Type: decimal (19,3)
+        /// Notes: Agreement (accounType = 19)
+        /// CBS: OutAgreementAgreementAgrLimit
         /// </summary>
-        /// <remarks>Agreement (accounType = 19)</remarks>
         public decimal cb_agr_limit { get; set; }
 
         /// <summary>
-        /// Agreement Signing Date
+        /// Seq: 14
+        /// Entity: cr_cucoba_det
+        /// Description: Agreement Signing Date
+        /// Data Type: datetime
+        /// Notes: Agreement (accounType = 19)
+        /// CBS: OutAgreementAgreementAgrSigningDt
         /// </summary>
-        /// <remarks>Agreement (accounType = 19)</remarks>
         public DateTime cb_agr_sign_dt { get; set; }
 
         /// <summary>
-        /// Agreement Utilised Limit
+        /// Seq: 15
+        /// Entity: cr_cucoba_det
+        /// Description: Agreement Utilised Limit
+        /// Data Type: decimal (19,3)
+        /// Notes: Agreement (accounType = 19)
+        /// CBS: OutAgreementAgreementAgrUtilisedLimit
         /// </summary>
-        /// <remarks>Agreement (accounType = 19)</remarks>
         public decimal cb_agr_util_limit { get; set; }
 
         /// <summary>
-        /// Agreement Year
+        /// Seq: 16
+        /// Entity: cr_cucoba_det
+        /// Description: Agreement Year
+        /// Data Type: integer
+        /// Notes: Agreement (accounType = 19)
+        /// CBS: OutAgreementAgreementAgrYear
         /// </summary>
-        /// <remarks>Agreement (accounType = 19)</remarks>
         public int cb_agr_year { get; set; }
 
         /// <summary>
-        /// Available Limit
+        /// Seq: 6
+        /// Entity: cr_cucoba_det
+        /// Description: Available Limit
+        /// Data Type: decimal (19,3)
+        /// Notes: N/A
+        /// CBS: OutAccAvailableIefSuppliedAmount
         /// </summary>
         public decimal cb_av_limit { get; set; }
 
         /// <summary>
-        /// Deposit Book Balance
+        /// Seq: 28
+        /// Entity: cr_cucoba_det
+        /// Description: Deposit Book Balance
+        /// Data Type: decimal (19,3)
+        /// Notes: Deposit (accountType = 3)
+        /// CBS: OutSelectedDepositAccountBookBalance
         /// </summary>
-        /// <remarks>
-        /// Deposit (accountType = 3)
-        /// </remarks>
         public decimal cb_bk_bal { get; set; }
 
         /// <summary>
-        /// Blocked Limit
+        /// Seq: 11
+        /// Entity: cr_cucoba_det
+        /// Description: Blocked Limit
+        /// Data Type: decimal (19,3)
+        /// Notes: Agreement (accounType = 19)
+        /// CBS: OutAgreementAgreementAgrBlockedLimit
         /// </summary>
-        /// <remarks>Agreement (accounType = 19)</remarks>
         public decimal cb_blc_limit { get; set; }
 
         /// <summary>
-        /// Branch
+        /// Seq: 5
+        /// Entity: cr_cucoba_det
+        /// Description: Branch
+        /// Data Type: varchar (10)
+        /// Notes: N/A
+        /// CBS: OutMonitoringUnitUnitCode
         /// </summary>
         public string cb_branch { get; set; }
 
         /// <summary>
-        /// Capital in Market Funds
+        /// Seq: 50
+        /// Entity: cr_cucoba_det
+        /// Description: Capital in Market Funds
+        /// Data Type: decimal (19,3)
+        /// Notes: Securities (accountType = 18)
+        /// CBS: OutTotalsScrAccountCustomerPositionTotalsScrAkddTot
         /// </summary>
         public decimal cb_cap_mrk_funds { get; set; }
 
         /// <summary>
-        /// Capital in Repos
+        /// Seq: 54
+        /// Entity: cr_cucoba_det
+        /// Description: Capital in Repos
+        /// Data Type: decimal (19,3)
+        /// Notes: Securities (accountType = 18)
+        /// CBS: OutTotalsScrAccountCustomerPositionTotalsScrRepoTot
         /// </summary>
         public decimal cb_cap_repos { get; set; }
 
         /// <summary>
-        /// Currency
+        /// Seq: 8
+        /// Entity: cr_cucoba_det
+        /// Description: Currency
+        /// Data Type: varchar (10)
+        /// Notes: N/A
+        /// CBS: OutSelectedProfitsAccountLimitCurrency
         /// </summary>
         public string cb_ccy { get; set; }
 
         /// <summary>
-        /// Account Check Digit
+        /// Seq: 4
+        /// Entity: cr_cucoba_det | cr_cucoba_ins
+        /// Description: Account Check Digit
+        /// Data Type: integer
+        /// Notes: N/A | from ValidateAccount
+        /// CBS: OutSelectedProfitsAccountAccountCd
         /// </summary>
         public int cb_checkdigit { get; set; }
 
         /// <summary>
-        /// Deposit Available Balance
+        /// Seq: 26
+        /// Entity: cr_cucoba_det
+        /// Description: Deposit Available Balance
+        /// Data Type: decimal (19,3)
+        /// Notes: Deposit (accountType = 3)
+        /// CBS: OutSelectedDepositAccountAvailableBalance
         /// </summary>
-        /// <remarks>
-        /// Deposit (accountType = 3)
-        /// </remarks>
         public decimal cb_dep_av_bal { get; set; }
 
         /// <summary>
-        /// Deposit Blocked Balance
+        /// Seq: 27
+        /// Entity: cr_cucoba_det
+        /// Description: Deposit Blocked Balance
+        /// Data Type: decimal (19,3)
+        /// Notes: Deposit (accountType = 3)
+        /// CBS: OutSelectedDepositAccountBlockedBalance
         /// </summary>
-        /// <remarks>
-        /// Deposit (accountType = 3)
-        /// </remarks>
         public decimal cb_dep_blc_bal { get; set; }
 
         /// <summary>
-        /// Deposit Forecast Balance
+        /// Seq: 29
+        /// Entity: cr_cucoba_det
+        /// Description: Deposit Forecast Balance
+        /// Data Type: decimal (19,3)
+        /// Notes: Deposit (accountType = 3)
+        /// CBS: OutSelectedDepositAccountForecastBalance
         /// </summary>
-        /// <remarks>
-        /// Deposit (accountType = 3)
-        /// </remarks>
         public decimal cb_dep_frc_bal { get; set; }
 
         /// <summary>
-        /// Deposit Unclear Balance
+        /// Seq: 30
+        /// Entity: cr_cucoba_det
+        /// Description: Deposit Unclear Balance
+        /// Data Type: decimal (19,3)
+        /// Notes: Deposit (accountType = 3)
+        /// CBS: OutSelectedDepositAccountUnclearBalance
         /// </summary>
         public decimal cb_dep_unclear_bal { get; set; }
 
         /// <summary>
-        /// Evaluated Balance in Mutual Funds
+        /// Seq: 51
+        /// Entity: cr_cucoba_det
+        /// Description: Evaluated Balance in Mutual Funds
+        /// Data Type: decimal (19,3)
+        /// Notes: Securities (accountType = 18)
+        /// CBS: OutTotalsScrAccountCustomerPositionTotalsScrAkEvalTot
         /// </summary>
         public decimal cb_eval_bal { get; set; }
 
         /// <summary>
-        /// LG Expiry Type
+        /// Seq: 37
+        /// Entity: cr_cucoba_det
+        /// Description: LG Expiry Type
+        /// Data Type: varchar (15)
+        /// Notes: Letter of Guarantee (accountType = 14) | Trade Finance (accountType = 37)
+        /// CBS: OutSelectedLgLgAccountExpirationType
         /// </summary>
         public string cb_exp_type { get; set; }
 
         /// <summary>
-        /// Face Value in Bonds
+        /// Seq: 53
+        /// Entity: cr_cucoba_det
+        /// Description: Face Value in Bonds
+        /// Data Type: decimal (19,3)
+        /// Notes: Securities (accountType = 18)
+        /// CBS: OutTotalsScrAccountCustomerPositionTotalsScrBondTot
         /// </summary>
         public decimal cb_fc_val_bonds { get; set; }
 
         /// <summary>
-        /// LG Amount
+        /// Seq: 36
+        /// Entity: cr_cucoba_det
+        /// Description: LG Amount
+        /// Data Type: decimal (19,3)
+        /// Notes: Letter of Guarantee (accountType = 14)
+        /// CBS: OutSelectedLgLgAccountLgAmountBal
         /// </summary>
         public decimal cb_lg_amt { get; set; }
 
         /// <summary>
-        /// LG Commissions Balance
+        /// Seq: 33
+        /// Entity: cr_cucoba_det
+        /// Description: LG Commissions Balance | TF Amount | LC Total Issued Amount
+        /// Data Type: decimal (19,3)
+        /// Notes: Letter of Guarantee (accountType = 14) | Trade Finance (accountType = 37) | Letter of Credit (accountType = 39)
+        /// CBS: OutSelectedLgLgAccountCommissionBal | OutSelectedLgLgAccountLgAmountBal | OutSelectedLgLgAccountLgAmountBal
         /// </summary>
         public decimal cb_lg_com_bal { get; set; }
 
         /// <summary>
-        /// LG Expenses Balance
+        /// Seq: 35
+        /// Entity: cr_cucoba_det
+        /// Description: LG Expenses Balance | LC Initial Amount
+        /// Data Type: decimal (19,3)
+        /// Notes: Letter of Guarantee (accountType = 14) |  Letter of Credit (accountType = 39)
+        /// CBS: OutSelectedLgLgAccountExpenseBal | OutSelectedLgLgAccountLgInitialAmn
         /// </summary>
         public decimal cb_lg_exp_bal { get; set; }
 
         /// <summary>
-        /// LG Forfeit Amount
+        /// Seq: 34
+        /// Entity: cr_cucoba_det
+        /// Description: LG Forfeit Amount
+        /// Data Type: decimal (19,3)
+        /// Notes: Letter of Guarantee (accountType = 14)
+        /// CBS: OutSelectedLgLgAccountDefaultAmn
         /// </summary>
         public decimal cb_lg_fr_amt { get; set; }
 
         /// <summary>
-        /// LG Limit Amount
+        /// Seq: 32 | 41 | 46
+        /// Entity: cr_cucoba_det
+        /// Description: LG Limit Amount | TF Used Amount | LC Limit Amount
+        /// Data Type: decimal (19,3)
+        /// Notes: Letter of Guarantee (accountType = 14) | Trade Finance (accountType = 37) | Letter of Credit (accountType = 39)
+        /// CBS: OutSelectedLgLgAccountAccLimitAmn
         /// </summary>
         public decimal cb_lg_lmt_amt { get; set; }
 
         /// <summary>
-        /// LG Obligation Status
+        /// Seq: 38 | 39
+        /// Entity: cr_cucoba_det
+        /// Description: LG Obligation Status
+        /// Data Type: varchar (15)
+        /// Notes: Letter of Guarantee (accountType = 14) | Letter of Credit (accountType = 39)
+        /// CBS: OutSelectedLgLgAccountObligationStatus
         /// </summary>
         public string cb_lg_obl_status { get; set; }
 
         /// <summary>
-        /// LG Requested Amount
+        /// Seq: 39
+        /// Entity: cr_cucoba_det
+        /// Description: LG Requested Amount
+        /// Data Type: decimal (19,3)
+        /// Notes: Letter of Guarantee (accountType = 14)
+        /// CBS: OutSelectedLgLgAccountRqDefaultAmn
         /// </summary>
         public decimal cb_lg_req_amt { get; set; }
 
         /// <summary>
-        /// Loan Account Balance
+        /// Seq: 17
+        /// Entity: cr_cucoba_det
+        /// Description: Loan Account Balance
+        /// Data Type: decimal (19,3)
+        /// Notes: Loan (accountType = 4)
+        /// CBS: OutLnsBalancesLoanAccountDrvWorkAccountBal
         /// </summary>
-        /// <remarks>Loan (accountType = 4)</remarks>
         public decimal cb_ln_accbal { get; set; }
 
         /// <summary>
-        /// Bank Loan Account Balance
+        /// Seq: 18
+        /// Entity: cr_cucoba_det
+        /// Description: Bank Loan Account Balance
+        /// Data Type: decimal (19,3)
+        /// Notes: Loan (accountType = 4)
+        /// CBS: OutLnsBalancesLoanAccountDrvWorkAccBankBal
         /// </summary>
-        /// <remarks>Loan (accountType = 4)</remarks>
         public decimal cb_ln_bankbal { get; set; }
 
         /// <summary>
-        /// Loan Limit Amount
+        /// Seq: 23
+        /// Entity: cr_cucoba_det
+        /// Description: Loan Limit Amount
+        /// Data Type: decimal (19,3)
+        /// Notes: Loan (accountType = 4)
+        /// CBS: OutSelectedLoanAccountAccLimitAmn
         /// </summary>
-        /// <remarks>
-        /// Loan (accountType = 4)
-        /// </remarks>
         public decimal cb_ln_limitamt { get; set; }
 
         /// <summary>
-        /// Loan Mechanism
+        /// Seq: 24
+        /// Entity: cr_cucoba_det
+        /// Description: Loan Mechanism
+        /// Data Type: varchar (15)
+        /// Notes: Loan (accountType = 4)
+        /// CBS: OutSelectedLoanAccountAccMechanism
         /// </summary>
-        /// <remarks>
-        /// Loan (accountType = 4)
-        /// </remarks>
         public string cb_ln_mech { get; set; }
 
         /// <summary>
-        /// Loan Normal Balance
+        /// Seq: 20
+        /// Entity: cr_cucoba_det
+        /// Description: Loan Normal Balance
+        /// Data Type: decimal (19,3)
+        /// Notes: Loan (accountType = 4)
+        /// CBS: OutLnsBalancesLoanAccountDrvWorkNrmAccountBal
         /// </summary>
-        /// <remarks>
-        /// Loan (accountType = 4)
-        /// </remarks>
         public decimal cb_ln_nrm_bal { get; set; }
 
         /// <summary>
-        /// Loan Overdue Balance
+        /// Seq: 21
+        /// Entity: cr_cucoba_det
+        /// Description: Loan Overdue Balance
+        /// Data Type: decimal (19,3)
+        /// Notes: Loan (accountType = 4)
+        /// CBS: OutLnsBalancesLoanAccountDrvWorkOvAccountBal
         /// </summary>
-        /// <remarks>
-        /// Loan (accountType = 4)
-        /// </remarks>
         public decimal cb_ln_ovd_bal { get; set; }
 
         /// <summary>
-        /// Shares in Mutual Funds
+        /// Seq: 52
+        /// Entity: cr_cucoba_det
+        /// Description: Shares in Mutual Funds
+        /// Data Type: decimal (19,3)
+        /// Notes: Securities (accountType = 18)
+        /// CBS: OutTotalsScrAccountCustomerPositionTotalsScrAkShrTot
         /// </summary>
         public decimal cb_shares { get; set; }
 
         /// <summary>
-        /// Account Status
+        /// Seq: 9 | 25 | 31 | 40 | 45
+        /// Entity: cr_cucoba_det
+        /// Description: Account Status
+        /// Data Type: varchar (10)
+        /// Notes: Agreement (accounType = 19) | Deposit (accountType = 3) | Letter of Guarantee (accountType = 14) | Trade Finance (accountType = 37) | Letter of Credit (accountType = 39)
+        /// CBS: OutAgreementAgreementAgrStatus | OutSelectedDepositAccountEntryStatus | OutSelectedLgLgAccountAccStatus | OutSelectedLgLgAccountAccStatus | OutSelectedLgLgAccountAccStatus
         /// </summary>
-        /// <remarks>Agreement (accounType = 19)</remarks>
         public string cb_status { get; set; }
 
         /// <summary>
-        /// Total Amount Paid
+        /// Seq: 22
+        /// Entity: cr_cucoba_det
+        /// Description: Total Amount Payed
+        /// Data Type: decimal (19,3)
+        /// Notes: Loan (accountType = 4)
+        /// CBS: OutLnsBalancesLoanAccountDrvWorkTotPaymentAmn
         /// </summary>
-        /// <remarks>
-        /// Loan (accountType = 4)
-        /// </remarks>
         public decimal cb_tot_amt_pd { get; set; }
 
         /// <summary>
-        /// Total Interest for Loan Account
+        /// Seq: 19
+        /// Entity: cr_cucoba_det
+        /// Description: Total Interest for Loan Account
+        /// Data Type: decimal (19,3)
+        /// Notes: Loan (accountType = 4)
+        /// CBS: OutLnsBalancesLoanAccountDrvWorkLstYrIntDbAmn
         /// </summary>
-        /// <remarks>Loan (accountType = 4)</remarks>
         public decimal cb_tot_interest { get; set; }
 
         /// <summary>
-        /// Utilized Limit
+        /// Seq: 7
+        /// Entity: cr_cucoba_det
+        /// Description: Utilized Limit
+        /// Data Type: decimal (19,3)
+        /// Notes: N/A
+        /// CBS: OutAccUtilizedIefSuppliedAmount
         /// </summary>
         public decimal cb_util_limit { get; set; }
 
         /// <summary>
-        /// Customer Id
+        /// Seq: 1
+        /// Entity: cr_cucoba_det
+        /// Description: Customer Id
+        /// Data Type: varchar (15)
+        /// Notes: N/A
+        /// CBS: customerId
         /// </summary>
         public string cu_id { get; set; }
 
         /// <summary>
-        /// Additional Amount
+        /// Seq: 67
+        /// Entity: cr_cucoba_ins
+        /// Description: Additional Amount
+        /// Data Type: decimal (19,3)
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssPremiumCalcAddInstalmAmnt
         /// </summary>
         public decimal in_add_first_inst_amt { get; set; }
 
         /// <summary>
-        /// Annual Premium
+        /// Seq: 68
+        /// Entity: cr_cucoba_ins
+        /// Description: Annual Premium
+        /// Data Type: decimal (19,3)
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssPremiumCalcAnnualPremium
         /// </summary>
         public decimal in_annual_premium { get; set; }
 
         /// <summary>
-        /// Serial Number
+        /// Seq: 66
+        /// Entity: cr_cucoba_ins
+        /// Description: Serial Number
+        /// Data Type: integer
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssCommitmentTpSoIdentifier
         /// </summary>
         public int in_applicationid { get; set; }
 
         /// <summary>
-        /// Branch
+        /// Seq: 62
+        /// Entity: cr_cucoba_ins
+        /// Description: Branch
+        /// Data Type: varchar (10)
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssCommitmentFkResponsibleUnit
         /// </summary>
         public string in_branch { get; set; }
 
         /// <summary>
-        /// Not Used
+        /// Seq: 57
+        /// Entity: cr_cucoba_ins
+        /// Description: Not Used
+        /// Data Type: varchar (100)
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssCommitmentFkCnlUsr
         /// </summary>
         public string in_canceluser { get; set; }
 
         /// <summary>
-        /// Currency
+        /// Seq: 74
+        /// Entity: cr_cucoba_ins
+        /// Description: Currency
+        /// Data Type: varchar (10)
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmAccCurrencyShortDescr
         /// </summary>
         public string in_ccy { get; set; }
 
         /// <summary>
-        /// Insurance Company
+        /// Seq: 55
+        /// Entity: cr_cucoba_ins
+        /// Description: Insurance Company
+        /// Data Type: varchar (10)
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssCommitmentCrAccCustomerId
         /// </summary>
         public string in_comp_id { get; set; }
 
         /// <summary>
-        /// Insurance Company Account
+        /// Seq: 75
+        /// Entity: cr_cucoba_ins
+        /// Description: Insurance Company Account
+        /// Data Type: varchar (40)
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssCommitmentLoanProfitsAcc
         /// </summary>
         public string in_inscomp_acc { get; set; }
 
         /// <summary>
-        /// Issue Date
+        /// Seq: 63
+        /// Entity: cr_cucoba_ins
+        /// Description: Issue Date
+        /// Data Type: datetime
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssCommitmentIssueDate
         /// </summary>
         public DateTime in_issuedate { get; set; }
 
         /// <summary>
-        /// Loading Amount
+        /// Seq: 69
+        /// Entity: cr_cucoba_ins
+        /// Description: Loading Amount
+        /// Data Type: decimal (19,3)
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssPremiumCalcLoadingAmnt
         /// </summary>
         public decimal in_loading_amnt { get; set; }
 
         /// <summary>
-        /// Modification Date
+        /// Seq: 64
+        /// Entity: cr_cucoba_ins
+        /// Description: Modification Date
+        /// Data Type: datetime
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssCommitmentLastUpdateDate
         /// </summary>
         public DateTime in_moddate { get; set; }
 
         /// <summary>
-        /// Monthly Premium
+        /// Seq: 70
+        /// Entity: cr_cucoba_ins
+        /// Description: Monthly Premium
+        /// Data Type: decimal (19,3)
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssPremiumCalcMonthlyPremium
         /// </summary>
         public decimal in_monthly_premium { get; set; }
 
         /// <summary>
-        /// Prorata
+        /// Seq: 71
+        /// Entity: cr_cucoba_ins
+        /// Description: Prorata
+        /// Data Type: decimal (19,3)
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssPremiumCalcProrataPremium
         /// </summary>
         public decimal in_prorata { get; set; }
 
         /// <summary>
-        /// Remaining Amount
+        /// Seq: 72
+        /// Entity: cr_cucoba_ins
+        /// Description: Remaining Amount
+        /// Data Type: decimal (19,3)
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssPremiumCalcRemainingAmnt
         /// </summary>
         public decimal in_remain_amnt { get; set; }
 
         /// <summary>
-        /// Renewal Date
+        /// Seq: 65
+        /// Entity: cr_cucoba_ins
+        /// Description: Renewal Date
+        /// Data Type: datetime
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssCommitmentRenewalDate
         /// </summary>
         public DateTime in_rendate { get; set; }
 
         /// <summary>
-        /// Insurance Status
+        /// Seq: 56
+        /// Entity: cr_cucoba_ins
+        /// Description: Insurance Status
+        /// Data Type: varchar (4)
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssCommitmentEntryStatus
         /// </summary>
         public string in_status { get; set; }
 
         /// <summary>
-        /// Not Used
+        /// Seq: 61
+        /// Entity: cr_cucoba_ins
+        /// Description: Not Used
+        /// Data Type: varchar (100)
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmIssCommitmentFkFinalizeUsr
         /// </summary>
         public string in_user { get; set; }
 
         /// <summary>
-        /// Insurance Id
+        /// Seq: 73
+        /// Entity: cr_cucoba_ins
+        /// Description: Insurance Id
+        /// Data Type: varchar (15)
+        /// Notes: N/A
+        /// CBS: OutGrpCommitmentOutGrmProductIdProduct
         /// </summary>
         public string insurance_id { get; set; }
 

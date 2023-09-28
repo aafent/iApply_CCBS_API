@@ -179,7 +179,7 @@ namespace iApplyShared.CbsModels
         /// Data Type: decimal (15,2)
         /// Entities: v_CBS_LGView
         /// </summary>
-        public decimal Amount { get; set; }
+        public decimal? Amount { get; set; }
 
         /// <summary>
         /// Account Officer (v_CBS_LGView)
@@ -359,10 +359,10 @@ namespace iApplyShared.CbsModels
 
         /// <summary>
         /// Representative if is Resident (v_CBS_TradeView)
-        /// Data Type: integer
+        /// Data Type: string
         /// Entities: v_CBS_TradeView
         /// </summary>
-        public int ContactRes { get; set; }
+        public string ContactRes { get; set; }
 
         /// <summary>
         /// Monitoring Branch (v_CBS_TradeView)
@@ -543,7 +543,7 @@ namespace iApplyShared.CbsModels
         /// Data Type: integer
         /// Entities: v_CBS_TradeView
         /// </summary>
-        public int Frequency { get; set; }
+        public decimal? Frequency { get; set; }
 
         /// <summary>
         /// Commission Calc Unit (v_CBS_TradeView)

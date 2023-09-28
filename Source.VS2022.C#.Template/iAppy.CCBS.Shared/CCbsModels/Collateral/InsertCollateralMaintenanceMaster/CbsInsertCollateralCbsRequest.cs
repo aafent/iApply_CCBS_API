@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IApplyDataAccess.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -239,5 +240,8 @@ namespace iApplyShared.CbsModels
         /// </summary>
         public decimal CollRevValue { get; set; }
 
+        public CollateralCbsView CollateralCbsViews { get; set; }
+        public List<CollateralCbsDetailsView> CollateralCbsDetailsViews { get; set; }
+        public InGrp[] InGrpArray { get; set; }
     }
 }

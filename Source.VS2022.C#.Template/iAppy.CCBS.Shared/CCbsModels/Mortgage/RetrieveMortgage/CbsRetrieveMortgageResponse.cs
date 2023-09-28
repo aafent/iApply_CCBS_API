@@ -210,5 +210,10 @@ namespace iApplyShared.CbsModels
         /// Entities: cr_curees_ip_mortdet
         /// </summary>
         public string waiver { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public MortgageProperty[] MortgageProperties { get; set; }
     }
 }

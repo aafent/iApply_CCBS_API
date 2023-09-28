@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IApplyDataAccess.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,6 +35,9 @@ namespace iApplyShared.CbsModels
         /// PayeeComment (varchar (180))
         /// </summary>
         public string PayeeComment { get; set; }
+
+        public DrawDownRequestView DrawDownRequestViews { get; set; }
+        public string AppUser { get; set; }
 
         #endregion Public Properties
     }

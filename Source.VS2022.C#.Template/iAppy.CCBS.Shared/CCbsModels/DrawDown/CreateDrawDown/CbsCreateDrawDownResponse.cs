@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IApplyDataAccess.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -100,6 +101,7 @@ namespace iApplyShared.CbsModels
         /// Payee Bank Branch (varchar (15))
         /// </summary>
         public string paye_branch { get; set; }
+        public List<PayeesView> PayeesView { get; set; }
 
         #endregion Public Properties
     }
