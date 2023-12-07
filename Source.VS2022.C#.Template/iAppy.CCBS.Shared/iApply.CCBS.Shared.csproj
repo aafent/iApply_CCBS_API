@@ -16,21 +16,16 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Compile Remove="CCbsModels\Other\NewFolder\**" />
 		<Compile Remove="Services\**" />
+		<EmbeddedResource Remove="CCbsModels\Other\NewFolder\**" />
 		<EmbeddedResource Remove="Services\**" />
+		<None Remove="CCbsModels\Other\NewFolder\**" />
 		<None Remove="Services\**" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\iApplyDataAccess\iApplyDataAccess.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="CCbsModels\Other\NewFolder\" />
 	</ItemGroup>
 
 </Project>
