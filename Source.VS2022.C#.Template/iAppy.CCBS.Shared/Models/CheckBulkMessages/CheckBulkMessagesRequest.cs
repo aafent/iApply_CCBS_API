@@ -8,7 +8,7 @@ namespace iApplyShared.Models
         #region Public Properties
 
         [DataMember(IsRequired = true)]
-        public decimal[] UniqueMessageIds { get; set; }
+        public List<decimal> UniqueMessageIds { get; set; } = new();
 
         #endregion Public Properties
     }

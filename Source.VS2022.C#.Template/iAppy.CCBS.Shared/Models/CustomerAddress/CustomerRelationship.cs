@@ -17,7 +17,7 @@ namespace iApplyShared.Models
         public string CustomerType { get; set; }
 
         [DataMemberAttribute(EmitDefaultValue = false, Order = 1)]
-        public CustomerRelationshipDetail[] Details { get; set; }
+        public List<CustomerRelationshipDetail> Details { get; set; } = new();
 
         [DataMemberAttribute]
         public DateTime ExpiryDate { get; set; }

@@ -8,7 +8,7 @@ namespace iApplyShared.Models
         #region Public Properties
 
         [DataMember]
-        public LetOfGuaBenefResult[] Results { get; set; }
+        public List<LetOfGuaBenefResult> Results { get; set; } = new();
 
         #endregion Public Properties
     }

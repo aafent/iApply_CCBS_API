@@ -8,7 +8,7 @@ namespace iApplyShared.Models
         #region Public Properties
 
         [DataMemberAttribute(EmitDefaultValue = false, Order = 36)]
-        public CustomerRelationship[] CustomerRelationships { get; set; }
+        public List<CustomerRelationship> CustomerRelationships { get; set; } = new();
 
         #endregion Public Properties
     }

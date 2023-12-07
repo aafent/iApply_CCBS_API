@@ -1,26 +1,24 @@
-﻿using IApplyDataAccess.DataModel;
-using iApplyShared.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
+using iApplyShared.Attributes;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsRetrieveDrawDownRequest
+    public class CbsRetrieveDrawDownRequest : MockupModel
     {
         #region Public Properties
 
-        /// <summary>
-        /// Customer CBS Id (integer)
-        /// </summary>
-        public int CustomerCBSId { get; set; }
+        public string AppUser { get; set; }
 
         /// <summary>
         /// Customer Check Digit (integer)
         /// </summary>
         public int CustomerCBSCD { get; set; }
+
+        /// <summary>
+        /// Customer CBS Id (integer)
+        /// </summary>
+        [Mockup(1)]
+        public int CustomerCBSId { get; set; }
 
         /// <summary>
         /// Date From (datetime)
@@ -31,10 +29,6 @@ namespace iApplyShared.CbsModels
         /// Date To (datetime)
         /// </summary>
         public DateTime DateTo { get; set; }
-
-        public DrawDownRequestView DrawDownRequestViews { get; set; }
-        public RetrieveDrawDownRequest Request { get; set; }
-        public string AppUser { get; set; }
 
         #endregion Public Properties
     }

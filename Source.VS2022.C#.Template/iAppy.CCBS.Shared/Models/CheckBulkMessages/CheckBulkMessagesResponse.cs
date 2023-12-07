@@ -22,7 +22,7 @@ namespace iApplyShared.Models
         #region Public Properties
 
         [DataMember(IsRequired = true)]
-        public BulkMessageStatus[] BulkMessageStatuses { get; set; }
+        public List<BulkMessageStatus> BulkMessageStatuses { get; set; } = new();
 
         #endregion Public Properties
     }

@@ -1,13 +1,8 @@
-﻿
-namespace iApplyShared.CbsModels
+﻿namespace iApplyShared.CbsModels
 {
     public class CbsAboutResponse : CommonResponseModel
     {
-        /// <summary>
-        /// The title of the CBS Software Platform
-        /// </summary>
-        /// <remarks></remarks>
-        public string title { get; set; }
+        #region Public Properties
 
         /// <summary>
         /// The version of the API Implementation
@@ -21,5 +16,13 @@ namespace iApplyShared.CbsModels
         /// </summary>
         /// <remarks></remarks>
         public string code { get; set; }
+
+        /// <summary>
+        /// The title of the CBS Software Platform
+        /// </summary>
+        /// <remarks></remarks>
+        public string title { get; set; }
+
+        #endregion Public Properties
     }
 }

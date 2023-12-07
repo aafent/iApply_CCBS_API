@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace iApplyShared.CbsModels
+﻿namespace iApplyShared.CbsModels
 {
-    public class CbsUpdateLegalCustomerResponse
+    public class CbsUpdateLegalCustomerResponse : CommonResponseModel
     {
         #region Public Properties
 
@@ -14,6 +8,8 @@ namespace iApplyShared.CbsModels
         /// CBS S/N (integer)
         /// </summary>
         public int AddressSerialNum { get; set; }
+
+        public List<CustomerIdentification> CustomerIdentificationList { get; set; }
 
         #endregion Public Properties
     }

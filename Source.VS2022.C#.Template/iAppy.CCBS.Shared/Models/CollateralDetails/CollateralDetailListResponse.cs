@@ -8,7 +8,7 @@ namespace iApplyShared.Models
         #region Public Properties
 
         [DataMember]
-        public RetrieveCollateralDetailsResponse[] MissingPersons { get; set; }
+        public List<RetrieveCollateralDetailsResponse> MissingPersons { get; set; } = new();
 
         #endregion Public Properties
     }

@@ -1,26 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace iApplyShared.CbsModels
+﻿namespace iApplyShared.CbsModels
 {
     public class CbsRetrieveCreditLineResponse : CommonResponseModel
     {
-        /// <summary>
-        /// Customer Id
-        /// Data Type: varchar (15)
-        /// Entities: cr_cucreditline
-        /// </summary>
-        public string cu_id { get; set; }
+        #region Public Properties
 
-        /// <summary>
-        /// Credit Limit Currency
-        /// Data Type: integer
-        /// Entities: cr_cucreditline
-        /// </summary>
-        public int cr_ccy { get; set; }
+        public List<RetrieveCredit> RetrieveCredits { get; set; }
+
+        #endregion Public Properties
+    }
+
+    public class RetrieveCredit
+    {
+        #region Public Properties
 
         /// <summary>
         /// Credit Limit Amount
@@ -30,18 +21,24 @@ namespace iApplyShared.CbsModels
         public decimal cr_amount { get; set; }
 
         /// <summary>
+        /// Assignment Date
+        /// Entities: cr_cucreditline
+        /// </summary>
+        public DateTime cr_assigndt { get; set; }
+
+        /// <summary>
+        /// Credit Limit Currency
+        /// Data Type: integer
+        /// Entities: cr_cucreditline
+        /// </summary>
+        public int cr_ccy { get; set; }
+
+        /// <summary>
         /// Expiry Date
         /// Data Type: datetime
         /// Entities: cr_cucreditline
         /// </summary>
         public DateTime cr_expdt { get; set; }
-
-        /// <summary>
-        /// Review Date
-        /// Data Type: datetime
-        /// Entities: cr_cucreditline
-        /// </summary>
-        public DateTime cr_reviewdt { get; set; }
 
         /// <summary>
         /// Next Review Date
@@ -51,11 +48,11 @@ namespace iApplyShared.CbsModels
         public DateTime cr_nextreviewdt { get; set; }
 
         /// <summary>
-        /// Credit Limit Type
-        /// Data Type: varchar (15)
+        /// Review Date
+        /// Data Type: datetime
         /// Entities: cr_cucreditline
         /// </summary>
-        public string cr_type { get; set; }
+        public DateTime cr_reviewdt { get; set; }
 
         /// <summary>
         /// Credit Limit Status
@@ -65,6 +62,13 @@ namespace iApplyShared.CbsModels
         public string cr_status { get; set; }
 
         /// <summary>
+        /// Credit Limit Type
+        /// Data Type: varchar (15)
+        /// Entities: cr_cucreditline
+        /// </summary>
+        public string cr_type { get; set; }
+
+        /// <summary>
         /// Utilized Limit
         /// Data Type: decimal (19,3)
         /// Entities: cr_cucreditline
@@ -72,9 +76,12 @@ namespace iApplyShared.CbsModels
         public decimal cr_utamount { get; set; }
 
         /// <summary>
-        /// Assignment Date
+        /// Customer Id
+        /// Data Type: varchar (15)
         /// Entities: cr_cucreditline
         /// </summary>
-        public DateTime cr_assigndt { get; set; }
+        public string cu_id { get; set; }
+
+        #endregion Public Properties
     }
 }

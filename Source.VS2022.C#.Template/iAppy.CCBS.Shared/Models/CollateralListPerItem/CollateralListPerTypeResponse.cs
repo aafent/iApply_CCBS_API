@@ -12,6 +12,6 @@ namespace iApplyShared.Models
     public class CollateralListPerTypeResponse : BaseResponse
     {
         [DataMember]
-        public CollateralListPerTypeItem[] CollateralListPerType;
+        public List<CollateralListPerTypeItem> CollateralListPerType { get; set; } = new();
     }
 }

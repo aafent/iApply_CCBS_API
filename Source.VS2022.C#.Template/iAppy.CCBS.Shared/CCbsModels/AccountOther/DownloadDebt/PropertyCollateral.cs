@@ -1,33 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace iApplyShared.CbsModels
+﻿namespace iApplyShared.CbsModels
 {
     public class PropertyCollateral
     {
-        /// <summary>
-        /// Property Id
-        /// Data Type: varchar (30)
-        /// Entities: cr_lacola
-        /// </summary>
-        public string co_id { get; set; }
-
-        /// <summary>
-        /// Collateral Type
-        /// Data Type: varchar (10)
-        /// Entities: cr_lacola
-        /// </summary>
-        public string co_type { get; set; }
-
-        /// <summary>
-        /// Market Value
-        /// Data Type: decimal (19,3)
-        /// Entities: cr_lacola
-        /// </summary>
-        public decimal co_sum { get; set; }
+        #region Public Properties
 
         /// <summary>
         /// Forced Sale Currency
@@ -42,6 +17,13 @@ namespace iApplyShared.CbsModels
         /// Entities: cr_lacola
         /// </summary>
         public decimal co_forceval { get; set; }
+
+        /// <summary>
+        /// Property Id
+        /// Data Type: varchar (30)
+        /// Entities: cr_lacola
+        /// </summary>
+        public string co_id { get; set; }
 
         /// <summary>
         /// Insurance Value Currency
@@ -72,20 +54,6 @@ namespace iApplyShared.CbsModels
         public decimal co_investval { get; set; }
 
         /// <summary>
-        /// Mortgage Value Currency
-        /// Data Type: varchar (10)
-        /// Entities: cr_lacola
-        /// </summary>
-        public string co_mortccy { get; set; }
-
-        /// <summary>
-        /// Mortgage Value
-        /// Data Type: decimal (19,3)
-        /// Entities: cr_lacola
-        /// </summary>
-        public decimal co_mortval { get; set; }
-
-        /// <summary>
         /// Open Market Currency
         /// Data Type: varchar (10)
         /// Entities: cr_lacola
@@ -98,6 +66,20 @@ namespace iApplyShared.CbsModels
         /// Entities: cr_lacola
         /// </summary>
         public decimal co_markval { get; set; }
+
+        /// <summary>
+        /// Mortgage Value Currency
+        /// Data Type: varchar (10)
+        /// Entities: cr_lacola
+        /// </summary>
+        public string co_mortccy { get; set; }
+
+        /// <summary>
+        /// Mortgage Value
+        /// Data Type: decimal (19,3)
+        /// Entities: cr_lacola
+        /// </summary>
+        public decimal co_mortval { get; set; }
 
         /// <summary>
         /// Reserve Value Currency
@@ -114,11 +96,25 @@ namespace iApplyShared.CbsModels
         public decimal co_reserval { get; set; }
 
         /// <summary>
-        /// LR Number
-        /// Data Type: varchar (150)
+        /// Valuation Date
+        /// Data Type: datetime
         /// Entities: cr_lacola
         /// </summary>
-        public string ip_lrnum { get; set; }
+        public DateTime co_revdate { get; set; }
+
+        /// <summary>
+        /// Market Value
+        /// Data Type: decimal (19,3)
+        /// Entities: cr_lacola
+        /// </summary>
+        public decimal co_sum { get; set; }
+
+        /// <summary>
+        /// Collateral Type
+        /// Data Type: varchar (10)
+        /// Entities: cr_lacola
+        /// </summary>
+        public string co_type { get; set; }
 
         /// <summary>
         /// Valuer
@@ -135,10 +131,12 @@ namespace iApplyShared.CbsModels
         public string co_valuetype { get; set; }
 
         /// <summary>
-        /// Valuation Date
-        /// Data Type: datetime
+        /// LR Number
+        /// Data Type: varchar (150)
         /// Entities: cr_lacola
         /// </summary>
-        public DateTime co_revdate { get; set; }
+        public string ip_lrnum { get; set; }
+
+        #endregion Public Properties
     }
 }

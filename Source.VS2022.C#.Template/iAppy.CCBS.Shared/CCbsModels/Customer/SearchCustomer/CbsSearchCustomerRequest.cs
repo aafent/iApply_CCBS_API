@@ -1,9 +1,9 @@
-﻿using iApplyShared.Attributes;
-using System.ComponentModel.DataAnnotations;
+﻿using iApply.CCBS.Shared.CCbsModels;
+using iApplyShared.Attributes;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsSearchCustomerRequest
+    public class CbsSearchCustomerRequest : MockupModel
     {
         #region Public Properties
 

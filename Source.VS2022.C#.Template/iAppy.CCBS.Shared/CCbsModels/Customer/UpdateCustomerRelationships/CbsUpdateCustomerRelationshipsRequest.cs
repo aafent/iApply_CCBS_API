@@ -1,51 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
+using iApplyShared.Attributes;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsUpdateCustomerRelationshipsRequest
+    public class CbsUpdateCustomerRelationshipsRequest : MockupModel
     {
         #region Public Properties
 
         /// <summary>
-        /// Customer Check Digit (integer)
-        /// 0 if CustomerCBSCd = RelCustomerCBSCd
+        /// All Accounts (varchar)
         /// </summary>
-        public int CustomerCBSCd { get; set; }
-
-        /// <summary>
-        /// Relation Customer Check Digit (integer)
-        /// 0 if RelCustomerCBSCd = CustomerCBSCd
-        /// </summary>
-        public int RelCustomerCBSCd { get; set; }
-
-        /// <summary>
-        /// Relationship (varchar)
-        /// </summary>
-        public string RelationCodeDet { get; set; }
-
-        /// <summary>
-        /// Relationship (integer)
-        /// </summary>
-        public int RelationCode { get; set; }
-
-        /// <summary>
-        /// Issued Date (datetime)
-        /// </summary>
-        public DateTime IssueDate { get; set; }
-
-        /// <summary>
-        /// Expiry Date (datetime)
-        /// </summary>
-        public DateTime ExpiryDate { get; set; }
-
-        /// <summary>
-        /// Percentage (decimal (15,2))
-        /// </summary>
-        public decimal? RelPerc { get; set; }
+        public string AllAccount { get; set; }
 
         /// <summary>
         /// Comments (varchar)
@@ -54,21 +19,27 @@ namespace iApplyShared.CbsModels
         public string Comments { get; set; }
 
         /// <summary>
+        /// Customer Check Digit (integer)
+        /// 0 if CustomerCBSCd = RelCustomerCBSCd
+        /// </summary>
+        public int CustomerCBSCd { get; set; }
+
+        /// <summary>
         /// Customer CBS Id (varchar)
         /// 0 if CustomerCBSId = RelCustomerCBSId
         /// </summary>
+        [Mockup(1)]
         public string CustomerCBSId { get; set; }
 
         /// <summary>
-        /// Relation Customer CBS Id (varchar)
-        /// 0 if RelCustomerCBSId = CustomerCBSId
+        /// Expiry Date (datetime)
         /// </summary>
-        public string RelCustomerCBSId { get; set; }
+        public DateTime ExpiryDate { get; set; }
 
         /// <summary>
-        /// All Accounts (varchar)
+        /// Issued Date (datetime)
         /// </summary>
-        public string AllAccount { get; set; }
+        public DateTime IssueDate { get; set; }
 
         /// <summary>
         /// Account Number (integer)
@@ -84,6 +55,33 @@ namespace iApplyShared.CbsModels
         /// Account Type (varchar)
         /// </summary>
         public string RelAccountType { get; set; }
+
+        /// <summary>
+        /// Relationship (integer)
+        /// </summary>
+        public int RelationCode { get; set; }
+
+        /// <summary>
+        /// Relationship (varchar)
+        /// </summary>
+        public string RelationCodeDet { get; set; }
+
+        /// <summary>
+        /// Relation Customer Check Digit (integer)
+        /// 0 if RelCustomerCBSCd = CustomerCBSCd
+        /// </summary>
+        public int RelCustomerCBSCd { get; set; }
+
+        /// <summary>
+        /// Relation Customer CBS Id (varchar)
+        /// 0 if RelCustomerCBSId = CustomerCBSId
+        /// </summary>
+        public string RelCustomerCBSId { get; set; }
+
+        /// <summary>
+        /// Percentage (decimal (15,2))
+        /// </summary>
+        public decimal? RelPerc { get; set; }
 
         #endregion Public Properties
     }

@@ -1,19 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
+using iApplyShared.Attributes;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsRetrieveDepositAccountRequest
+    public class CbsRetrieveDepositAccountRequest : MockupModel
     {
         #region Public Properties
 
         /// <summary>
-        /// Account Number (varchar (40))
+        /// Customer CBS Id (integer)
         /// </summary>
-        public string profitsAccountNumber { get; set; }
+        [Mockup(1)]
+        public int InCustomerCustId { get; set; }
 
         /// <summary>
         /// Account Check digit (integer)
@@ -21,9 +19,9 @@ namespace iApplyShared.CbsModels
         public int profitsAccountCd { get; set; }
 
         /// <summary>
-        /// Customer CBS Id (integer)
+        /// Account Number (varchar (40))
         /// </summary>
-        public int InCustomerCustId { get; set; }
+        public string profitsAccountNumber { get; set; }
 
         #endregion Public Properties
     }

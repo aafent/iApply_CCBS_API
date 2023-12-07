@@ -1,22 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
+using iApplyShared.Attributes;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsCreateCreditLineRequest
+    public class CbsCreateCreditLineRequest : MockupModel
     {
-        /// <summary>
-        /// Gets or sets the Customer CBS Id (integer).
-        /// </summary>
-        public int CustomerCBSId { get; set; }
+        #region Public Properties
+
+        public CbsRetrieveCreditLineResponse CbsRetrieveCreditLineResponseModel { get; set; }
 
         /// <summary>
-        /// Gets or sets the Customer Check Digit (integer).
+        /// Gets or sets the Credit Limit Amount (decimal (15,2)).
         /// </summary>
-        public int CustomerCBSCd { get; set; }
+        public decimal CrAmount { get; set; }
 
         /// <summary>
         /// Gets or sets the Credit Limit Currency (integer).
@@ -29,19 +25,9 @@ namespace iApplyShared.CbsModels
         public string CrCcyDescr { get; set; }
 
         /// <summary>
-        /// Gets or sets the Credit Limit Amount (decimal (15,2)).
-        /// </summary>
-        public decimal CrAmount { get; set; }
-
-        /// <summary>
         /// Gets or sets the Expiry Date (datetime).
         /// </summary>
         public DateTime CrExpDate { get; set; }
-
-        /// <summary>
-        /// Gets or sets the Review Date (datetime).
-        /// </summary>
-        public DateTime CrRevDate { get; set; }
 
         /// <summary>
         /// Gets or sets the Next Review Date (datetime).
@@ -49,10 +35,26 @@ namespace iApplyShared.CbsModels
         public DateTime CrNextRevDate { get; set; }
 
         /// <summary>
+        /// Gets or sets the Review Date (datetime).
+        /// </summary>
+        public DateTime CrRevDate { get; set; }
+
+        /// <summary>
         /// Gets or sets the Credit Limit Type (varchar (15)).
         /// </summary>
         public string CrType { get; set; }
 
-        public List<CbsRetrieveCreditLineResponse> CbsRetrieveCreditLineResponseModel { get; set; }
+        /// <summary>
+        /// Gets or sets the Customer Check Digit (integer).
+        /// </summary>
+        public int CustomerCBSCd { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Customer CBS Id (integer).
+        /// </summary>
+        [Mockup(1)]
+        public int CustomerCBSId { get; set; }
+
+        #endregion Public Properties
     }
 }

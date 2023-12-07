@@ -90,8 +90,8 @@ namespace iApplyShared.Models
         [DataMember]
         public decimal? CollReCur { get; set; }
 
-
-        [DataMember] public CollateralCbsDetailItem[] CollateralCbsDetailItems;
+        [DataMember] 
+        public List<CollateralCbsDetailItem> CollateralCbsDetailItems { get; set; }
 
 
     }

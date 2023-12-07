@@ -11,6 +11,6 @@ namespace iApplyShared.Models
     public class GetDynamicCollateralFieldsResponse : BaseResponse
     {
         [DataMember]
-        virtual public DynamicFields[] Fields { get; set; }
+        virtual public List<DynamicFields> Fields { get; set; } = new();
     }
 }

@@ -1,13 +1,9 @@
-﻿using IApplyDataAccess.DataModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
+using iApplyShared.Attributes;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsDeleteCustAccRelationshipsRequest
+    public class CbsDeleteCustAccRelationshipsRequest : MockupModel
     {
         #region Public Properties
 
@@ -15,35 +11,14 @@ namespace iApplyShared.CbsModels
         /// Customer Check Digit (integer)
         /// 0 if CustomerCBSCd = RelCustomerCBSCd
         /// </summary>
+        [Mockup(1)]
         public int CustomerCBSCd { get; set; }
-
-        /// <summary>
-        /// Relation Customer Check Digit (integer)
-        /// 0 if RelCustomerCBSCd = CustomerCBSCd
-        /// </summary>
-        public int RelCustomerCBSCd { get; set; }
-
-        /// <summary>
-        /// Relationship (varchar)
-        /// </summary>
-        public string RelationCodeDet { get; set; }
-
-        /// <summary>
-        /// Relationship (integer)
-        /// </summary>
-        public int RelationCode { get; set; }
 
         /// <summary>
         /// Customer CBS Id (varchar)
         /// 0 if CustomerCBSId = RelCustomerCBSId
         /// </summary>
         public string CustomerCBSId { get; set; }
-
-        /// <summary>
-        /// Relation Customer CBS Id (varchar)
-        /// 0 if RelCustomerCBSId = CustomerCBSId
-        /// </summary>
-        public string RelCustomerCBSId { get; set; }
 
         /// <summary>
         /// Account Number (integer)
@@ -59,6 +34,28 @@ namespace iApplyShared.CbsModels
         /// Account Type (varchar)
         /// </summary>
         public string RelAccountType { get; set; }
+
+        /// <summary>
+        /// Relationship (integer)
+        /// </summary>
+        public int RelationCode { get; set; }
+
+        /// <summary>
+        /// Relationship (varchar)
+        /// </summary>
+        public string RelationCodeDet { get; set; }
+
+        /// <summary>
+        /// Relation Customer Check Digit (integer)
+        /// 0 if RelCustomerCBSCd = CustomerCBSCd
+        /// </summary>
+        public int RelCustomerCBSCd { get; set; }
+
+        /// <summary>
+        /// Relation Customer CBS Id (varchar)
+        /// 0 if RelCustomerCBSId = CustomerCBSId
+        /// </summary>
+        public string RelCustomerCBSId { get; set; }
 
         #endregion Public Properties
     }

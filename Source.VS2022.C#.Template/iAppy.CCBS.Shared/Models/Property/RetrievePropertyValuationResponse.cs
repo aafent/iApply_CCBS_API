@@ -8,7 +8,7 @@ namespace iApplyShared.Models
         #region Public Properties
 
         [DataMember]
-        public ValuationItem[] ValuationItems { get; set; }
+        public List<ValuationItem> ValuationItems { get; set; } = new();
 
         #endregion Public Properties
     }

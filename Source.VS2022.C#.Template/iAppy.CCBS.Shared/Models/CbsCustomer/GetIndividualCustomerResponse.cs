@@ -6,9 +6,9 @@ namespace iApplyShared.Models
     public class GetIndividualCustomerResponse : BaseResponse
     {
         #region Public Properties
-
+            
         [DataMember(EmitDefaultValue = false, Order = 24)]
-        public CustomerAddress[] Addresses { get; set; }
+        public List<CustomerAddress> Addresses { get; set; } = new();
 
         [DataMember(EmitDefaultValue = false, Order = 32)]
         public string AfmIssueCountryShortDescription { get; set; }
@@ -47,7 +47,7 @@ namespace iApplyShared.Models
         public DateTime? ContractDate { get; set; }
 
         [DataMember(EmitDefaultValue = false, Order = 61)]
-        public CustomerCategory[] CustomerCategories { get; set; }
+        public List<CustomerCategory> CustomerCategories { get; set; } = new();
 
         [DataMember(EmitDefaultValue = false, Order = 44)]
         public string CustomerCrmId { get; set; }
@@ -56,7 +56,7 @@ namespace iApplyShared.Models
         public int CustomerId { get; set; }
 
         [DataMember(EmitDefaultValue = false, Order = 36)]
-        public CustomerIdentification[] CustomerIdentifications { get; set; }
+        public List<CustomerIdentification >CustomerIdentifications { get; set; } = new();
 
         [DataMember(EmitDefaultValue = false, Order = 64)]
         public string CustomerStatus { get; set; }

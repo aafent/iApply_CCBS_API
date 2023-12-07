@@ -1,20 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
+using iApplyShared.Attributes;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsDownloadDebtRequest
+    public class CbsDownloadDebtRequest : MockupModel
     {
-        /// <summary>
-        /// Entity: Customer CBS Id
-        /// Description: Customer CBS Id
-        /// Data Type: varchar (20)
-        /// Notes: argument from client
-        /// </summary>
-        public string CustomerCBSId { get; set; }
+        #region Public Properties
 
         /// <summary>
         /// Entity: Account Number
@@ -23,5 +14,16 @@ namespace iApplyShared.CbsModels
         /// Notes: argument from client
         /// </summary>
         public string AccountNumber { get; set; }
+
+        /// <summary>
+        /// Entity: Customer CBS Id
+        /// Description: Customer CBS Id
+        /// Data Type: varchar (20)
+        /// Notes: argument from client
+        /// </summary>
+        [Mockup(1)]
+        public string CustomerCBSId { get; set; }
+
+        #endregion Public Properties
     }
 }

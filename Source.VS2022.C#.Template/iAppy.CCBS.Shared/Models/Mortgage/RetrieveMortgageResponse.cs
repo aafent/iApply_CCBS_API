@@ -8,7 +8,7 @@ namespace iApplyShared.Models
         #region Public Properties
 
         [DataMember]
-        public MortgageProperty[] MissingProperties { get; set; }
+        public List<MortgageProperty> MissingProperties { get; set; } = new();
 
         [DataMember]
         public string mort_id { get; set; }

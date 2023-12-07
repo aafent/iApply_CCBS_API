@@ -1,13 +1,9 @@
-﻿using IApplyDataAccess.DataModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
+using iApplyShared.Attributes;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsDeleteCustomerRelationshipsRequest
+    public class CbsDeleteCustomerRelationshipsRequest : MockupModel
     {
         #region Public Properties
 
@@ -18,25 +14,11 @@ namespace iApplyShared.CbsModels
         public int CustomerCBSCd { get; set; }
 
         /// <summary>
-        /// Relation Customer Check Digit (integer)
-        /// 0 if RelCustomerCBSCd = CustomerCBSCd
+        /// Customer CBS Id (varchar)
+        /// 0 if CustomerCBSId = RelCustomerCBSId
         /// </summary>
-        public int RelCustomerCBSCd { get; set; }
-
-        /// <summary>
-        /// Relationship (varchar)
-        /// </summary>
-        public string RelationCodeDet { get; set; }
-
-        /// <summary>
-        /// Relationship (integer)
-        /// </summary>
-        public int RelationCode { get; set; }
-
-        /// <summary>
-        /// Issued Date (datetime)
-        /// </summary>
-        public DateTime IssueDate { get; set; }
+        [Mockup(1)]
+        public string CustomerCBSId { get; set; }
 
         /// <summary>
         /// Expiry Date (datetime)
@@ -44,10 +26,25 @@ namespace iApplyShared.CbsModels
         public DateTime ExpiryDate { get; set; }
 
         /// <summary>
-        /// Customer CBS Id (varchar)
-        /// 0 if CustomerCBSId = RelCustomerCBSId
+        /// Issued Date (datetime)
         /// </summary>
-        public string CustomerCBSId { get; set; }
+        public DateTime IssueDate { get; set; }
+
+        /// <summary>
+        /// Relationship (integer)
+        /// </summary>
+        public int RelationCode { get; set; }
+
+        /// <summary>
+        /// Relationship (varchar)
+        /// </summary>
+        public string RelationCodeDet { get; set; }
+
+        /// <summary>
+        /// Relation Customer Check Digit (integer)
+        /// 0 if RelCustomerCBSCd = CustomerCBSCd
+        /// </summary>
+        public int RelCustomerCBSCd { get; set; }
 
         /// <summary>
         /// Relation Customer CBS Id (varchar)

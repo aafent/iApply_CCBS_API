@@ -11,7 +11,7 @@ namespace iApplyShared.Models
     public class GetBankEmployeeResponse : BaseResponse
     {
         [DataMemberAttribute]
-        public BankEmployeeInfo[] Details { get; set; }
+        public List<BankEmployeeInfo> Details { get; set; } = new();
 
         [DataMemberAttribute]
         public bool NotFound { get; set; }

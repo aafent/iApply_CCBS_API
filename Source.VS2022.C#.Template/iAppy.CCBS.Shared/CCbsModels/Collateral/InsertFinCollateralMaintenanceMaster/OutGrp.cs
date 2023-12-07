@@ -1,19 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace iApplyShared.CbsModels
+﻿namespace iApplyShared.CbsModels
 {
     public class OutGrp
     {
-        /// <summary>
-        /// Entity: crp_CBS_updateCollDetCBSID
-        /// Description: Account or Agreement Check Digit
-        /// Data Type: integer
-        /// </summary>
-        public int co_accountcd { get; set; }
+        #region Public Properties
 
         /// <summary>
         /// Entity: crp_CBS_updateCollDetCBSID
@@ -24,10 +13,10 @@ namespace iApplyShared.CbsModels
 
         /// <summary>
         /// Entity: crp_CBS_updateCollDetCBSID
-        /// Description: Allocation CBS Id
+        /// Description: Account or Agreement Check Digit
         /// Data Type: integer
         /// </summary>
-        public int co_trcbsid { get; set; }
+        public int co_accountcd { get; set; }
 
         /// <summary>
         /// Entity: crp_CBS_updateCollCBSID
@@ -35,5 +24,14 @@ namespace iApplyShared.CbsModels
         /// Data Type: varchar (10)
         /// </summary>
         public string co_status { get; set; }
+
+        /// <summary>
+        /// Entity: crp_CBS_updateCollDetCBSID
+        /// Description: Allocation CBS Id
+        /// Data Type: integer
+        /// </summary>
+        public int co_trcbsid { get; set; }
+
+        #endregion Public Properties
     }
 }

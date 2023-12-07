@@ -11,7 +11,7 @@ namespace iApplyShared.Models
         public string Accounts { get; set; }
 
         [DataMemberAttribute(EmitDefaultValue = false, Order = 1)]
-        public CustomerRelationshipAccountDetail[] Details { get; set; }
+        public List<CustomerRelationshipAccountDetail> Details { get; set; } = new();
 
         [DataMemberAttribute]
         public int Relationship { get; set; }

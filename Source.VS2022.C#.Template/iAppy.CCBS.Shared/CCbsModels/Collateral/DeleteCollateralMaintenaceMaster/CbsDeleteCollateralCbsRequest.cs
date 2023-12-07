@@ -1,18 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
+using iApplyShared.Attributes;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsDeleteCollateralCbsRequest
+    public class CbsDeleteCollateralCbsRequest : MockupModel
     {
+        #region Public Properties
+
         /// <summary>
         /// Entity: v_CBS_Collateral
         /// Description: Collateral CBS Id
         /// Data Type: integer
         /// </summary>
+        [Mockup(1)]
         public int CollateralCbsId { get; set; }
 
         /// <summary>
@@ -28,5 +28,7 @@ namespace iApplyShared.CbsModels
         /// Data Type: decimal (15,2)
         /// </summary>
         public decimal CollSecAmount { get; set; }
+
+        #endregion Public Properties
     }
 }

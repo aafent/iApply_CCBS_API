@@ -12,6 +12,6 @@ namespace iApplyShared.Models
     public class GeneralCollateralListResponse : BaseResponse
     {
         [DataMember]
-        public GeneralCollateralListItem[] GeneralCollateralList;
+        public List<GeneralCollateralListItem> GeneralCollateralList { get; set; } = new();
     }
 }

@@ -1,17 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
+using iApplyShared.Attributes;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsRetrieveMortgageRequest
+    public class CbsRetrieveMortgageRequest : MockupModel
     {
+        #region Public Properties
+
         /// <summary>
         /// Mortgage CBS Id
         /// Data Type: integer
         /// </summary>
+        [Mockup(1)]
         public int MortgageCbsId { get; set; }
+
+        #endregion Public Properties
     }
 }

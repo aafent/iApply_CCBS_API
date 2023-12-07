@@ -1,20 +1,10 @@
-﻿using IApplyDataAccess.DataModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsUpdateLGBeneficiaryRequest
+    public class CbsUpdateLGBeneficiaryRequest : MockupModel
     {
         #region Public Properties
-
-        /// <summary>
-        /// Category (integer)
-        /// </summary>
-        public int Category { get; set; }
 
         /// <summary>
         /// Address Line 1 (varchar (255))
@@ -27,9 +17,34 @@ namespace iApplyShared.CbsModels
         public string Address2 { get; set; }
 
         /// <summary>
-        /// Tax Id (varchar (40))
+        /// Category (integer)
         /// </summary>
-        public string TaxId { get; set; }
+        public int Category { get; set; }
+
+        /// <summary>
+        /// LG CBS Id (integer)
+        /// </summary>
+        public int CbsId { get; set; }
+
+        /// <summary>
+        /// City (varchar (40))
+        /// </summary>
+        public string City { get; set; }
+
+        /// <summary>
+        /// Comments (varchar (255))
+        /// </summary>
+        public string Comments { get; set; }
+
+        /// <summary>
+        /// Name (varchar (20))
+        /// </summary>
+        public string FirstName { get; set; }
+
+        /// <summary>
+        /// Full Name (varchar (100))
+        /// </summary>
+        public string FullName { get; set; }
 
         /// <summary>
         /// Id Type (varchar (100))
@@ -37,9 +52,9 @@ namespace iApplyShared.CbsModels
         public string IdType { get; set; }
 
         /// <summary>
-        /// Name (varchar (20))
+        /// Postal Code (varchar (20))
         /// </summary>
-        public string FirstName { get; set; }
+        public string Postal { get; set; }
 
         /// <summary>
         /// Profession (varchar (100))
@@ -52,35 +67,14 @@ namespace iApplyShared.CbsModels
         public string Region { get; set; }
 
         /// <summary>
-        /// Full Name (varchar (100))
+        /// Tax Id (varchar (40))
         /// </summary>
-        public string FullName { get; set; }
+        public string TaxId { get; set; }
 
         /// <summary>
         /// Phone Number (varchar (20))
         /// </summary>
         public string Tele { get; set; }
-
-        /// <summary>
-        /// Postal Code (varchar (20))
-        /// </summary>
-        public string Postal { get; set; }
-
-        /// <summary>
-        /// Comments (varchar (255))
-        /// </summary>
-        public string Comments { get; set; }
-
-        /// <summary>
-        /// City (varchar (40))
-        /// </summary>
-        public string City { get; set; }
-
-        /// <summary>
-        /// LG CBS Id (integer)
-        /// </summary>
-        public int CbsId { get; set; }
-        public LGBenefView LGBenefViews { get; set; }
 
         #endregion Public Properties
     }

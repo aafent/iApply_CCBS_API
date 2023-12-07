@@ -7,6 +7,14 @@
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <NoWarn>1701;1702;1591</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <NoWarn>1701;1702;1591</NoWarn>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<Compile Remove="Services\**" />
 		<EmbeddedResource Remove="Services\**" />
@@ -19,6 +27,10 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\iApplyDataAccess\iApplyDataAccess.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="CCbsModels\Other\NewFolder\" />
 	</ItemGroup>
 
 </Project>

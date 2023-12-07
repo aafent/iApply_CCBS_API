@@ -1,19 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace iApplyShared.CbsModels
+﻿namespace iApplyShared.CbsModels
 {
     public class CbsInstantLoanResponse : CommonResponseModel
     {
+        #region Public Properties
+
         /// <summary>
-        /// Entity: crp_CBS_updateInstantLoan
-        /// Description: Application Id
-        /// Data Type: varchar (15)
+        /// Entity: cr_lamast
+        /// Description: Agreement Status
+        /// Data Type: varchar (1)
+        /// Notes: This property has a note indicating the lack of a description in your provided data.
         /// </summary>
-        public string la_id { get; set; }
+        public string agree_status { get; set; }
 
         /// <summary>
         /// Entity: cr_lamast
@@ -45,12 +42,11 @@ namespace iApplyShared.CbsModels
         public string cbs_apid_status { get; set; }
 
         /// <summary>
-        /// Entity: cr_lamast
-        /// Description: Agreement Status
-        /// Data Type: varchar (1)
-        /// Notes: This property has a note indicating the lack of a description in your provided data.
+        /// Entity: crp_CBS_updateInstantLoan
+        /// Description: Application Id
+        /// Data Type: varchar (15)
         /// </summary>
-        public string agree_status { get; set; }
+        public string la_id { get; set; }
 
         /// <summary>
         /// Entity: cr_ladis
@@ -66,5 +62,6 @@ namespace iApplyShared.CbsModels
         /// </summary>
         public int profitsaccountcd { get; set; }
 
+        #endregion Public Properties
     }
 }

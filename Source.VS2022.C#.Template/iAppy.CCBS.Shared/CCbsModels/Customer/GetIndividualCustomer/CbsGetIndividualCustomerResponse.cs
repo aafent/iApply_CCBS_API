@@ -89,9 +89,9 @@
         /// </summary>
         public string cus_status { get; set; }
 
-        public CustomerCategory[] CustomerCategories { get; set; }
+        public List<CustomerCategory> CustomerCategories { get; set; }
 
-        public CustomerIdentification[] CustomerIdentifications { get; set; }
+        public List<CustomerIdentification> CustomerIdentifications { get; set; }
 
         /// <summary>
         /// Email 1

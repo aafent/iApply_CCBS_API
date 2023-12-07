@@ -11,6 +11,6 @@ namespace iApplyShared.Models
     public class SafeDepositBoxesListResponse : BaseResponse
     {
         [DataMember]
-        public SafeDepositBoxesResult[] Results { get; set; }
+        public List<SafeDepositBoxesResult> Results { get; set; } = new();
     }
 }

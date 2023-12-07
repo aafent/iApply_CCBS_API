@@ -1,13 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace iApplyShared.Models
+﻿namespace iApplyShared.Models
 {
+    /// <summary>
+    /// Mockup action metadata
+    /// </summary>
     public class actionMetadata
     {
+        /// <summary>
+        /// Markdown with manual page 
+        /// </summary>
         public string helpText { get; set; }
+
+        /// <summary>
+        /// Markdown with information about the action
+        /// </summary>
+        public string infoText {  get; set; }
     }
 }

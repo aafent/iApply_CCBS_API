@@ -4,6 +4,15 @@
     {
         #region Public Properties
 
+        public List<CustomerAccount> CustomerAccounts { get; set; }
+
+        #endregion Public Properties
+    }
+
+    public class CustomerAccount
+    {
+        #region Public Properties
+
         /// <summary>
         /// Account Check Digit (integer)
         /// </summary>

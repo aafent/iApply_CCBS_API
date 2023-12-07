@@ -11,6 +11,6 @@ namespace iApplyShared.Models
     public class GetDynamicCollateralListResponse : BaseResponse
     {
         [DataMember]
-        virtual public DynamicCollateral[] dynamicCollaterals { get; set; }
+        virtual public List<DynamicCollateral> dynamicCollaterals { get; set; } = new();
     }
 }

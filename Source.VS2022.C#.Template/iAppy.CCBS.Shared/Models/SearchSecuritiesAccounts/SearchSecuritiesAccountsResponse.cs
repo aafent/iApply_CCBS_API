@@ -8,7 +8,7 @@ namespace iApplyShared.Models
         #region Public Fields
 
         [DataMember]
-        public SearchSecuritiesAccountListItem[] SearchSecuritiesAccountList;
+        public List<SearchSecuritiesAccountListItem> SearchSecuritiesAccountList { get; set; } = new();
 
         #endregion Public Fields
     }

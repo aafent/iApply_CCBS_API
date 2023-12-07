@@ -8,7 +8,7 @@ namespace iApplyShared.Models
         #region Public Properties
 
         [DataMember]
-        public CustomerInfo[] Details { get; set; }
+        public List<CustomerInfo> Details { get; set; } = new();
 
         [DataMember]
         public bool NotFound { get; set; }

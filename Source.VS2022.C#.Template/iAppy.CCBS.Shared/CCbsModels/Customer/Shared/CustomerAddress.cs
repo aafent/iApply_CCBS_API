@@ -282,6 +282,13 @@
         /// </summary>
         public string website { get; set; }
 
+        public bool IsValid()
+        {
+            if (string.IsNullOrEmpty(addres1) /*&& string.IsNullOrEmpty(CountryShortDes)*/)
+                return false;
+            return true;
+        }
+
         #endregion Public Properties
     }
 }

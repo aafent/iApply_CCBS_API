@@ -11,7 +11,8 @@ namespace iApplyShared.Models
     public class SearchValuerResponse : BaseResponse
     {
         [DataMember]
-        public CbsValuer[] Results { get; set; }
+        public List<CbsValuer> Results { get; set; } = new();
+         
         [DataMember]
         public int ResultsCount { get; set; }
     }

@@ -8,7 +8,7 @@ namespace iApplyShared.Models
         #region Public Properties
 
         [DataMemberAttribute]
-        public DebtInfo[] Details { get; set; }
+        public List<DebtInfo> Details { get; set; } = new();
 
         [DataMemberAttribute]
         public bool NotFound { get; set; }

@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace iApplyShared.CbsModels
+﻿namespace iApplyShared.CbsModels
 {
     public class GuarantorsList
     {
+        #region Public Properties
+
         /// <summary>
         /// Entity: v_CBS_InstantLoanView
-        /// Description: Guarantor Amount
-        /// Data Type: decimal (15,2)
+        /// Description: Guarantor Check Digit
+        /// Data Type: integer
         /// </summary>
-        public decimal GuarantorAmount { get; set; }
+        public int CustomerCBSCd { get; set; }
 
         /// <summary>
         /// Entity: v_CBS_InstantLoanView
@@ -24,11 +20,11 @@ namespace iApplyShared.CbsModels
 
         /// <summary>
         /// Entity: v_CBS_InstantLoanView
-        /// Description: Guarantor Check Digit
-        /// Data Type: integer
+        /// Description: Guarantor Amount
+        /// Data Type: decimal (15,2)
         /// </summary>
-        public int CustomerCBSCd { get; set; }
+        public decimal GuarantorAmount { get; set; }
 
-
+        #endregion Public Properties
     }
 }

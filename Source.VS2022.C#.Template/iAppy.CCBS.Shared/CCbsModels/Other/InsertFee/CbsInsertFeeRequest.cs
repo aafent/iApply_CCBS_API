@@ -1,13 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsInsertFeeRequest
+    public class CbsInsertFeeRequest : MockupModel
     {
+        #region Public Properties
+
+        /// <summary>
+        /// Fee Amount
+        /// Data Type: Numeric
+        /// Entities: v_CBS_Fees
+        /// </summary>
+        public decimal FeeAmount { get; set; }
+
         /// <summary>
         /// Deposit Account
         /// Entities: v_CBS_Fees
@@ -21,11 +26,10 @@ namespace iApplyShared.CbsModels
         public string FeeDepAccountCd { get; set; }
 
         /// <summary>
-        /// Fee Amount
-        /// Data Type: Numeric
+        /// Fee Justification Code
         /// Entities: v_CBS_Fees
         /// </summary>
-        public decimal FeeAmount { get; set; }
+        public string FeeJustificCode { get; set; }
 
         /// <summary>
         /// Transaction Type
@@ -34,10 +38,6 @@ namespace iApplyShared.CbsModels
         /// </summary>
         public string Type { get; set; }
 
-        /// <summary>
-        /// Fee Justification Code
-        /// Entities: v_CBS_Fees
-        /// </summary>
-        public string FeeJustificCode { get; set; }
+        #endregion Public Properties
     }
 }

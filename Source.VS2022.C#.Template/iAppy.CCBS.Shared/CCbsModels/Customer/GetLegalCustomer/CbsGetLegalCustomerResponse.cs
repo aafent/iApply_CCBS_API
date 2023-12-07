@@ -12,7 +12,7 @@
         /// </remarks>
         public string address_no { get; set; }
 
-        public CustomerAddress[] Addresses { get; set; }
+        public List<CustomerAddress> Addresses { get; set; } = new();
 
         /// <summary>
         /// CRM Id
@@ -138,9 +138,9 @@
         /// </remarks>
         public int cu_type { get; set; }
 
-        public CustomerCategory[] CustomerCategories { get; set; }
+        public List<CustomerCategory> CustomerCategories { get; set; } = new();
 
-        public CustomerIdentification[] CustomerIdentifications { get; set; }
+        public List<CustomerIdentification> CustomerIdentifications { get; set; } = new();
 
         /// <summary>
         /// Email 1

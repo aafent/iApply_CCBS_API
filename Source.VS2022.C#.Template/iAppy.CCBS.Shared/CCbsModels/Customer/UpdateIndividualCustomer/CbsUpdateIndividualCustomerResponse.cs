@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace iApplyShared.CbsModels
+﻿namespace iApplyShared.CbsModels
 {
-    public class CbsUpdateIndividualCustomerResponse : CommonResponseModel    
+    public class CbsUpdateIndividualCustomerResponse : CommonResponseModel
     {
         #region Public Properties
 

@@ -8,91 +8,91 @@ namespace iApplyShared.Models
         #region Public Properties
 
         [DataMember]
-        public CustomerAddress[] Addresses { get; set; }
+        public List<CustomerAddress> Addresses { get; set; } = new();
 
         [DataMember]
-        public string AfmIssueCountryShortDescription { get; set; }
+        public string AfmIssueCountryShortDescription { get; set; } = string.Empty;
 
         [DataMember]
         public int BranchCode { get; set; }
 
         [DataMember]
-        public string BranchDescription { get; set; }
+        public string BranchDescription { get; set; } = string.Empty;
 
         [DataMember]
-        public string ClientCons { get; set; }
+        public string ClientCons { get; set; } = string.Empty;
 
         [DataMember]
-        public string ClientConsent { get; set; }
+        public string ClientConsent { get; set; } = string.Empty;
 
         [DataMember]
-        public string ComLanguage { get; set; }
+        public string ComLanguage { get; set; } = string.Empty;
 
         [DataMember]
-        public string ComMethod { get; set; }
+        public string ComMethod { get; set; } = string.Empty;
 
         [DataMember]
-        public string CompanyName { get; set; }
+        public string CompanyName { get; set; } = string.Empty;
 
         [DataMember]
-        public string CorrespondenceAddress1 { get; set; }
+        public string CorrespondenceAddress1 { get; set; } = string.Empty;
 
         [DataMember]
-        public string CorrespondenceAddress2 { get; set; }
+        public string CorrespondenceAddress2 { get; set; } = string.Empty;
 
         [DataMember]
-        public string CorrespondenceCity { get; set; }
+        public string CorrespondenceCity { get; set; } = string.Empty;
 
         [DataMember]
-        public string CorrespondenceCountryCode { get; set; }
+        public string CorrespondenceCountryCode { get; set; } = string.Empty;
 
         [DataMember]
-        public string CorrespondenceCountryDescription { get; set; }
+        public string CorrespondenceCountryDescription { get; set; } = string.Empty;
 
         [DataMember]
         public int CorrespondenceCountyCode { get; set; }
 
         [DataMember]
-        public string CorrespondenceCountyDescription { get; set; }
+        public string CorrespondenceCountyDescription { get; set; } = string.Empty;
 
         [DataMember]
-        public string CorrespondencePOBox { get; set; }
+        public string CorrespondencePOBox { get; set; } = string.Empty;
 
         [DataMember]
-        public string CorrespondenceZipCode { get; set; }
+        public string CorrespondenceZipCode { get; set; } = string.Empty;
 
         [DataMember]
-        public string CountryOfIcorporationDescription { get; set; }
+        public string CountryOfIcorporationDescription { get; set; } = string.Empty;
 
         [DataMember]
-        public string CountryOfIncorporationCode { get; set; }
+        public string CountryOfIncorporationCode { get; set; } = string.Empty;
 
         [DataMember]
-        public CustomerCategory[] CustomerCategories { get; set; }
+        public List<CustomerCategory> CustomerCategories { get; set; } = new();
 
         [DataMember]
-        public string CustomerCrmId { get; set; }
+        public string CustomerCrmId { get; set; } = string.Empty;
 
         [DataMember]
         public int CustomerId { get; set; }
 
         [DataMember]
-        public CustomerIdentification[] CustomerIdentifications { get; set; }
+        public List<CustomerIdentification> CustomerIdentifications { get; set; } = new();
 
         [DataMember]
         public CustomerType CustomerType { get; set; }
 
         [DataMember]
-        public string DependNo { get; set; }
+        public string DependNo { get; set; } = string.Empty;
 
         [DataMember]
-        public string Email { get; set; }
+        public string Email { get; set; } = string.Empty;
 
         [DataMember]
-        public string Email2 { get; set; }
+        public string Email2 { get; set; } = string.Empty;
 
         [DataMember]
-        public string Fax { get; set; }
+        public string Fax { get; set; } = string.Empty;
 
         [DataMember]
         public int FinancialSectorCode { get; set; }
@@ -101,25 +101,25 @@ namespace iApplyShared.Models
         public int LegalFormCode { get; set; }
 
         [DataMember]
-        public string Litigation { get; set; }
+        public string Litigation { get; set; } = string.Empty;
 
         [DataMember]
-        public string MaritalStatus { get; set; }
+        public string MaritalStatus { get; set; } = string.Empty;
 
         [DataMember]
-        public string MissingAfm { get; set; }
+        public string MissingAfm { get; set; } = string.Empty;
 
         [DataMember]
-        public string Mobile { get; set; }
+        public string Mobile { get; set; } = string.Empty;
 
         [DataMember]
-        public string Mobile2 { get; set; }
+        public string Mobile2 { get; set; } = string.Empty;
 
         [DataMember]
         public int NatureOfBusinessCode { get; set; }
 
         [DataMember]
-        public string NatureOfBusinessDescription { get; set; }
+        public string NatureOfBusinessDescription { get; set; } = string.Empty;
 
         [DataMember]
         public int NoofBusiness { get; set; }
@@ -131,28 +131,28 @@ namespace iApplyShared.Models
         public int NoOfPermEmpl { get; set; }
 
         [DataMember]
-        public string PIN { get; set; }
+        public string PIN { get; set; } = string.Empty;
 
         [DataMember]
-        public string RecruiterBy { get; set; }
+        public string RecruiterBy { get; set; } = string.Empty;
 
         [DataMember]
-        public string RegistrationBy { get; set; }
+        public string RegistrationBy { get; set; } = string.Empty;
 
         [DataMember]
         public DateTime RegistrationDate { get; set; }
 
         [DataMember]
-        public string RegistrationNumber { get; set; }
+        public string RegistrationNumber { get; set; } = string.Empty;
 
         [DataMember]
         public CustomerResidencyStatus? ResidencyStatus { get; set; }
 
         [DataMember]
-        public string Telephone { get; set; }
+        public string Telephone { get; set; } = string.Empty;
 
         [DataMember]
-        public string TradeName { get; set; }
+        public string TradeName { get; set; } = string.Empty;
 
         #endregion Public Properties
     }

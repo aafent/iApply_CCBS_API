@@ -8,13 +8,13 @@ namespace iApplyShared.Models
         #region Public Properties
 
         [DataMember]
-        public ChequeItem[] ChequeItems { get; set; }
+        public List<ChequeItem> ChequeItems { get; set; } = new();
 
         [DataMember]
-        public LimitItem[] LimitItems { get; set; }
+        public List<LimitItem> LimitItems { get; set; } = new();
 
         [DataMember]
-        public ResponseList[] ResponseItems { get; set; }
+        public List<ResponseList> ResponseItems { get; set; } = new();
 
         #endregion Public Properties
     }

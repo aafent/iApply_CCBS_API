@@ -83,6 +83,7 @@
         /// </summary>
         /// CBS: OutListGrpOutGrmOtherIdMainFlag
         public string pe_main { get; set; }
+
         /// <summary>
         /// Seq: 9
         /// Entity: cr_cuident

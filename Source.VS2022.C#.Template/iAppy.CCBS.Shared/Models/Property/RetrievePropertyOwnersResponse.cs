@@ -11,7 +11,7 @@ namespace iApplyShared.Models
         public bool HasMissingOwners { get; set; }
 
         [DataMember]
-        public CbsPropertyPerson[] MissingOwners { get; set; }
+        public List<CbsPropertyPerson> MissingOwners { get; set; } = new();
 
         #endregion Public Properties
     }

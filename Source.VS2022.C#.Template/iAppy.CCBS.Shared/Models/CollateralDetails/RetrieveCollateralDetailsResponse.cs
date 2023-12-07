@@ -14,10 +14,10 @@ namespace iApplyShared.Models
         public bool HasMissingValuers { get; set; }
 
         [DataMember]
-        public CbsPropertyPersonOwner[] MissingOwners { get; set; }
+        public List<CbsPropertyPersonOwner> MissingOwners { get; set; } = new();
 
         [DataMember]
-        public CbsPropertyPersonValuer[] MissingValuers { get; set; }
+        public List<CbsPropertyPersonValuer> MissingValuers { get; set; } = new();
 
         #endregion Public Properties
     }

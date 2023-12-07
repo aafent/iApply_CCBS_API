@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace iApplyShared.CbsModels
+﻿namespace iApplyShared.CbsModels
 {
-    public class CbsInsertFeeResponse :CommonResponseModel
+    public class CbsInsertFeeResponse : CommonResponseModel
     {
+        #region Public Properties
+
         /// <summary>
         /// Source
         /// Data Type: varchar (1)
@@ -15,5 +11,7 @@ namespace iApplyShared.CbsModels
         /// Notes: 2
         /// </summary>
         public string source { get; set; }
+
+        #endregion Public Properties
     }
 }

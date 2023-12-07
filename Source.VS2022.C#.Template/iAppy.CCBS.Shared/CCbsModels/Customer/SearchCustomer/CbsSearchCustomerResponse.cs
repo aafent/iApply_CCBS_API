@@ -1,6 +1,8 @@
-﻿namespace iApplyShared.CbsModels
+﻿using System.Text.Json.Serialization;
+
+namespace iApplyShared.CbsModels
 {
-    public class CbsSearchCustomerResponse : CommonResponseModel
+    public class CbsCustomerInfo
     {
         #region Public Properties
 
@@ -96,6 +98,16 @@
         /// Customer Zip Code (varchar (20))
         /// </summary>
         public string ZipCode { get; set; }
+
+        #endregion Public Properties
+    }
+
+    public class CbsSearchCustomerResponse : CommonResponseModel
+    {
+        #region Public Properties
+
+        [JsonPropertyName("cbsCustomerInfos")]
+        public List<CbsCustomerInfo> CbsCustomerInfos { get; set; } = new();
 
         #endregion Public Properties
     }

@@ -1,14 +1,22 @@
-﻿using IApplyDataAccess.DataModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace iApplyShared.CbsModels
+﻿namespace iApplyShared.CbsModels
 {
     public class CbsUpdateCollateralCbsResponse : CommonResponseModel
     {
+        #region Public Properties
+
+        /// <summary>
+        /// Entity: crp_CBS_updateCollDetCBSID
+        /// Description: Allocation CBS Id
+        /// Data Type: integer
+        /// </summary>
+        public int AllocationCbsId { get; set; }
+
+        /// <summary>
+        /// Entity: crp_CBS_updateCollDetCBSID
+        /// Description: Allocation Status
+        /// Data Type: varchar (10)
+        /// </summary>
+        public string AllocationStatus { get; set; }
 
         /// <summary>
         /// Entity: crp_CBS_updateCollDetCBSID
@@ -16,13 +24,6 @@ namespace iApplyShared.CbsModels
         /// Data Type: varchar (15)
         /// </summary>
         public string ApplicationId { get; set; }
-
-        /// <summary>
-        /// Entity: crp_CBS_updateCollDetCBSID
-        /// Description: Collateral Id
-        /// Data Type: varchar (15)
-        /// </summary>
-        public string CollateralId { get; set; }
 
         /// <summary>
         /// Entity: crp_CBS_updateCollDetCBSID
@@ -47,16 +48,11 @@ namespace iApplyShared.CbsModels
 
         /// <summary>
         /// Entity: crp_CBS_updateCollDetCBSID
-        /// Description: Allocation Status
-        /// Data Type: varchar (10)
+        /// Description: Collateral Id
+        /// Data Type: varchar (15)
         /// </summary>
-        public string AllocationStatus { get; set; }
+        public string CollateralId { get; set; }
 
-        /// <summary>
-        /// Entity: crp_CBS_updateCollDetCBSID
-        /// Description: Allocation CBS Id
-        /// Data Type: integer
-        /// </summary>
-        public int AllocationCbsId { get; set; }
+        #endregion Public Properties
     }
 }

@@ -8,7 +8,7 @@ namespace iApplyShared.Models
         #region Public Properties
 
         [DataMember]
-        public Mediators[] MediatorsList { get; set; }
+        public List<Mediators> MediatorsList { get; set; } = new();
 
         #endregion Public Properties
     }

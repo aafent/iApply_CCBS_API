@@ -11,6 +11,6 @@ namespace iApplyShared.Models
     public class LoanAccountForecastResponse : BaseResponse
     {
         [DataMember]
-        public ForecastInfo[] ForecastInfo { get; set; }
+        public List<ForecastInfo> ForecastInfo { get; set; } = new();
     }
 }

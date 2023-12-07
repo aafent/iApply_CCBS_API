@@ -1,23 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
+using iApplyShared.Attributes;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsRetrieveCreditLineRequest
+    public class CbsRetrieveCreditLineRequest : MockupModel
     {
-        /// <summary>
-        /// Customer CBS Id
-        /// Data Type: integer
-        /// </summary>
-        public int CustomerCBSId { get; set; }
+        #region Public Properties
 
         /// <summary>
         /// Customer Check Digit
         /// Data Type: integer
         /// </summary>
         public int CustomerCBSCd { get; set; }
+
+        /// <summary>
+        /// Customer CBS Id
+        /// Data Type: integer
+        /// </summary>
+        [Mockup(1)]
+        public int CustomerCBSId { get; set; }
+
+        #endregion Public Properties
     }
 }

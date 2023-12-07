@@ -1,20 +1,19 @@
-﻿using IApplyDataAccess.DataModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
+using IApplyDataAccess.DataModel;
+using iApplyShared.Attributes;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsCancelDrawDownRequest
+    public class CbsCancelDrawDownRequest : MockupModel
     {
         #region Public Properties
 
+        public string AppUser { get; set; }
+
         /// <summary>
-        /// Drawdown Number (varchar (20))
+        /// Disbursment Branch (integer)
         /// </summary>
-        public string ProfitsId { get; set; }
+        public int BranchId { get; set; }
 
         /// <summary>
         /// comments (varchar)
@@ -24,20 +23,20 @@ namespace iApplyShared.CbsModels
         /// <summary>
         /// Customer CBS Id (integer)
         /// </summary>
+        [Mockup(1)]
         public int CustomerCBSId { get; set; }
 
-        /// <summary>
-        /// Disbursment Branch (integer)
-        /// </summary>
-        public int BranchId { get; set; }
+        public DrawDownRequestView DrawDownRequestViews { get; set; }
 
         /// <summary>
         /// PayeeComment (varchar (180))
         /// </summary>
         public string PayeeComment { get; set; }
 
-        public DrawDownRequestView DrawDownRequestViews { get; set; }
-        public string AppUser { get; set; }
+        /// <summary>
+        /// Drawdown Number (varchar (20))
+        /// </summary>
+        public string ProfitsId { get; set; }
 
         #endregion Public Properties
     }

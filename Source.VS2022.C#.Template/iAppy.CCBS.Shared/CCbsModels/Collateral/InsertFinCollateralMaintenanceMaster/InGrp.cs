@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace iApplyShared.CbsModels
+﻿namespace iApplyShared.CbsModels
 {
     public class InGrp
     {
+        #region Public Properties
+
         /// <summary>
         /// Entity: v_CBS_Collateral
         /// Description: Account or Agreement
@@ -17,17 +13,10 @@ namespace iApplyShared.CbsModels
 
         /// <summary>
         /// Entity: v_CBS_CollateralDet
-        /// Description: Reference Number
-        /// Data Type: varchar (40)
-        /// </summary>
-        public string CollRefNum { get; set; }
-
-        /// <summary>
-        /// Entity: v_CBS_Collateral
-        /// Description: Reevaluation Currency
+        /// Description: Account or Agreement Check digit
         /// Data Type: integer
         /// </summary>
-        public int CollReCcy { get; set; }
+        public int CollAccountCd { get; set; }
 
         /// <summary>
         /// Entity: v_CBS_Collateral
@@ -35,27 +24,6 @@ namespace iApplyShared.CbsModels
         /// Data Type: integer
         /// </summary>
         public int CollAccountType { get; set; }
-
-        /// <summary>
-        /// Entity: v_CBS_Collateral
-        /// Description: Customer CBS Id
-        /// Data Type: integer
-        /// </summary>
-        public int CustomerCbsId { get; set; }
-
-        /// <summary>
-        /// Entity: v_CBS_Collateral
-        /// Description: Reevaluation Original %
-        /// Data Type: decimal (15,2)
-        /// </summary>
-        public decimal CollReOrig { get; set; }
-
-        /// <summary>
-        /// Entity: v_CBS_Collateral
-        /// Description: Reevaluation Current %
-        /// Data Type: decimal (15,2)
-        /// </summary>
-        public decimal CollReCur { get; set; }
 
         /// <summary>
         /// Entity: v_CBS_CollateralDet
@@ -72,18 +40,11 @@ namespace iApplyShared.CbsModels
         public int CollateralTrCbsId { get; set; }
 
         /// <summary>
-        /// Entity: v_CBS_CollateralDet
-        /// Description: Account or Agreement Check digit
-        /// Data Type: integer
-        /// </summary>
-        public int CollAccountCd { get; set; }
-
-        /// <summary>
         /// Entity: v_CBS_Collateral
-        /// Description: Central Bank Security Amount
+        /// Description: Covered Amount
         /// Data Type: decimal (15,2)
         /// </summary>
-        public decimal CollSecAmount { get; set; }
+        public decimal CollCovAmount { get; set; }
 
         /// <summary>
         /// Entity: v_CBS_Collateral
@@ -91,13 +52,6 @@ namespace iApplyShared.CbsModels
         /// Data Type: decimal (15,2)
         /// </summary>
         public decimal CollEstAmount { get; set; }
-
-        /// <summary>
-        /// Entity: v_CBS_Collateral
-        /// Description: Covered Amount
-        /// Data Type: decimal (15,2)
-        /// </summary>
-        public decimal CollCovAmount { get; set; }
 
         /// <summary>
         /// Entity: v_CBS_CollateralDet
@@ -108,10 +62,52 @@ namespace iApplyShared.CbsModels
 
         /// <summary>
         /// Entity: v_CBS_Collateral
+        /// Description: Return Limit
+        /// Data Type: decimal (15,2)
+        /// </summary>
+        public decimal CollLimit { get; set; }
+
+        /// <summary>
+        /// Entity: v_CBS_Collateral
         /// Description: Number of Items
         /// Data Type: integer
         /// </summary>
         public int CollNoItems { get; set; }
+
+        /// <summary>
+        /// Entity: v_CBS_Collateral
+        /// Description: Return Percent (%)
+        /// Data Type: decimal (15,2)
+        /// </summary>
+        public decimal CollPerc { get; set; }
+
+        /// <summary>
+        /// Entity: v_CBS_Collateral
+        /// Description: Reevaluation Currency
+        /// Data Type: integer
+        /// </summary>
+        public int CollReCcy { get; set; }
+
+        /// <summary>
+        /// Entity: v_CBS_Collateral
+        /// Description: Reevaluation Current %
+        /// Data Type: decimal (15,2)
+        /// </summary>
+        public decimal CollReCur { get; set; }
+
+        /// <summary>
+        /// Entity: v_CBS_CollateralDet
+        /// Description: Reference Number
+        /// Data Type: varchar (40)
+        /// </summary>
+        public string CollRefNum { get; set; }
+
+        /// <summary>
+        /// Entity: v_CBS_Collateral
+        /// Description: Reevaluation Original %
+        /// Data Type: decimal (15,2)
+        /// </summary>
+        public decimal CollReOrig { get; set; }
 
         /// <summary>
         /// Entity: v_CBS_CollateralDet
@@ -122,16 +118,18 @@ namespace iApplyShared.CbsModels
 
         /// <summary>
         /// Entity: v_CBS_Collateral
-        /// Description: Return Limit
+        /// Description: Central Bank Security Amount
         /// Data Type: decimal (15,2)
         /// </summary>
-        public decimal CollLimit { get; set; }
+        public decimal CollSecAmount { get; set; }
 
         /// <summary>
         /// Entity: v_CBS_Collateral
-        /// Description: Return Percent (%)
-        /// Data Type: decimal (15,2)
+        /// Description: Customer CBS Id
+        /// Data Type: integer
         /// </summary>
-        public decimal CollPerc { get; set; }
+        public int CustomerCbsId { get; set; }
+
+        #endregion Public Properties
     }
 }

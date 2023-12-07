@@ -11,6 +11,6 @@ namespace iApplyShared.Models
     public class RetrieveBBFResponse : BaseResponse
     {
         [DataMember]
-        public BBF[] BBFList { get; set; }
+        public List<BBF> BBFList { get; set; } = new();
     }
 }

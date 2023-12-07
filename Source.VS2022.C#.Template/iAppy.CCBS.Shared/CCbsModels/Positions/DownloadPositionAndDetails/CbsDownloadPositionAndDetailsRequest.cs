@@ -1,6 +1,9 @@
-﻿namespace iApplyShared.CbsModels
+﻿using iApply.CCBS.Shared.CCbsModels;
+using iApplyShared.Attributes;
+
+namespace iApplyShared.CbsModels
 {
-    public class CbsDownloadPositionAndDetailsRequest
+    public class CbsDownloadPositionAndDetailsRequest : MockupModel
     {
         #region Public Properties
 
@@ -30,6 +33,7 @@
         /// <summary>
         /// Customer CBS Id (varchar (20))
         /// </summary>
+        [Mockup(1)]
         public string CustomerCbsId { get; set; }
 
         #endregion Public Properties

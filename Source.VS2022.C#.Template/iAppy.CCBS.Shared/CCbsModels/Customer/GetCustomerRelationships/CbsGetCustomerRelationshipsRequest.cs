@@ -1,24 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
+using iApplyShared.Attributes;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsGetCustomerRelationshipsRequest
+    public class CbsGetCustomerRelationshipsRequest : MockupModel
     {
         #region Public Properties
-
-        /// <summary>
-        /// Customer CBS Id (varchar (20))
-        /// </summary>
-        public string CustomerCBSId { get; set; }
 
         /// <summary>
         /// Customer Check Digit (integer)
         /// </summary>
         public int? CustomerCBSCd { get; set; }
+
+        /// <summary>
+        /// Customer CBS Id (varchar (20))
+        /// </summary>
+        [Mockup(1)]
+        public string CustomerCBSId { get; set; }
 
         #endregion Public Properties
     }

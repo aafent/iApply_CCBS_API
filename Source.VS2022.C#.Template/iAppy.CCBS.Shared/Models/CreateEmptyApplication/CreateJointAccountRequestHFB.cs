@@ -17,7 +17,7 @@ namespace iApplyShared.Models
         public string CRM_UserName { get; set; }
 
         [DataMember(IsRequired = true)]
-        public ParticipantHFB[] Participants { get; set; }
+        public List<ParticipantHFB> Participants { get; set; } = new();
 
         [DataMember(IsRequired = true)]
         public string ApplicationType { get; set; }

@@ -1,41 +1,27 @@
-﻿using IApplyDataAccess.DataModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
+using IApplyDataAccess.DataModel;
+using iApplyShared.Attributes;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsInsertMortgageRequest
+    public class CbsInsertMortgageRequest : MockupModel
     {
-        /// <summary>
-        /// Description
-        /// Data Type: varchar (40)
-        /// Entities: v_CBS_Mortgage
-        /// </summary>
-        public string MortgageDescr { get; set; }
+        #region Public Properties
 
         /// <summary>
-        /// Registration Date
-        /// Data Type: datetime
+        /// Mortgage Amount
+        /// Data Type: decimal (15,2)
         /// Entities: v_CBS_Mortgage
         /// </summary>
-        public DateTime MortgageRegDt { get; set; }
+        public decimal MortgageAmount { get; set; }
 
         /// <summary>
-        /// Notary Deed Number
-        /// Data Type: varchar (40)
+        /// Mortgage CBS Id
+        /// Data Type: integer
         /// Entities: v_CBS_Mortgage
         /// </summary>
-        public string MortgageNotDeedNo { get; set; }
-
-        /// <summary>
-        /// Notary Deed Date
-        /// Data Type: datetime
-        /// Entities: v_CBS_Mortgage
-        /// </summary>
-        public DateTime MortgageNotDeedDt { get; set; }
+        [Mockup(1)]
+        public int MortgageCbsId { get; set; }
 
         /// <summary>
         /// Characterization
@@ -45,18 +31,11 @@ namespace iApplyShared.CbsModels
         public string MortgageChar { get; set; }
 
         /// <summary>
-        /// Notary
-        /// Data Type: varchar (40)
+        /// Comments
+        /// Data Type: varchar (255)
         /// Entities: v_CBS_Mortgage
         /// </summary>
-        public string MortgageNotary { get; set; }
-
-        /// <summary>
-        /// Decision Number
-        /// Data Type: varchar (40)
-        /// Entities: v_CBS_Mortgage
-        /// </summary>
-        public string MortgageDesNo { get; set; }
+        public string MortgageComments { get; set; }
 
         /// <summary>
         /// Court
@@ -73,11 +52,55 @@ namespace iApplyShared.CbsModels
         public string MortgageCourtCnty { get; set; }
 
         /// <summary>
-        /// Mortgage Amount
-        /// Data Type: decimal (15,2)
+        /// Description
+        /// Data Type: varchar (40)
         /// Entities: v_CBS_Mortgage
         /// </summary>
-        public decimal MortgageAmount { get; set; }
+        public string MortgageDescr { get; set; }
+
+        /// <summary>
+        /// Decision Number
+        /// Data Type: varchar (40)
+        /// Entities: v_CBS_Mortgage
+        /// </summary>
+        public string MortgageDesNo { get; set; }
+
+        /// <summary>
+        /// Institution
+        /// Data Type: varchar (15)
+        /// Entities: v_CBS_MortgageDet
+        /// </summary>
+        public string MortgageInstit { get; set; }
+
+        /// <summary>
+        /// Institution Description
+        /// Data Type: varchar (20)
+        /// Entities: v_CBS_MortgageDet
+        /// Notes: select des from cr__comast where grp ='G089' and cod = Row
+        /// </summary>
+        public string MortgageInstitDesc { get; set; }
+
+        /// <summary>
+        /// Land/Mortgage Reg.
+        /// Data Type: integer
+        /// Entities: v_CBS_MortgageDet
+        /// </summary>
+        public int MortgageLandReg { get; set; }
+
+        /// <summary>
+        /// Land/Mortgage Reg. Description
+        /// Data Type: varchar (20)
+        /// Entities: v_CBS_MortgageDet
+        /// Notes: select des from cr__comast where grp ='G078' and cod = Row
+        /// </summary>
+        public string MortgageLandRegDesc { get; set; }
+
+        /// <summary>
+        /// Lawyer
+        /// Data Type: varchar (40)
+        /// Entities: v_CBS_MortgageDet
+        /// </summary>
+        public string MortgageLawyer { get; set; }
 
         /// <summary>
         /// Loan Due Balance
@@ -87,60 +110,39 @@ namespace iApplyShared.CbsModels
         public decimal MortgageLoanBalAmount { get; set; }
 
         /// <summary>
-        /// Mortgage Waiver No
+        /// Main Connection
+        /// Data Type: varchar (15)
+        /// Entities: v_CBS_MortgageDet
+        /// </summary>
+        public string MortgageMain { get; set; }
+
+        /// <summary>
+        /// Notary
         /// Data Type: varchar (40)
         /// Entities: v_CBS_Mortgage
         /// </summary>
-        public string MortgageWaivNo { get; set; }
+        public string MortgageNotary { get; set; }
 
         /// <summary>
-        /// Last Waiver Date
+        /// Notary Deed Date
         /// Data Type: datetime
         /// Entities: v_CBS_Mortgage
         /// </summary>
-        public DateTime MortgageWaivDt { get; set; }
+        public DateTime MortgageNotDeedDt { get; set; }
 
         /// <summary>
-        /// Comments
-        /// Data Type: varchar (255)
+        /// Notary Deed Number
+        /// Data Type: varchar (40)
         /// Entities: v_CBS_Mortgage
         /// </summary>
-        public string MortgageComments { get; set; }
+        public string MortgageNotDeedNo { get; set; }
 
         /// <summary>
-        /// Mortgage CBS Id
-        /// Data Type: integer
+        /// Registration Date
+        /// Data Type: datetime
         /// Entities: v_CBS_Mortgage
         /// </summary>
-        public int MortgageCbsId { get; set; }
-
-        /// <summary>
-        /// Property CBS Id
-        /// Data Type: integer
-        /// Entities: v_CBS_MortgageDet
-        /// </summary>
-        public int PropertyCbsId { get; set; }
-
-        /// <summary>
-        /// Property Description
-        /// Data Type: varchar (800)
-        /// Entities: v_CBS_MortgageDet
-        /// </summary>
-        public string PropertyDesc { get; set; }
-
-        /// <summary>
-        /// Volume
-        /// Data Type: varchar (40)
-        /// Entities: v_CBS_MortgageDet
-        /// </summary>
-        public string MortgageVolume { get; set; }
-
-        /// <summary>
-        /// Sheet
-        /// Data Type: varchar (40)
-        /// Entities: v_CBS_MortgageDet
-        /// </summary>
-        public string MortgageSheet { get; set; }
+        public DateTime MortgageRegDt { get; set; }
 
         /// <summary>
         /// Row
@@ -158,47 +160,27 @@ namespace iApplyShared.CbsModels
         public string MortgageRowDesc { get; set; }
 
         /// <summary>
-        /// Land/Mortgage Reg.
-        /// Data Type: integer
-        /// Entities: v_CBS_MortgageDet
-        /// </summary>
-        public int MortgageLandReg { get; set; }
-
-        /// <summary>
-        /// Land/Mortgage Reg. Description
-        /// Data Type: varchar (20)
-        /// Entities: v_CBS_MortgageDet
-        /// Notes: select des from cr__comast where grp ='G078' and cod = Row
-        /// </summary>
-        public string MortgageLandRegDesc { get; set; }
-        /// <summary>
-        /// Institution
-        /// Data Type: varchar (15)
-        /// Entities: v_CBS_MortgageDet
-        /// </summary>
-        public string MortgageInstit { get; set; }
-
-        /// <summary>
-        /// Institution Description
-        /// Data Type: varchar (20)
-        /// Entities: v_CBS_MortgageDet
-        /// Notes: select des from cr__comast where grp ='G089' and cod = Row
-        /// </summary>
-        public string MortgageInstitDesc { get; set; }
-
-        /// <summary>
-        /// Lawyer
+        /// Sheet
         /// Data Type: varchar (40)
         /// Entities: v_CBS_MortgageDet
         /// </summary>
-        public string MortgageLawyer { get; set; }
+        public string MortgageSheet { get; set; }
+
+        public MortgageView MortgageViews { get; set; }
 
         /// <summary>
-        /// Main Connection
-        /// Data Type: varchar (15)
+        /// Volume
+        /// Data Type: varchar (40)
         /// Entities: v_CBS_MortgageDet
         /// </summary>
-        public string MortgageMain { get; set; }
+        public string MortgageVolume { get; set; }
+
+        /// <summary>
+        /// Last Waiver Date
+        /// Data Type: datetime
+        /// Entities: v_CBS_Mortgage
+        /// </summary>
+        public DateTime MortgageWaivDt { get; set; }
 
         /// <summary>
         /// Waiver
@@ -206,6 +188,28 @@ namespace iApplyShared.CbsModels
         /// Entities: v_CBS_MortgageDet
         /// </summary>
         public string MortgageWaiver { get; set; }
-        public MortgageView MortgageViews { get; set; }
+
+        /// <summary>
+        /// Mortgage Waiver No
+        /// Data Type: varchar (40)
+        /// Entities: v_CBS_Mortgage
+        /// </summary>
+        public string MortgageWaivNo { get; set; }
+
+        /// <summary>
+        /// Property CBS Id
+        /// Data Type: integer
+        /// Entities: v_CBS_MortgageDet
+        /// </summary>
+        public int PropertyCbsId { get; set; }
+
+        /// <summary>
+        /// Property Description
+        /// Data Type: varchar (800)
+        /// Entities: v_CBS_MortgageDet
+        /// </summary>
+        public string PropertyDesc { get; set; }
+
+        #endregion Public Properties
     }
 }

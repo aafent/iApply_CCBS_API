@@ -8,7 +8,7 @@ namespace iApplyShared.Models
         #region Public Fields
 
         [DataMember]
-        public LimitInformation[] limitInformation;
+        public List<LimitInformation> limitInformation { get; set; } = new();
 
         #endregion Public Fields
     }

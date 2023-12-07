@@ -1,14 +1,22 @@
-﻿using IApplyDataAccess.DataModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iApply.CCBS.Shared.CCbsModels;
+using iApplyShared.Attributes;
 
 namespace iApplyShared.CbsModels
 {
-    public class CbsRetrieveCbsCollateralRequest
+    public class CbsRetrieveCbsCollateralRequest : MockupModel
     {
+        #region Public Properties
+
+        /// <summary>
+        /// Entity: v_CBS_Collateral
+        /// Description: Collateral CBS Id
+        /// Data Type: integer
+        /// </summary>
+        [Mockup(1)]
+        public int? collateralSn { get; set; }
+
+        public int CollType { get; set; }
+
         /// <summary>
         /// Entity: v_CBS_Collateral
         /// Description: Opening Branch
@@ -23,14 +31,6 @@ namespace iApplyShared.CbsModels
         /// </summary>
         public int? product { get; set; }
 
-        /// <summary>
-        /// Entity: v_CBS_Collateral
-        /// Description: Collateral CBS Id
-        /// Data Type: integer
-        /// </summary>
-        public int? collateralSn { get; set; }
-
-        public int CollType { get; set; }
-
+        #endregion Public Properties
     }
 }
