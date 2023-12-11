@@ -1,0 +1,5 @@
+Title: iApply - European Union (code: IAEU)
+Edition: Light (code: Green)
+Version/Release: 3.11.x
+
+License schema: Light (limited application types & functionality)
