@@ -3,6 +3,15 @@ Common Core Banking System API
 C# Template Program
 Visual Studio 2022
 
+Solution: Into folder iApplyCCBSTemplateAPI 
+Folders: 	CCBS.Template (solution folder)
+			CCBS.Models
+
+
+---------BEFORE 1/8/2024 updates--------
+
+
+
 Solution: Into folder iApplyCCBSTemplateAPI
 Folders: 	iApplyCCBSTemplateAPI
 			iAppy.CCBS.Shared

@@ -1,0 +1,1275 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>iApplyShared</name>
+    </assembly>
+    <members>
+        <member name="T:IO.Swagger.Client.MockApiClient">
+            <summary>
+            API client is mainly responible for making the HTTP call to the API backend.
+            </summary>
+        </member>
+        <member name="M:IO.Swagger.Client.MockApiClient.#ctor(Serilog.ILogger,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:IO.Swagger.Client.MockApiClient" /> class.
+            </summary>
+            <param name="basePath">The base path.</param>
+        </member>
+        <member name="P:IO.Swagger.Client.MockApiClient.BasePath">
+            <summary>
+            Gets or sets the base path.
+            </summary>
+            <value>The base path</value>
+        </member>
+        <member name="P:IO.Swagger.Client.MockApiClient.RestClient">
+            <summary>
+            Gets or sets the RestClient.
+            </summary>
+            <value>An instance of the RestClient</value>
+        </member>
+        <member name="M:IO.Swagger.Client.MockApiClient.ExecuteAction``2(System.String,``1)">
+            <summary>
+             
+            </summary>
+            <returns>CbsAboutResponse</returns>
+        </member>
+        <member name="T:FAST.Core.IinjectableAssembly">
+            <summary>
+            Interface to Injectable Assembly minimun requirments
+            </summary>
+        </member>
+        <member name="P:FAST.Core.IinjectableAssembly.version">
+            <summary>
+            The version of the injectable assembly
+            </summary>
+        </member>
+        <member name="M:FAST.FastServices.TokenAsync(System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.TokenAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.CheckAsync(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.CheckAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.RefreshAsync(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.RefreshAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ImpersonateGETAsync(System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ImpersonateGETAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ImpersonateDELETEAsync(System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ImpersonateDELETEAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.PostLoginAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.PostLoginAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.PendingActivitiesAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.PendingActivitiesAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.UsersAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.UsersAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.UserGETAsync(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.UserGETAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.UserPUTAsync(System.String,System.String,FAST.PandoraUserViewNodeRole)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.UserPUTAsync(System.String,System.String,FAST.PandoraUserViewNodeRole,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.MenuAsync(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.MenuAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.AboutAsync">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.AboutAsync(System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.RepairAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.RepairAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ValueAsync(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ValueAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.SensitivevalueAsync(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.SensitivevalueAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.RepositoryConnectionStringAsync">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.RepositoryConnectionStringAsync(System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.DatetimeAsync(System.Nullable{System.Boolean})">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.DatetimeAsync(System.Nullable{System.Boolean},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.HelpguidelineAsync(System.String,System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.HelpguidelineAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ConnectionsGETAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ConnectionsGETAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ConnectionsPUTAsync(System.String,FAST.ConnectionConfigModel)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ConnectionsPUTAsync(System.String,FAST.ConnectionConfigModel,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.TestAsync(System.String,System.String,System.String,FAST.ConnectionConfigModel)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.TestAsync(System.String,System.String,System.String,FAST.ConnectionConfigModel,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.EnvironmentsAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.EnvironmentsAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.NamesAsync(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.NamesAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.NameAsync(System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.NameAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ParametersGETAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ParametersGETAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ParametersPUTAsync(System.String,System.Collections.Generic.IEnumerable{FAST.StringStringKeyValuePair})">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ParametersPUTAsync(System.String,System.Collections.Generic.IEnumerable{FAST.StringStringKeyValuePair},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LookupPOSTAsync(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LookupPOSTAsync(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LookupGETAsync(System.String,System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LookupGETAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LookupPOST2Async(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LookupPOST2Async(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.RunAsync(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.RunAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.About2Async">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.About2Async(System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.WorklistAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.WorklistAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.DefinitionsAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.DefinitionsAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.IdPUTAsync(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.IdPUTAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ByRoleAsync(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ByRoleAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.CloneAsync(System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.CloneAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.IdGETAsync(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.IdGETAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ActionsAsync(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ActionsAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ActionAsync(System.String,System.String,System.String,System.Nullable{System.Int32})">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ActionAsync(System.String,System.String,System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.HistoryAsync(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.HistoryAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.UpdateAsync(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.UpdateAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.CommentAsync(System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.CommentAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.PermissionsAsync(System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.PermissionsAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ReceiversAsync(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ReceiversAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ReceiversByActionAsync(System.String,System.String,System.String,System.Nullable{System.Int32})">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ReceiversByActionAsync(System.String,System.String,System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LoadallAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LoadallAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.DaemonsAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.DaemonsAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.HeartbeatAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.HeartbeatAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LookupPOST3Async(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LookupPOST3Async(System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LookupGET2Async(System.String,System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LookupGET2Async(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LookupPOST4Async(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LookupPOST4Async(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ContexAsync">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.ContexAsync(System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryGETAsync(System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryGETAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.NewAsync(System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.NewAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryPATCHAsync(System.String,System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryPATCHAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryDELETEAsync(System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryDELETEAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryGET2Async(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryGET2Async(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryGET3Async(System.String,System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryGET3Async(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryPOSTAsync(System.String,System.String,System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryPOSTAsync(System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryPUTAsync(System.String,System.String,System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryPUTAsync(System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryDELETE2Async(System.String,System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LibraryDELETE2Async(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.MemoryPUTAsync(System.String,System.String,System.String,System.String)">
+            <param name="scope">session | user</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.MemoryPUTAsync(System.String,System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="scope">session | user</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.MemoryGETAsync(System.String,System.String,System.String)">
+            <param name="scope">session | user</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.MemoryGETAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="scope">session | user</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.FolderGETAsync(System.String,System.String,System.String)">
+            <summary>
+            Returns on data property an array of file names and directory names that match a search pattern
+            <br/>in a specified path.
+            </summary>
+            <param name="fastToken">The authedication fastToken</param>
+            <param name="folderPath">The non rooted path to the directory to search. This string is case-sensitive.</param>
+            <param name="browsePattern">The search string to match against the names of file and directories in path.
+            <br/>This parameter can contain a combination of valid literal path and wildcard (*
+            <br/>and ?) characters, but it doesn't support regular expressions.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.FolderGETAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Returns on data property an array of file names and directory names that match a search pattern
+            <br/>in a specified path.
+            </summary>
+            <param name="fastToken">The authedication fastToken</param>
+            <param name="folderPath">The non rooted path to the directory to search. This string is case-sensitive.</param>
+            <param name="browsePattern">The search string to match against the names of file and directories in path.
+            <br/>This parameter can contain a combination of valid literal path and wildcard (*
+            <br/>and ?) characters, but it doesn't support regular expressions.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.FolderPUTAsync(System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.FolderPUTAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.FolderDELETEAsync(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.FolderDELETEAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.FolderPATCHAsync(System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.FolderPATCHAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.FolderTreeAsync(System.String,System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.FolderTreeAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.UploadAsync(System.String,System.String,System.Collections.Generic.IEnumerable{FAST.FileParameter})">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.UploadAsync(System.String,System.String,System.Collections.Generic.IEnumerable{FAST.FileParameter},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.DownloadAsync(System.String,System.String)">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.DownloadAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LogfileAsync(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int32})">
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:FAST.FastServices.LogfileAsync(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int32},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:FAST.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:iApplyShared.Core.APIMAuthenticationHelper.AddAuthorizationHeaderToSoapAction(System.ServiceModel.Channels.Message)">
+            <summary>
+            Adds the Authorization Header on SOAP Request. The header will be added on if enabled.
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:iApplyShared.Core.commonHelper">
+            <summary>
+            Common (shared) helper
+            </summary>
+        </member>
+        <member name="M:iApplyShared.Core.commonHelper.uploadOutput(FAST.Core.IFastGlobals,FAST.Services.API.fastServicesAPI,System.Enum,System.Text.StringBuilder)">
+            <summary>
+            Upload text as log file
+            </summary>
+            <param name="globals">Fast globals instance</param>
+            <param name="API">Fast services API instance</param>
+            <param name="location">Location to the LOGs folder</param>
+            <param name="output">A string builder with the output</param>
+        </member>
+        <member name="T:iApplyShared.Core.iaConnectionAdapter">
+            <summary>
+            iApply Connection Adapter
+            For connection with DB using the FAST DB
+            The connection name is the property [connectionName]
+            </summary>
+        </member>
+        <member name="M:iApplyShared.Core.iaConnectionAdapter.#ctor">
+            <summary>
+            Will retrieve the Fast Services from the default appsettings.json
+            </summary>
+        </member>
+        <member name="M:iApplyShared.Core.iaConnectionAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Will use the config to configure the Fast Services API
+            </summary>
+            <param name="config">the configuration (injection)</param>
+        </member>
+        <member name="M:iApplyShared.Core.iaConnectionAdapter.#ctor(FAST.Services.API.fastServicesAPI)">
+            <summary>
+            Use already configured API
+            </summary>
+            <param name="API"></param>
+        </member>
+        <member name="M:iApplyShared.Core.InterfaceExtractorExtension.GetInterfaces(System.Type)">
+            <summary>
+            Allows the extaction of used interfaces of the given <see cref="T:System.Type"/> (class).
+            Does not return any inhereted intefaces.
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="M:iApplyShared.Core.ServiceBuilderExtensions.UseRegisteredSoapEndpoints(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Reflection.Assembly)">
+            <summary>
+            Register all SOAP services marked by <see cref="T:CCBS.Attributes.RegisterSoapServiceAttribute"/> attribute and utilizing SoapCore's <see cref="M:SoapCore.SoapEndpointExtensions.UseSoapEndpoint(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.Type,System.String,SoapCore.SoapEncoderOptions,SoapCore.SoapSerializer,System.Boolean,SoapCore.Extensibility.ISoapModelBounder,SoapCore.WsdlFileOptions,System.Boolean,System.Boolean)">UseSoapEndpoint</see>.
+            </summary>
+        </member>
+        <member name="M:CCBS.Mappings.ApplicationDatabaseTools.GetMappingFromDatabase(System.String,System.String)">
+            <summary>
+            Gets the LOOKUP values for a given group.
+            </summary>
+            <param name="group"></param>
+            <param name="information"></param>
+            <returns></returns>
+        </member>
+        <member name="P:iApplyShared.Startup.programStartup`2.xmlHelpDocumentFilename">
+            <summary>
+            Path to xml help document file. 
+            Project.Build option must be enabled
+            </summary>
+        </member>
+        <member name="P:iApplyShared.Startup.programStartup`2.enableComments">
+            <summary>
+            enable notes and comments to the swagger
+            </summary>
+        </member>
+        <member name="F:iApplyShared.Startup.programStartup`2.injections">
+            <summary>
+            injections field (not a property)
+            </summary>
+        </member>
+        <member name="F:iApplyShared.Startup.programStartup`2.output">
+            <summary>
+            Output for program startup
+            </summary>
+        </member>
+        <member name="M:iApplyShared.Startup.programStartup`2.log(System.String)">
+            <summary>
+            Log to inner output log text
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="T:IA.Gateways.countryGateway">
+            <summary>
+            Getways per country
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.countryGateway.A2">
+            <summary>
+            The ISO A2 code of the country
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.countryGateway.country">
+            <summary>
+            The name of the country
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.countryGateway.gateways">
+            <summary>
+            Supported gateway types for the country
+            </summary>
+        </member>
+        <member name="T:IA.Gateways.gatewayInformation">
+            <summary>
+            information about indivitual gateways
+            </summary>
+        </member>
+        <member name="M:IA.Gateways.gatewayInformation.#ctor">
+            <summary>
+            Parameterless constructor
+            </summary>
+        </member>
+        <member name="M:IA.Gateways.gatewayInformation.#ctor(IA.Gateways.gatewayType,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32[])">
+            <summary>
+            Constructor with all fields
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayInformation.type">
+            <summary>
+            The type of the gateway, uppercase always
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayInformation.currentVersion">
+            <summary>
+            The current version of the response model
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayInformation.numberOfArguments">
+            <summary>
+            The number of required arguments
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayInformation.pastVersions">
+            <summary>
+            The past versions
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayParameters.key">
+            <summary>
+            iApply key 
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayParameters.version">
+            <summary>
+            version comes out of the gateways metadata and is the current version (for a new set of parameters)
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayParameters.custID">
+            <summary>
+            Customer ID, folder spred field, mandatory
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayParameters.appID">
+            <summary>
+            iApply Application ID
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayParameters.code">
+            (v) code,product: from Codification List, is the group of the available gateways, user popup for selection of the service by the user
+        </member>
+        <member name="P:IA.Gateways.gatewayParameters.countryA2">
+            <summary>
+            Getting value from tryRetrieveEntryByKey()
+            The country of the gateway
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayParameters.type">
+            <summary>
+            Getting value from tryRetrieveEntryByKey()
+            The type of the gateway
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayParameters.gatewayName">
+            <summary>
+            The name of the gateway. Can be casted to gatewayType enumeration
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayParameters.timeFileName">
+            <summary>
+            Part of the filename
+            Contains the creation time stamp
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayParameters.arg1">
+            <summary>
+            Argument 1, is the main argument for the gateway
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayParameters.arg2">
+            <summary>
+            Argument 2, is the second argument
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayParameters.arg3">
+            <summary>
+            Argument 3, is the 3rd argument
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayParameters.inputsContainer">
+            <summary>
+            Other Variables
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayTrace.traceID">
+            <summary>
+            the requested trace 
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayTrace.parameters">
+            <summary>
+            parameters of the gateway execution
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.gatewayTrace.serializedModel">
+            <summary>
+            The serialized content of the model
+            </summary>
+        </member>
+        <member name="T:IA.Gateways.historicalTraces">
+            <summary>
+            Historical traces for information comes from the gateways 
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.historicalTraces.requestParameter">
+            <summary>
+            Historical trace builded base on the request parameters
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.historicalTraces.requestTrace">
+            <summary>
+            The historical trace of the requested key
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.historicalTraces.sameGatewayTraces">
+            <summary>
+            Other (elder) traces found 
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.historicalTraces.otherTraces">
+            <summary>
+            Other  traces found by the same Customer
+            </summary>
+        </member>
+        <member name="T:IA.Gateways.historicalTraceEntry">
+            <summary>
+            The model class for historical traces
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.historicalTraceEntry.traceID">
+            <summary>
+            the ID of the trace
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.historicalTraceEntry.gatewayType">
+            <summary>
+            The gateway type (castable to gatewayType)
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.historicalTraceEntry.when">
+            <summary>
+            The date and time of the trace
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.historicalTraceEntry.custID">
+            <summary>
+            The customer ID extracted from the trace
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.historicalTraceEntry.appID">
+            <summary>
+            The Application ID extracted from the trace
+            </summary>
+        </member>
+        <member name="T:IA.Gateways.gatewayResponseType">
+            <summary>
+            Gateway model response types 
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayResponseType.raw">
+            <summary>
+            The raw response as received from the external API
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayResponseType.model">
+            <summary>
+            A response that can be deserialized to the gateway model
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayResponseType.attachment">
+            <summary>
+            Attachment to be saved with the gateway results 
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayResponseType.other">
+            <summary>
+            Other reposne to persist. The creator knows how to handle it
+            </summary>
+        </member>
+        <member name="T:IA.Gateways.gatewayVar">
+            <summary>
+            Variable names used by the gateways adapter
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.fastServicesURI">
+            <summary>
+            The endpoint (base URI) of the fast services
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.fastServicesToken">
+            <summary>
+            The shareable FAST Token
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.IADatabaseCS">
+            <summary>
+            The connection string to the IA Database
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.GatewaysLocalAddOnsFolder">
+            <summary>
+            The path of the local (in the deplyment) folder of the AddOns
+            Useful to access local resourses and files
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.GatewaysHomeFolder">
+            <summary>
+            Remote Home folder for the Gateways
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.GatewaysExampleFolder">
+            <summary>
+            Remote Gateways folder with examples
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.GatewaysLogFolder">
+            <summary>
+            Remote Gateways folder for log files
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.CountryA2">
+            <summary>
+            iApply Application ID
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.IAAppID">
+            <summary>
+            Country A2 Code
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.Arg1">
+            <summary>
+            Argument 1
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.Arg2">
+            <summary>
+            Argument 2
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.Arg3">
+            <summary>
+            Argument 3
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.Arg4">
+            <summary>
+            Argument 4
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.Arg5">
+            <summary>
+            Argument 5
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.isMockup">
+            <summary>
+            true or false, if runs under mockup mode
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.Url">
+            <summary>
+            URL of the remote service
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.connectionTags">
+            <summary>
+            Tags of the connection entry
+            </summary>
+        </member>
+        <member name="F:IA.Gateways.gatewayVar.userName">
+            <summary>
+            User name is performing the operation
+            </summary>
+        </member>
+        <member name="T:IA.Gateways.AddOns.IGatewayModuleFactoryArtifact`1">
+            <summary>
+            Define the results type of the gateway
+            </summary>
+            <typeparam name="TModel">Type results (response) model type</typeparam>
+        </member>
+        <member name="M:IA.Gateways.AddOns.IGatewayModuleFactoryArtifact`1.getResults">
+            <summary>
+            Get typed results
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:IA.Gateways.AddOns.IGatewayAdapter`1">
+            <summary>
+            An adapter to the IGatewayModule
+            </summary>
+        </member>
+        <member name="M:IA.Gateways.AddOns.IGatewayAdapter`1.prepare(FAST.Logging.Ilogger,FAST.Core.IvariablesContainer)">
+            <summary>
+            Will invoked before each execute() to prepare the environment, 
+             but once in case of batch execute()
+            </summary>
+            <param name="logger">the logger</param>
+            <param name="variables">the working variables</param>
+        </member>
+        <member name="M:IA.Gateways.AddOns.IGatewayAdapter`1.execute(IA.Gateways.gatewayParameters,IA.Gateways.AddOns.gatewatsAdapterSaveResultMethod)">
+            <summary>
+            Gateway execution of the request process
+            </summary>
+            <param name="parameters">the request parameters</param>
+            <param name="saveResult">A delegation to save file(s)</param>
+        </member>
+        <member name="M:IA.Gateways.AddOns.IGatewayAdapter`1.getModel">
+            <summary>
+            Return the model for the Gateway
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:IA.Gateways.AddOns.IGatewayAdapter`1.getRawResponse">
+            <summary>
+            Return the raw response for standard parsing from the gateway module
+            </summary>
+            <returns>the raw response</returns>
+        </member>
+        <member name="M:IA.Gateways.AddOns.IGatewayAdapter`1.getDBOperations">
+            <summary>
+            Get the DB operations handling object or null if no DB operations are supported
+            </summary>
+            <returns>Object instance or null</returns>
+        </member>
+        <member name="T:IA.Gateways.AddOns.IGatewayAdapterDBOperations">
+            <summary>
+            Interface to implement cascaded database operations
+            </summary>
+        </member>
+        <member name="M:IA.Gateways.AddOns.IGatewayAdapterDBOperations.beforeModuleOperations">
+            <summary>
+            Invocation before modules database operations
+            Can override the default module's execution
+            </summary>
+            <returns>If false the module process and the afterModuleOperations()
+               will not executed, if yes will be executed</returns>
+        </member>
+        <member name="M:IA.Gateways.AddOns.IGatewayAdapterDBOperations.afterModulerOperations">
+            <summary>
+            Invocation after modules database operations
+            </summary>
+        </member>
+        <member name="T:IA.Gateways.AddOns.gatewatsAdapterSaveResultMethod">
+            <summary>
+            Delegation used to save results back to the Gateway repository
+            </summary>
+            <param name="nameSuffix">Suffic to the name. Must be short and indicative</param>
+            <param name="extention">The extetion of the file eg ".xml"</param>
+            <param name="content">The to save in the file</param>
+            <returns>true if success or false on failure</returns>
+        </member>
+        <member name="T:IA.Gateways.Internal.IGatewayElement">
+            <summary>
+            Interface contract for every gateway module
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.Internal.IGatewayElement.type">
+            <summary>
+            The type of the gateway
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.Internal.IGatewayElement.countryA2">
+            <summary>
+            ISO A2 country code
+            </summary>
+        </member>
+        <member name="T:IA.Gateways.Internal.IGatewayModule">
+            <summary>
+            Interface contract for every gateway module
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.Internal.IGatewayModule.folderLocation">
+            <summary>
+            The location of the folder for the gateway
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.Internal.IGatewayModule.rawGatewayContent">
+            <summary>
+            Raw contents 
+            </summary>
+        </member>
+        <member name="M:IA.Gateways.Internal.IGatewayModule.execute">
+            <summary>
+            Execute (invoke) the interface
+            </summary>
+        </member>
+        <member name="M:IA.Gateways.Internal.IGatewayModule.getResultsAsObject">
+            <summary>
+            Get the results (model)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IA.Gateways.Internal.IGatewayModule.init">
+            <summary>
+            Initialize the gateway operation
+            </summary>
+        </member>
+        <member name="M:IA.Gateways.Internal.IGatewayModule.prepareResults">
+            <summary>
+            Pre-processing to prepare the results
+            </summary>
+        </member>
+        <member name="M:IA.Gateways.Internal.IGatewayModule.prepareToExecute(IA.Gateways.gatewayParameters)">
+            <summary>
+            pre-processing, before execute the gateway
+            </summary>
+            <param name="parameters"></param>
+        </member>
+        <member name="M:IA.Gateways.Internal.IGatewayModule.modelToDatabase">
+            <summary>
+            Persist model to the database
+            </summary>
+        </member>
+        <member name="T:IA.Gateways.Internal.IGatewayAdapterElement">
+            <summary>
+            Interface to impemented the elementary Gateway Adapter 
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.Internal.IGatewayAdapterElement.returnGatewayModel">
+            <summary>
+            True if the adapter supports the getModel() method
+            </summary>
+        </member>
+        <member name="P:IA.Gateways.Internal.IGatewayAdapterElement.returnRawGatewayResponse">
+            <summary>
+            True if the adapter can return raw gateway response
+            If yes, the gateway module will parse is and will create the requested model
+            </summary>
+        </member>
+        <member name="M:IA.Gateways.Internal.IGatewayAdapterElement.init">
+            <summary>
+            Will invoked to initialize the adapter on the program startup
+            </summary>
+        </member>
+    </members>
+</doc>

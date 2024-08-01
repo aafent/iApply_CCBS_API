@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<VersionSuffix>$([System.DateTime]::UtcNow.ToString("yy.MM.ddHH.mmss"))</VersionSuffix>
+		<AssemblyVersion>$(VersionSuffix)</AssemblyVersion>
+		<Version>$(VersionSuffix)</Version>
+	</PropertyGroup>
+
+</Project>

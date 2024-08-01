@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>iApplyDataAccess</name>
+    </assembly>
+    <members>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.AccountCoverage">
+            <summary>
+            InGrpInGrmAccountCollateralYieldPerc
+             pososto kalipshs apo kalimata tou daneiou (apo collateral management)
+            </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.BranchCBSId">
+            <summary>
+            InMonitoringUnitCode
+            </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.CollateralTypeCode">
+             <summary>
+            Collateral type code	InCollateralProduct.IdProduct	Text	Permitted values: 1 - Prenotation, 2 - Mortgage, 3 - Deposit Pledges, 4 - Stock Mortgages, 5 - Stock Margin, 6 - Ship Mortgage, 7 - Bond Mortgage, 8 - Automobiles, 9- Cheques, 10- Invoices, 11- Dynamic Pledges, 99 - Other.
+             </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.CollateralTypeDescription">
+            <summary>
+            Collateral type desc	InCollateralTypeProduct.Description	Text
+            </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.Coverage">
+            <summary>
+            InCollateralYieldPerc
+             pososto kalipshs apo kalimata tou daneiou (apo collateral management)
+            </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.CurrencyID">
+            <summary>
+            currency of the collateral	InCurrency.IdCurrency	Numeric
+            </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.CustomerCBSCd">
+            <summary>
+            Customer CBS Check Digit
+            </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.CustomerCBSId">
+            <summary>
+            Customer ID	InNewColltblCustomer.CustId	Numeric
+            InGrpInGrmCustomerCustId
+            </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.FirstName">
+             <summary>
+            InGrpInGrmAccountCollateralFirstName
+             </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.ProductCBSId">
+            <summary>
+            InCollateralTypeProductIdProduct
+             to proion tou kalimatos, tha erxete apo product factoring
+            </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.ProfitsAccountCd">
+            <summary>
+            InGrpInGrmAccountCollateralAccountCd
+            </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.ProfitsAccountNumber">
+            <summary>
+            InGrpInGrmAccountCollateralPrftAccount
+            </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.ProfitsSystem">
+            <summary>
+            InGrpInGrmAccountCollateralProfitsSystem
+            </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.ReferenceNumber">
+             <summary>
+            Reference number	InCollateral.CollateralSn	Numeric
+             </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.Surname">
+             <summary>
+            InGrpInGrmAccountCollateralSurname
+             </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.CollateralView.TotalValue">
+            <summary>
+            Total collateral estimated value	InCollateral.ColEstValueAmn	Numeric
+            </summary>
+        </member>
+        <member name="P:IApplyDataAccess.DataModel.IMSIView.ApplicationId">
+            *Na mhn allaksoun ta onomata kai ta types
+        </member>
+    </members>
+</doc>
