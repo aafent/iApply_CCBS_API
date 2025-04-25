@@ -126,7 +126,7 @@ namespace CCBS.Models
         /// Data Type: datetime
         /// Entities: v_CBS_Mortgage
         /// </summary>
-        public DateTime MortgageNotDeedDt { get; set; }
+        public DateTime MortgageNotDeedDt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Notary Deed Number
@@ -140,7 +140,7 @@ namespace CCBS.Models
         /// Data Type: datetime
         /// Entities: v_CBS_Mortgage
         /// </summary>
-        public DateTime MortgageRegDt { get; set; }
+        public DateTime MortgageRegDt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Row
@@ -178,7 +178,7 @@ namespace CCBS.Models
         /// Data Type: datetime
         /// Entities: v_CBS_Mortgage
         /// </summary>
-        public DateTime MortgageWaivDt { get; set; }
+        public DateTime MortgageWaivDt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Waiver

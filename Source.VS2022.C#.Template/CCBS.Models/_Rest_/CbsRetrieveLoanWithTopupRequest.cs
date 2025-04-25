@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsRetrieveLoanWithTopupRequest
+    public class CbsRetrieveLoanWithTopupRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsRetrieveLoanWithTopupRequest
+        // Add properties and methods for CbsRetrieveLoanWithTopupRequest : BaseCbsRequestModel
     }
 }

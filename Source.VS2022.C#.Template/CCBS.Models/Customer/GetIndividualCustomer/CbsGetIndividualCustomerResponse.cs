@@ -122,7 +122,7 @@
         /// <summary>
         /// Birth Date
         /// </summary>
-        public DateTime pe_birdt { get; set; }
+        public DateTime pe_birdt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Children No
@@ -190,7 +190,7 @@
         /// <summary>
         /// Contract Date
         /// </summary>
-        public DateTime pr_contrc_dt { get; set; }
+        public DateTime pr_contrc_dt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Education Level
@@ -251,7 +251,7 @@
         /// <summary>
         /// Total Employment
         /// </summary>
-        public DateTime pr_totemp { get; set; }
+        public DateTime pr_totemp { get; set; } =  DateTime.Parse("1800-01-01");
 
         #endregion Public Properties
     }

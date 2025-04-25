@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsUpdateMemberMessageResponse
+    public class CbsUpdateMemberMessageResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsUpdateMemberMessageResponse
+        // Add properties and methods for CbsUpdateMemberMessageResponse : CommonResponseModel
     }
 }

@@ -36,8 +36,9 @@ builder.Services.AddSwaggerGen(c =>
 {
 
     // https://www.c-sharpcorner.com/article/using-xml-comments-as-web-api-documentation-with-swagger/
-    string xmlHelpFilename = Path.Combine(AppContext.BaseDirectory, $"{Assembly.GetExecutingAssembly().GetName().Name}.xml");
-    bool enableComments = File.Exists(xmlHelpFilename);
+    string xmlHelpCBSFilename = Path.Combine(AppContext.BaseDirectory, $"{Assembly.GetExecutingAssembly().GetName().Name}.xml");
+    string xmlHelpModelsFilename = Path.Combine(AppContext.BaseDirectory, $"CCBS.Models.xml");
+    bool enableComments = File.Exists(xmlHelpCBSFilename);
 
     c.SwaggerDoc("v1", new OpenApiInfo
     {
@@ -69,18 +70,15 @@ builder.Services.AddSwaggerGen(c =>
 
     if (enableComments)
     {
-        c.IncludeXmlComments(xmlHelpFilename); // (<) enable notes and comments to the swagger
-
-        if (File.Exists("iApplyShared.CCBS.Shared.xml")) c.IncludeXmlComments("iApplyShared.CCBS.Shared.xml");
-        if (File.Exists("iApplyDataAccess.xml")) c.IncludeXmlComments("iApplyDataAccess.xml");
+        c.IncludeXmlComments(xmlHelpCBSFilename); // (<) enable notes and comments to the swagger
+        if (File.Exists(xmlHelpModelsFilename)) c.IncludeXmlComments(xmlHelpModelsFilename);
     }
 
 });
 #endregion (+) OpenAPI
 
 
-//builder.Services.AddSingleton<ServiceInjections>(injections);
-
+builder.Services.AddControllers(options => options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
 
 
 var app = builder.Build();

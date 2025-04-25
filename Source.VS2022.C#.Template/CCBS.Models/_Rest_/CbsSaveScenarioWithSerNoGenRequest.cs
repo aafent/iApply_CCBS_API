@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsSaveScenarioWithSerNoGenRequest
+    public class CbsSaveScenarioWithSerNoGenRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsSaveScenarioWithSerNoGenRequest
+        // Add properties and methods for CbsSaveScenarioWithSerNoGenRequest : BaseCbsRequestModel
     }
 }

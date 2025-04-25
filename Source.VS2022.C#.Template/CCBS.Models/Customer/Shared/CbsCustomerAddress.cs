@@ -12,7 +12,7 @@
         /// Notes: N/A
         /// CBS: OutListGrpOutGrmCustAddressAccomodationDate
         /// </summary>
-        public DateTime accdate { get; set; }
+        public DateTime accdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A

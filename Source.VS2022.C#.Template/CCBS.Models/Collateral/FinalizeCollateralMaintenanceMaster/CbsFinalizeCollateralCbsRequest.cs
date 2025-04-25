@@ -46,6 +46,8 @@ namespace CCBS.Models
         /// </summary>
         public int? CollateralCbsId { get; set; }
 
+        public List<CollateralDetails> CollateralDetails { get; set; }
+
         /// <summary>
         /// Seq: N/A
         /// Entity: v_CBS_CollateralDet
@@ -144,7 +146,7 @@ namespace CCBS.Models
         /// Notes: N/A
         /// CBS: N/A
         /// </summary>
-        public DateTime CollExpDate { get; set; }
+        public DateTime CollExpDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A
@@ -174,7 +176,7 @@ namespace CCBS.Models
         /// Notes: N/A
         /// CBS: N/A
         /// </summary>
-        public DateTime CollNextRevDate { get; set; }
+        public DateTime CollNextRevDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A
@@ -274,7 +276,7 @@ namespace CCBS.Models
         /// Notes: N/A
         /// CBS: N/A
         /// </summary>
-        public DateTime CollRevDate { get; set; }
+        public DateTime CollRevDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A
@@ -316,8 +318,6 @@ namespace CCBS.Models
         /// </summary>
         [Mockup(1)]
         public int CustomerCbsId { get; set; }
-
-        public InGrp[] InGrpArray { get; set; }
 
         /// <summary>
         /// Seq: N/A

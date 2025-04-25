@@ -2,6 +2,12 @@
 {
     public class CbsUpdateCustomerRelationshipsResponse : CommonResponseModel
     {
+        public List<CustomerRelationshipResponse> CustomerRelationships { get; set; } = new();
+
+    }
+
+    public class CustomerRelationshipResponse
+    {
         #region Public Properties
 
         /// <summary>

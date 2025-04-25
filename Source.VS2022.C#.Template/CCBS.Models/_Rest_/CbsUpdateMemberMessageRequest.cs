@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsUpdateMemberMessageRequest
+    public class CbsUpdateMemberMessageRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsUpdateMemberMessageRequest
+        // Add properties and methods for CbsUpdateMemberMessageRequest : BaseCbsRequestModel
     }
 }

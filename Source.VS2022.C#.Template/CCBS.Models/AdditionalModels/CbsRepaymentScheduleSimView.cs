@@ -132,7 +132,7 @@
 
         public virtual int? ProductId { get; set; }
 
-        public virtual DateTime Request_Dt { get; set; }
+        public virtual DateTime? Request_Dt { get; set; }
 
         public virtual int? SalesUnit { get; set; }
 
@@ -150,6 +150,7 @@
 
         public virtual int? TransactSm { get; set; }
 
+        public virtual decimal? Margin { get; set; }
         #endregion Public Properties
 
         #region Public Methods

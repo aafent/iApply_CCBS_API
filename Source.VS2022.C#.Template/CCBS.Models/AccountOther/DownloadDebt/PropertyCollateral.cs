@@ -100,7 +100,7 @@
         /// Data Type: datetime
         /// Entities: cr_lacola
         /// </summary>
-        public DateTime co_revdate { get; set; }
+        public DateTime co_revdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Market Value

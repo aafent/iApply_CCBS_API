@@ -56,7 +56,7 @@
         /// Notes: N/A
         /// CBS: sourceData.ApplicationDate
         /// </summary>
-        public DateTime la_date { get; set; }
+        public DateTime la_date { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A

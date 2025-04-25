@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsRetrieveFilesRequest
+    public class CbsRetrieveFilesRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsRetrieveFilesRequest
+        // Add properties and methods for CbsRetrieveFilesRequest : BaseCbsRequestModel
     }
 }

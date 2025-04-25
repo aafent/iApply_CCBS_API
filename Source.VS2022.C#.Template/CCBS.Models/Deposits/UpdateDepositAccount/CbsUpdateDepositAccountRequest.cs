@@ -58,7 +58,7 @@ namespace CCBS.Models
         /// <summary>
         /// Cheque Approval Date (datetime)
         /// </summary>
-        public DateTime AppDateCheque { get; set; }
+        public DateTime AppDateCheque { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// As Collateral (varchar (1))
@@ -108,12 +108,12 @@ namespace CCBS.Models
         /// <summary>
         /// ChequeTollDays (datetime)
         /// </summary>
-        public DateTime ChequeTollDays { get; set; }
+        public DateTime ChequeTollDays { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Collateral Date (datetime)
         /// </summary>
-        public DateTime CollateralDate { get; set; }
+        public DateTime CollateralDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Conditional Account (varchar (1))
@@ -133,7 +133,7 @@ namespace CCBS.Models
         /// <summary>
         /// Credit Expiry Date (datetime)
         /// </summary>
-        public DateTime CreditExpDate { get; set; }
+        public DateTime CreditExpDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Fixed Credit IR (varchar (1))
@@ -174,7 +174,7 @@ namespace CCBS.Models
         /// <summary>
         /// Debit Expiry Date (datetime)
         /// </summary>
-        public DateTime DebitExpDate { get; set; }
+        public DateTime DebitExpDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Debit Indicator (varchar (1))
@@ -199,7 +199,7 @@ namespace CCBS.Models
         /// <summary>
         /// Cheque Expiry Date (datetime)
         /// </summary>
-        public DateTime ExpDateCheque { get; set; }
+        public DateTime ExpDateCheque { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// External Account (varchar (1))
@@ -309,7 +309,7 @@ namespace CCBS.Models
         /// <summary>
         /// Overdraft Maturity Date (datetime)
         /// </summary>
-        public DateTime OverdraftMaturity { get; set; }
+        public DateTime OverdraftMaturity { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Print Mandate Instr. Statement (varchar (1))
@@ -334,14 +334,14 @@ namespace CCBS.Models
         /// <summary>
         /// Renewal Date (datetime)
         /// </summary>
-        public DateTime RenewalDate { get; set; }
+        public DateTime RenewalDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         public CbsRetrieveDepositAccountResponse RetrieveDepositAccountModel { get; set; }
 
         /// <summary>
         /// Review Date (datetime)
         /// </summary>
-        public DateTime ReviewDate { get; set; }
+        public DateTime ReviewDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Discount Cheques Risk Diversification (decimal (8,4))
@@ -401,12 +401,12 @@ namespace CCBS.Models
         /// <summary>
         /// Temporary Limit Expiry Date (datetime)
         /// </summary>
-        public DateTime TempLimitEnd { get; set; }
+        public DateTime TempLimitEnd { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Temporary Limit Start Date (datetime)
         /// </summary>
-        public DateTime TempLimitStart { get; set; }
+        public DateTime TempLimitStart { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Withdrawals Validity Period (integer)

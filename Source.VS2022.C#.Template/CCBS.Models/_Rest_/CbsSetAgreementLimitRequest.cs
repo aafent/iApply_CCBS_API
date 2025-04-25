@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsSetAgreementLimitRequest
+    public class CbsSetAgreementLimitRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsSetAgreementLimitRequest
+        // Add properties and methods for CbsSetAgreementLimitRequest : BaseCbsRequestModel
     }
 }

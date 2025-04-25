@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsDeletePropertyValuersResponse
+    public class CbsDeletePropertyValuersResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsDeletePropertyValuersResponse
+        // Add properties and methods for CbsDeletePropertyValuersResponse : CommonResponseModel
     }
 }

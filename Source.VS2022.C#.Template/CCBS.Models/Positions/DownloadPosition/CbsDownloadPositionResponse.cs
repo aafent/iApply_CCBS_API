@@ -163,7 +163,7 @@
         ///OutGrpOutGrmSearchCustPositionDate7
         ///OutGrpOutGrmSearchCustPositionDate8
         /// </summary>
-        public DateTime cb_expdt { get; set; }
+        public DateTime cb_expdt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: 23
@@ -194,7 +194,7 @@
         /// Notes: N/A
         /// CBS: OutGrpOutGrmSearchCustPositionDate8
         /// </summary>
-        public DateTime cb_opendt { get; set; }
+        public DateTime cb_opendt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: 16

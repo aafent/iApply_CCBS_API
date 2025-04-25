@@ -12,7 +12,7 @@
         /// <summary>
         /// drawDownDate (datetime)
         /// </summary>
-        public DateTime drawDownDate { get; set; }
+        public DateTime drawDownDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         public List<Drawdown> DrawdownsList { get; set; }
 

@@ -65,7 +65,7 @@
         /// Data Type: datetime
         /// Entities: cr_cucoba_det
         /// </summary>
-        public DateTime cb_disdate { get; set; }
+        public DateTime cb_disdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Frequency
@@ -93,7 +93,7 @@
         /// Data Type: datetime
         /// Entities: cr_cucoba_det
         /// </summary>
-        public DateTime cb_lastpaydate { get; set; }
+        public DateTime cb_lastpaydate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Specific provision
@@ -317,7 +317,7 @@
         /// Data Type: datetime
         /// Entities: cr_lacola
         /// </summary>
-        public DateTime co_revdate { get; set; }
+        public DateTime co_revdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Security Value

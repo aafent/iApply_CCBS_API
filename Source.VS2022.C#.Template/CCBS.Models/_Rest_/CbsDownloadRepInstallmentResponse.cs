@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsDownloadRepInstallmentResponse
+    public class CbsDownloadRepInstallmentResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsDownloadRepInstallmentResponse
+        // Add properties and methods for CbsDownloadRepInstallmentResponse : CommonResponseModel
     }
 }

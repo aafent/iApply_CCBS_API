@@ -13,7 +13,7 @@
         /// Seq.: 2
         /// Payment Date
         /// </summary>
-        public DateTime rs_paydate { get; set; }
+        public DateTime rs_paydate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 3
@@ -121,7 +121,7 @@
         /// Seq.: 19
         /// Birth Date
         /// </summary>
-        public DateTime insurer_birthdate { get; set; }
+        public DateTime insurer_birthdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 20

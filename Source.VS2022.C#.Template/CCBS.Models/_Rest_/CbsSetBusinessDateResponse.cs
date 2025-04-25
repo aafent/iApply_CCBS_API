@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsSetBusinessDateResponse
+    public class CbsSetBusinessDateResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsSetBusinessDateResponse
+        // Add properties and methods for CbsSetBusinessDateResponse : CommonResponseModel
     }
 }

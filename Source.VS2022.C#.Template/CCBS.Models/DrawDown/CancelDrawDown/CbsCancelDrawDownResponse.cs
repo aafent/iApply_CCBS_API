@@ -12,17 +12,17 @@
         /// <summary>
         /// Disbursment Date (datetime)
         /// </summary>
-        public DateTime disb_date { get; set; }
+        public DateTime disb_date { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Drawdown Date (datetime)
         /// </summary>
-        public DateTime draw_date { get; set; }
+        public DateTime draw_date { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Drawdown Transaction Date (datetime)
         /// </summary>
-        public DateTime drawtr_dt { get; set; }
+        public DateTime drawtr_dt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Currency (varchar (10))

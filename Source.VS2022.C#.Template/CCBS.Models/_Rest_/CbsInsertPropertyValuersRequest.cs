@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsInsertPropertyValuersRequest
+    public class CbsInsertPropertyValuersRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsInsertPropertyValuersRequest
+        // Add properties and methods for CbsInsertPropertyValuersRequest : BaseCbsRequestModel
     }
 }

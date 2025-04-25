@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsSafeDepositBoxesListRequest
+    public class CbsSafeDepositBoxesListRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsSafeDepositBoxesListRequest
+        // Add properties and methods for CbsSafeDepositBoxesListRequest : BaseCbsRequestModel
     }
 }

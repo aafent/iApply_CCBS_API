@@ -58,7 +58,7 @@
         /// Data Type: datetime
         /// CBS: OutAgreementAgreementAgrSigningDt
         /// </summary>
-        public DateTime cb_agr_sign_dt { get; set; }
+        public DateTime cb_agr_sign_dt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Agreement Utilised Limit (Agreement, accounType = 19)
@@ -231,7 +231,7 @@
         /// Value: If date1 is null then date9, if date9 is null then date15, if date15 is null then date4, if date4 is null then date5,
         ///        if date5 is null then date7, if date7 is null then date8
         /// </summary>
-        public DateTime cb_expdt { get; set; }
+        public DateTime cb_expdt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Face Value in Bonds (Securities, accountType = 18)
@@ -351,7 +351,7 @@
         /// Data Type: datetime
         /// CBS: OutGrpOutGrmSearchCustPositionDate8
         /// </summary>
-        public DateTime cb_opendt { get; set; }
+        public DateTime cb_opendt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Overdue Amount

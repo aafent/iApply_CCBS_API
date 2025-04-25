@@ -24,7 +24,7 @@
         /// Assignment Date
         /// Entities: cr_cucreditline
         /// </summary>
-        public DateTime cr_assigndt { get; set; }
+        public DateTime cr_assigndt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Credit Limit Currency
@@ -38,21 +38,21 @@
         /// Data Type: datetime
         /// Entities: cr_cucreditline
         /// </summary>
-        public DateTime cr_expdt { get; set; }
+        public DateTime cr_expdt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Next Review Date
         /// Data Type: datetime
         /// Entities: cr_cucreditline
         /// </summary>
-        public DateTime cr_nextreviewdt { get; set; }
+        public DateTime cr_nextreviewdt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Review Date
         /// Data Type: datetime
         /// Entities: cr_cucreditline
         /// </summary>
-        public DateTime cr_reviewdt { get; set; }
+        public DateTime cr_reviewdt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Credit Limit Status

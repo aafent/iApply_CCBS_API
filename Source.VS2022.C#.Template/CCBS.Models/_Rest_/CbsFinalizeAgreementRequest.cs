@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsFinalizeAgreementRequest
+    public class CbsFinalizeAgreementRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsFinalizeAgreementRequest
+        // Add properties and methods for CbsFinalizeAgreementRequest : BaseCbsRequestModel
     }
 }

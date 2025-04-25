@@ -286,7 +286,7 @@ namespace CCBS.Models
         /// Data Type: datetme
         /// Entities: v_CBS_TradeView
         /// </summary>
-        public DateTime DestDate { get; set; }
+        public DateTime DestDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Destination (v_CBS_TradeView)
@@ -315,7 +315,7 @@ namespace CCBS.Models
         /// Data Type: datetime
         /// Entities: v_CBS_SDView
         /// </summary>
-        public DateTime ExpDate { get; set; }
+        public DateTime ExpDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Expiration Type (v_CBS_LGView)
@@ -436,7 +436,7 @@ namespace CCBS.Models
         /// Data Type: datetime
         /// Entities: v_CBS_LGView
         /// </summary>
-        public DateTime MaturityDate { get; set; }
+        public DateTime MaturityDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Monitoring Branch (v_CBS_TradeView)
@@ -457,7 +457,7 @@ namespace CCBS.Models
         /// Data Type: datetime
         /// Entities: v_CBS_LGView
         /// </summary>
-        public DateTime OpenDate { get; set; }
+        public DateTime OpenDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Monitoring Branch
@@ -513,7 +513,7 @@ namespace CCBS.Models
         /// Data Type: datetime
         /// Entities: v_CBS_SDView
         /// </summary>
-        public DateTime RentalDate { get; set; }
+        public DateTime RentalDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Revolving Limit (v_CBS_TradeView)
@@ -541,7 +541,7 @@ namespace CCBS.Models
         /// Data Type: datetme
         /// Entities: v_CBS_TradeView
         /// </summary>
-        public DateTime ShipDate { get; set; }
+        public DateTime ShipDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Shipment Place (v_CBS_TradeView)

@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsCreateAgreementBeneficiaryResponse
+    public class CbsCreateAgreementBeneficiaryResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsCreateAgreementBeneficiaryResponse
+        // Add properties and methods for CbsCreateAgreementBeneficiaryResponse : CommonResponseModel
     }
 }

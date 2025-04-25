@@ -1,7 +1,7 @@
-namespace CCBS.Models
-{
-    public class CbsCreateInsuranceResponse
-    {
-        // Add properties and methods for CbsCreateInsuranceResponse
-    }
-}
+//namespace CCBS.Models
+//{
+//    public class CbsCreateInsuranceResponse : CommonResponseModel
+//    {
+//        // Add properties and methods for CbsCreateInsuranceResponse : CommonResponseModel
+//    }
+//}

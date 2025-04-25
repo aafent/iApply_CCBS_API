@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsGetCustomerCategoryRequest
+    public class CbsGetCustomerCategoryRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsGetCustomerCategoryRequest
+        // Add properties and methods for CbsGetCustomerCategoryRequest : BaseCbsRequestModel
     }
 }

@@ -1,7 +1,7 @@
-namespace CCBS.Models
-{
-    public class CbsInstantLoanResponseRest
-    {
-        // Add properties and methods for CbsInstantLoanResponse
-    }
-}
+//namespace CCBS.Models
+//{
+//    public class CbsInstantLoanResponse : CommonResponseModel
+//    {
+//        // Add properties and methods for CbsInstantLoanResponse : CommonResponseModel
+//    }
+//}

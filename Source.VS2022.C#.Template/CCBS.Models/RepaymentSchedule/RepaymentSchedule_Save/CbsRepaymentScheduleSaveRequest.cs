@@ -70,7 +70,7 @@
         /// Seq.: 10
         /// Applicant Birth Date
         /// </summary>
-        public DateTime BirthDate { get; set; }
+        public DateTime BirthDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 11
@@ -129,13 +129,13 @@
         /// Seq.: 19
         /// Loan Expiry Date
         /// </summary>
-        public DateTime MaturityDate { get; set; }
+        public DateTime MaturityDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 20
         /// 1st Install.t Date
         /// </summary>
-        public DateTime FirstInstallmentDate { get; set; }
+        public DateTime FirstInstallmentDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 21
@@ -202,7 +202,7 @@
         /// Seq.: 31
         /// Grace Period Expiry Date
         /// </summary>
-        public DateTime GracePeriodExpiryDate { get; set; }
+        public DateTime GracePeriodExpiryDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 32
@@ -232,13 +232,13 @@
         /// Seq.: 36
         /// Disbursement Date
         /// </summary>
-        public DateTime DisbDate { get; set; }
+        public DateTime DisbDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 37
         /// Fixed Rate Expiry Date
         /// </summary>
-        public DateTime FixedIntExpDate { get; set; }
+        public DateTime FixedIntExpDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 38
@@ -253,7 +253,7 @@
         /// Seq.: 39
         /// Account Open Date
         /// </summary>
-        public DateTime AccountOpenDate { get; set; }
+        public DateTime AccountOpenDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 40
@@ -370,7 +370,7 @@
         /// <remarks>
         /// Business datetime
         /// </remarks>
-        public DateTime Request_Dt { get; set; }
+        public DateTime Request_Dt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 56

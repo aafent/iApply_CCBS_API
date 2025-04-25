@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsUpdatePropertyRequest
+    public class CbsUpdatePropertyRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsUpdatePropertyRequest
+        // Add properties and methods for CbsUpdatePropertyRequest : BaseCbsRequestModel
     }
 }

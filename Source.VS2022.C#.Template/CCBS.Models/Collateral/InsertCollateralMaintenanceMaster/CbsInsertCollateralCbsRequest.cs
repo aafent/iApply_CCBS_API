@@ -6,6 +6,9 @@ namespace CCBS.Models
     {
         #region Public Properties
 
+        [Mockup(1)]
+        public string ApplicationId { get; set; }
+
         /// <summary>
         /// Entity: v_CBS_Collateral
         /// Description: Account or Agreement
@@ -27,9 +30,7 @@ namespace CCBS.Models
         /// </summary>
         public int CollAccountType { get; set; }
 
-        public List<CbsCollateralCbsDetailsView> CollateralCbsDetailsViews { get; set; }
-
-        public CbsCollateralCbsView CollateralCbsViews { get; set; }
+        public List<CollateralDetails> CollateralDetails { get; set; } = new();
 
         /// <summary>
         /// Entity: v_CBS_CollateralDet
@@ -99,7 +100,7 @@ namespace CCBS.Models
         /// Description: Expiration Date
         /// Data Type: datetime
         /// </summary>
-        public DateTime CollExpDate { get; set; }
+        public DateTime CollExpDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: v_CBS_Collateral
@@ -113,7 +114,7 @@ namespace CCBS.Models
         /// Description: Next Review Date
         /// Data Type: datetime
         /// </summary>
-        public DateTime CollNextRevDate { get; set; }
+        public DateTime CollNextRevDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: v_CBS_Collateral
@@ -183,7 +184,7 @@ namespace CCBS.Models
         /// Description: Review Date
         /// Data Type: datetime
         /// </summary>
-        public DateTime CollRevDate { get; set; }
+        public DateTime CollRevDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: v_CBS_CollateralDet
@@ -220,8 +221,6 @@ namespace CCBS.Models
         /// </summary>
         public int CustomerCbsId { get; set; }
 
-        public InGrp[] InGrpArray { get; set; }
-
         /// <summary>
         /// Entity: v_CBS_Collateral
         /// Description: Monitoring Branch
@@ -242,9 +241,6 @@ namespace CCBS.Models
         /// Data Type: varchar (2)
         /// </summary>
         public string RecordType { get; set; }
-
-        [Mockup(1)]
-        public string ApplicationId { get; set; }
 
         #endregion Public Properties
     }

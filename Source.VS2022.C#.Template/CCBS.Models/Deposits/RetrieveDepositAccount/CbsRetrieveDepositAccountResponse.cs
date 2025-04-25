@@ -127,7 +127,7 @@
         /// <summary>
         /// Cheque Approval Date (datetime)
         /// </summary>
-        public DateTime la_depchequefdate { get; set; }
+        public DateTime la_depchequefdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Cheque Iss. Exp. % (decimal (19,3))
@@ -142,7 +142,7 @@
         /// <summary>
         /// Cheque Expiry Date (datetime)
         /// </summary>
-        public DateTime la_depchequetdate { get; set; }
+        public DateTime la_depchequetdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Credit Indicator (varchar (1))
@@ -152,7 +152,7 @@
         /// <summary>
         /// Collateral Date (datetime)
         /// </summary>
-        public DateTime la_depcolldate { get; set; }
+        public DateTime la_depcolldate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Conditional Account (varchar (1))
@@ -172,7 +172,7 @@
         /// <summary>
         /// Debit Expiry Date (datetime)
         /// </summary>
-        public DateTime la_depdexpdt { get; set; }
+        public DateTime la_depdexpdt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Debit Indicator (varchar (1))
@@ -297,12 +297,12 @@
         /// <summary>
         /// Renewal Date (datetime)
         /// </summary>
-        public DateTime la_deprenewaldt { get; set; }
+        public DateTime la_deprenewaldt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Review Date (datetime)
         /// </summary>
-        public DateTime la_depreviewdt { get; set; }
+        public DateTime la_depreviewdt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Discount Cheques Risk Diversification (decimal (19,3))
@@ -347,7 +347,7 @@
         /// <summary>
         /// Temporary Limit Expiry Date (datetime)
         /// </summary>
-        public DateTime la_deptemenddt { get; set; }
+        public DateTime la_deptemenddt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Temporary Limit Excess (decimal (19,3))
@@ -357,7 +357,7 @@
         /// <summary>
         /// Temporary Limit Start Date (datetime)
         /// </summary>
-        public DateTime la_deptemstdt { get; set; }
+        public DateTime la_deptemstdt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Limit Encr/nt Toler. (decimal (19,3))
@@ -392,7 +392,7 @@
         /// <summary>
         /// Overdraft Maturity Date (datetime)
         /// </summary>
-        public DateTime la_ovexpdt { get; set; }
+        public DateTime la_ovexpdt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Over. Limit Margin (decimal (19,3))

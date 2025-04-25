@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsInsertCollateralDetailsResponse
+    public class CbsInsertCollateralDetailsResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsInsertCollateralDetailsResponse
+        // Add properties and methods for CbsInsertCollateralDetailsResponse : CommonResponseModel
     }
 }

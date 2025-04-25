@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsGetListMediatorsRequest
+    public class CbsGetListMediatorsRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsGetListMediatorsRequest
+        // Add properties and methods for CbsGetListMediatorsRequest : BaseCbsRequestModel
     }
 }

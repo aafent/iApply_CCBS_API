@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsCollateralFxRateResponse
+    public class CbsCollateralFxRateResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsCollateralFxRateResponse
+        // Add properties and methods for CbsCollateralFxRateResponse : CommonResponseModel
     }
 }

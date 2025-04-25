@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsSearchSecuritiesAccountsRequest
+    public class CbsSearchSecuritiesAccountsRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsSearchSecuritiesAccountsRequest
+        // Add properties and methods for CbsSearchSecuritiesAccountsRequest : BaseCbsRequestModel
     }
 }

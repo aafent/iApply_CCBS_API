@@ -23,7 +23,7 @@
         /// Data Type: datetime
         /// Entities: cr_laaccscenario
         /// </summary>
-        public DateTime cbs_request_dt { get; set; }
+        public DateTime cbs_request_dt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// CBS Serial Number
@@ -121,7 +121,7 @@
         /// Data Type: datetime
         /// Entities: cr_laaccscenario
         /// </summary>
-        public DateTime la_date { get; set; }
+        public DateTime la_date { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Irrevocable
@@ -232,14 +232,14 @@
         /// Data Type: datetime
         /// Entities: cr_laaccscenario
         /// </summary>
-        public DateTime la_earlier { get; set; }
+        public DateTime la_earlier { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Rental Expiration Date
         /// Data Type: datetime
         /// Entities: cr_laaccscenario
         /// </summary>
-        public DateTime la_expdate { get; set; }
+        public DateTime la_expdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Final
@@ -295,7 +295,7 @@
         /// Data Type: datetime
         /// Entities: cr_laaccscenario
         /// </summary>
-        public DateTime la_later { get; set; }
+        public DateTime la_later { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// LC Type
@@ -323,7 +323,7 @@
         /// Data Type: datetime
         /// Entities: cr_laaccscenario
         /// </summary>
-        public DateTime la_open_date { get; set; }
+        public DateTime la_open_date { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Tolerance %

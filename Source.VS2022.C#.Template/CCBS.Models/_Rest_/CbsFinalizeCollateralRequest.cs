@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsFinalizeCollateralRequest
+    public class CbsFinalizeCollateralRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsFinalizeCollateralRequest
+        // Add properties and methods for CbsFinalizeCollateralRequest : BaseCbsRequestModel
     }
 }

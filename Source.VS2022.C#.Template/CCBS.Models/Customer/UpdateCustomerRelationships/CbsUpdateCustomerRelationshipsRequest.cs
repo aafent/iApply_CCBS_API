@@ -6,6 +6,15 @@ namespace CCBS.Models
     {
         #region Public Properties
 
+        public List<CustomerRelationshipRequest> CustomerRelationships { get; set; } = new();
+
+        #endregion Public Properties
+    }
+
+    public class CustomerRelationshipRequest
+    {
+        #region Public Properties
+
         /// <summary>
         /// All Accounts (varchar)
         /// </summary>
@@ -33,12 +42,12 @@ namespace CCBS.Models
         /// <summary>
         /// Expiry Date (datetime)
         /// </summary>
-        public DateTime ExpiryDate { get; set; }
+        public DateTime ExpiryDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Issued Date (datetime)
         /// </summary>
-        public DateTime IssueDate { get; set; }
+        public DateTime IssueDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Account Number (integer)

@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsShareTransferResponse
+    public class CbsShareTransferResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsShareTransferResponse
+        // Add properties and methods for CbsShareTransferResponse : CommonResponseModel
     }
 }

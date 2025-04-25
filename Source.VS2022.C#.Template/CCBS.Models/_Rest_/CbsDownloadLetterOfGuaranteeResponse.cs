@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsDownloadLetterOfGuaranteeResponse
+    public class CbsDownloadLetterOfGuaranteeResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsDownloadLetterOfGuaranteeResponse
+        // Add properties and methods for CbsDownloadLetterOfGuaranteeResponse : CommonResponseModel
     }
 }

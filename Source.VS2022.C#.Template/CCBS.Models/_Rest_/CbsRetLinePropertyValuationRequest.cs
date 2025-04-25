@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsRetLinePropertyValuationRequest
+    public class CbsRetLinePropertyValuationRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsRetLinePropertyValuationRequest
+        // Add properties and methods for CbsRetLinePropertyValuationRequest : BaseCbsRequestModel
     }
 }

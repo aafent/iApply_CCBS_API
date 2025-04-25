@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsDownloadDepositAccountRequest
+    public class CbsDownloadDepositAccountRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsDownloadDepositAccountRequest
+        // Add properties and methods for CbsDownloadDepositAccountRequest : BaseCbsRequestModel
     }
 }

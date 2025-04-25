@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsSearchPropertyRequest
+    public class CbsSearchPropertyRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsSearchPropertyRequest
+        // Add properties and methods for CbsSearchPropertyRequest : BaseCbsRequestModel
     }
 }

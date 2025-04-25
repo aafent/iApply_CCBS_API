@@ -108,7 +108,7 @@ namespace CCBS.Models
         /// Notes: N/A
         /// CBS: InCollateralReviseDt
         /// </summary>
-        public DateTime CollNextRevDate { get; set; }
+        public DateTime CollNextRevDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A
@@ -198,7 +198,7 @@ namespace CCBS.Models
         /// Notes: N/A
         /// CBS: InCollateralEstimationDt
         /// </summary>
-        public DateTime CollRevDate { get; set; }
+        public DateTime CollRevDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A

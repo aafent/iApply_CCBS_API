@@ -30,12 +30,13 @@ namespace CCBS.Models
         /// Customer Birth Date (datetime)
         /// If the CustomerCBSId is not 0 (empty), then we don’t pass anything to this property.
         /// </summary>
+        //public DateTime? DateOfBirth { get; set; } =  DateTime.Parse("1800-01-01");
         public DateTime? DateOfBirth { get; set; }
 
         /// <summary>
         /// Customer Email
         /// </summary>
-        public string Email { get; set; }
+        public string? Email { get; set; }
 
         /// <summary>
         /// Customer PF Number (varchar)
@@ -82,7 +83,7 @@ namespace CCBS.Models
         /// <summary>
         /// Customer Surname (varchar)
         /// </summary>
-        [Mockup(2)]
+        //[Mockup(2)]
         public string Surname { get; set; }
 
         #endregion Public Properties

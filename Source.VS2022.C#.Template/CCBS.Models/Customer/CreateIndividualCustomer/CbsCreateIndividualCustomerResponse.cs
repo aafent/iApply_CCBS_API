@@ -53,7 +53,7 @@
         /// Member Creation Date (datetime)
         /// business date
         /// </summary>
-        public DateTime member_strdate { get; set; }
+        public DateTime member_strdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Member SubStatus (varchar (20))

@@ -27,7 +27,7 @@ namespace CCBS.Models
         /// <summary>
         /// Id Expiry Date (datetime)
         /// </summary>
-        public DateTime IdentificationExpiryDate { get; set; }
+        public DateTime IdentificationExpiryDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Issue Country (integer)
@@ -42,7 +42,7 @@ namespace CCBS.Models
         /// <summary>
         /// Id Issue Date (datetime)
         /// </summary>
-        public DateTime IdentificationIssueDate { get; set; }
+        public DateTime IdentificationIssueDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Main Id (varchar (1))

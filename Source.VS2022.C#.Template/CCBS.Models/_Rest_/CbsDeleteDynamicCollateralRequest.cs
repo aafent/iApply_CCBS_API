@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsDeleteDynamicCollateralRequest
+    public class CbsDeleteDynamicCollateralRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsDeleteDynamicCollateralRequest
+        // Add properties and methods for CbsDeleteDynamicCollateralRequest : BaseCbsRequestModel
     }
 }

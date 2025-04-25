@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsDownloadSecuritiesAccountResponse
+    public class CbsDownloadSecuritiesAccountResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsDownloadSecuritiesAccountResponse
+        // Add properties and methods for CbsDownloadSecuritiesAccountResponse : CommonResponseModel
     }
 }

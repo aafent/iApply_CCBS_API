@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsSearchValuerResponse
+    public class CbsSearchValuerResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsSearchValuerResponse
+        // Add properties and methods for CbsSearchValuerResponse : CommonResponseModel
     }
 }

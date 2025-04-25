@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsRetrieveDynamicCollateralRequest
+    public class CbsRetrieveDynamicCollateralRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsRetrieveDynamicCollateralRequest
+        // Add properties and methods for CbsRetrieveDynamicCollateralRequest : BaseCbsRequestModel
     }
 }

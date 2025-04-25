@@ -36,21 +36,21 @@
         /// Description: CBS Requested Date
         /// Entities: cr_laresc_save
         /// </summary>
-        public DateTime cbs_request_dt { get; set; }
+        public DateTime cbs_request_dt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq. 6
         /// Description: Loan Expiry Date
         /// Entities: cr_laresc_save
         /// </summary>
-        public DateTime la_matur_date { get; set; }
+        public DateTime la_matur_date { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq. 7
         /// Description: Account Open Date
         /// Entities: cr_laresc_save
         /// </summary>
-        public DateTime la_open_date { get; set; }
+        public DateTime la_open_date { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq. 8
@@ -64,7 +64,7 @@
         /// Description: Fixed Expiry Date
         /// Entities: cr_laresc_save
         /// </summary>
-        public DateTime la_int_date { get; set; }
+        public DateTime la_int_date { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq. 10
@@ -85,7 +85,7 @@
         /// Description: Fixed IR Start Date
         /// Entities: cr_laresc_save
         /// </summary>
-        public DateTime la_fixed_start_dt { get; set; }
+        public DateTime la_fixed_start_dt { get; set; } =  DateTime.Parse("1800-01-01");
         /// <summary>
         /// Seq. 13
         /// Description: Fixed Duration Unit
@@ -133,14 +133,14 @@
         /// Description: 1st Install.t Date
         /// Entities: cr_laresc_save
         /// </summary>
-        public DateTime la_insdate { get; set; }
+        public DateTime la_insdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq. 20
         /// Description: Disbursement Date
         /// Entities: cr_laresc_save
         /// </summary>
-        public DateTime disb_date { get; set; }
+        public DateTime disb_date { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq. 21
@@ -175,7 +175,7 @@
         /// Description: Grace Period Expiry Date
         /// Entities: cr_laresc_save
         /// </summary>
-        public DateTime la_morat_enddt { get; set; }
+        public DateTime la_morat_enddt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq. 26
@@ -290,7 +290,7 @@
         /// Entities: cr_laresc_save
         /// Data Type: datetime
         /// </summary>
-        public DateTime la_date { get; set; }
+        public DateTime la_date { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq. 42
@@ -433,7 +433,7 @@
         /// Entities: cr_laresc_insur_save
         /// Data Type: datetime
         /// </summary>
-        public DateTime insurer_birthdate { get; set; }
+        public DateTime insurer_birthdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq. 61

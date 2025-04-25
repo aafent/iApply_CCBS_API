@@ -2,18 +2,11 @@
 
 namespace CCBS.Models
 {
-    public class CbsDeleteCreditLineRequest : BaseCbsRequestModel
+    public class CbsUpdateCreditLineRequest : BaseCbsRequestModel
     {
         #region Public Properties
 
-        public List<RetrieveCredit> CbsRetrieveCreditLineResponseModel { get; set; }
-
-        /// <summary>
-        /// Entity: v_CBS_Collateral
-        /// Description: BASIL II Accepted
-        /// Data Type: varchar (10)
-        /// </summary>
-        public string CollBasil { get; set; }
+        public CbsRetrieveCreditLineResponse CbsRetrieveCreditLineResponseModel { get; set; }
 
         /// <summary>
         /// Entity: Credit Limit Amount
@@ -41,21 +34,21 @@ namespace CCBS.Models
         /// Description: CrExpDate
         /// Data Type: datetime
         /// </summary>
-        public DateTime CrExpDate { get; set; }
+        public DateTime CrExpDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: Next Review Date
         /// Description: CrNextRevDate
         /// Data Type: datetime
         /// </summary>
-        public DateTime CrNextRevDate { get; set; }
+        public DateTime CrNextRevDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: Review Date
         /// Description: CrRevDate
         /// Data Type: datetime
         /// </summary>
-        public DateTime CrRevDate { get; set; }
+        public DateTime CrRevDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: Credit Limit Type

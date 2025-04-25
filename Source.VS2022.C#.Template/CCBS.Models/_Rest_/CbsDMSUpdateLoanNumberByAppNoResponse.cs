@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsDMSUpdateLoanNumberByAppNoResponse
+    public class CbsDMSUpdateLoanNumberByAppNoResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsDMSUpdateLoanNumberByAppNoResponse
+        // Add properties and methods for CbsDMSUpdateLoanNumberByAppNoResponse : CommonResponseModel
     }
 }

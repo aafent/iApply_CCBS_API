@@ -100,7 +100,7 @@
         /// Description: Loan Expiry Date
         /// Data Type: datetime
         /// </summary>
-        public DateTime ExpiryDate { get; set; }
+        public DateTime ExpiryDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: v_CBS_InstantLoanView
@@ -135,7 +135,7 @@
         /// Description: Grace Period Expiry Date
         /// Data Type: datetime
         /// </summary>
-        public DateTime GracePeriodExpiryDate { get; set; }
+        public DateTime GracePeriodExpiryDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: v_CBS_InstantLoanView

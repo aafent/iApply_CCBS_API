@@ -4,7 +4,7 @@
     {
         #region Public Properties
 
-        public DateTime? BirthDate { get; set; }
+        public DateTime? BirthDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         public int? InsuranceCode { get; set; }
 

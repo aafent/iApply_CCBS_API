@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsDMSUpdateMemberDocumentByAppNoResponse
+    public class CbsDMSUpdateMemberDocumentByAppNoResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsDMSUpdateMemberDocumentByAppNoResponse
+        // Add properties and methods for CbsDMSUpdateMemberDocumentByAppNoResponse : CommonResponseModel
     }
 }

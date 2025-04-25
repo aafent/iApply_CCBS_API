@@ -32,12 +32,12 @@
         /// <summary>
         /// Expiry Date (datetime)
         /// </summary>
-        public DateTime cu_relexpdt { get; set; }
+        public DateTime cu_relexpdt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Issued Date (datetime)
         /// </summary>
-        public DateTime cu_relissdt { get; set; }
+        public DateTime cu_relissdt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Relationship (varchar (20))
@@ -69,7 +69,7 @@
         /// <summary>
         /// RelationshipTmstamp (datetime)
         /// </summary>
-        public DateTime RelationshipTmstamp { get; set; }
+        public DateTime RelationshipTmstamp { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Opposite (varchar (1))

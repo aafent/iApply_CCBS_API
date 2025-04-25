@@ -62,7 +62,7 @@
         /// Notes: Agreement (accounType = 19)
         /// CBS: OutAgreementAgreementAgrSigningDt
         /// </summary>
-        public DateTime cb_agr_sign_dt { get; set; }
+        public DateTime cb_agr_sign_dt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: 15

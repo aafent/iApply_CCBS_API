@@ -8,7 +8,7 @@ namespace IA.CCBSAPI.Controllers
     public partial class CommonController
     {
         [HttpPost("[action]")]
-        public CbsCreateJointAccountResponse CreateJointAccountHFB(CbsCreateJointAccountRequestHFB request)
+        public CbsCreateJointAccountResponse CreateJointAccountHFB(CbsCreateJointAccountRequest request)
         {
             throw new NotImplementedException();
         }

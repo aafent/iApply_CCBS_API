@@ -22,12 +22,12 @@ namespace CCBS.Models
         /// <summary>
         /// Date From (datetime)
         /// </summary>
-        public DateTime DateFrom { get; set; }
+        public DateTime DateFrom { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Date To (datetime)
         /// </summary>
-        public DateTime DateTo { get; set; }
+        public DateTime DateTo { get; set; } =  DateTime.Parse("1800-01-01");
 
         #endregion Public Properties
     }

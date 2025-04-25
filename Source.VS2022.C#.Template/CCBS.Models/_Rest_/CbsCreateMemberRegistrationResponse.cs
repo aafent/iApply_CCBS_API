@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsCreateMemberRegistrationResponse
+    public class CbsCreateMemberRegistrationResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsCreateMemberRegistrationResponse
+        // Add properties and methods for CbsCreateMemberRegistrationResponse : CommonResponseModel
     }
 }

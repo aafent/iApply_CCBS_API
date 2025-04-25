@@ -58,7 +58,7 @@
         /// <summary>
         /// Birth Date (datetime)
         /// </summary>
-        public DateTime insurer_birthdate { get; set; }
+        public DateTime insurer_birthdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Main Beneficiary (varchar (15))
@@ -108,7 +108,7 @@
         /// <summary>
         /// Payment Date (datetime)
         /// </summary>
-        public DateTime rs_paydate { get; set; }
+        public DateTime rs_paydate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Principal Payment (decimal (19,3))

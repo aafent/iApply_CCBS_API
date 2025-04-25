@@ -104,7 +104,7 @@ namespace CCBS.Models
         /// Notes: N/A
         /// CBS: InCustomerContractExpiryDate
         /// </summary>
-        public DateTime ContractDate { get; set; }
+        public DateTime ContractDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         public List<CbsCustomerAddress> CustomerAddresses { get; set; } = new List<CbsCustomerAddress>();
 
@@ -151,7 +151,7 @@ namespace CCBS.Models
         /// Notes: N/A
         /// CBS: InCustomerDateOfBirth
         /// </summary>
-        public DateTime DateOfBirth { get; set; }
+        public DateTime DateOfBirth { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A

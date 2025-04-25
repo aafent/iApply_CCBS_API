@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsCheckBulkMessagesRequest
+    public class CbsCheckBulkMessagesRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsCheckBulkMessagesRequest
+        // Add properties and methods for CbsCheckBulkMessagesRequest : BaseCbsRequestModel
     }
 }

@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsRetrieveAgreementRequest
+    public class CbsRetrieveAgreementRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsRetrieveAgreementRequest
+        // Add properties and methods for CbsRetrieveAgreementRequest : BaseCbsRequestModel
     }
 }

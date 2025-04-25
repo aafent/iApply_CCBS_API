@@ -42,7 +42,7 @@
         /// Notes: N/A
         /// CBS: OutListGrpOutGrmOtherIdExpiryDate
         /// </summary>
-        public DateTime pe_exp_date { get; set; }
+        public DateTime pe_exp_date { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: 3
@@ -72,7 +72,7 @@
         /// Notes: N/A
         /// CBS: OutListGrpOutGrmOtherIdIssueDate
         /// </summary>
-        public DateTime pe_issuon { get; set; }
+        public DateTime pe_issuon { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: 1

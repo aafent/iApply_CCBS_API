@@ -10,7 +10,7 @@ namespace CCBS.Models
         /// <summary>
         /// Accommodation Date (datetime)
         /// </summary>
-        public DateTime AccDate { get; set; }
+        public DateTime AccDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Street Name, Address Line 1 (varchar)
@@ -167,7 +167,7 @@ namespace CCBS.Models
         /// <summary>
         /// Contract Date (datetime)
         /// </summary>
-        public DateTime ContractDate { get; set; }
+        public DateTime ContractDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// County (varchar)
@@ -201,7 +201,7 @@ namespace CCBS.Models
         /// <summary>
         /// Birth Date (datetime)
         /// </summary>
-        public DateTime DateOfBirth { get; set; }
+        public DateTime DateOfBirth { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// DelZone (varchar)
@@ -250,7 +250,7 @@ namespace CCBS.Models
         /// <summary>
         /// Total Employment (datetime)
         /// </summary>
-        public DateTime EmplDate { get; set; }
+        public DateTime EmplDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Employee No (integer)
@@ -327,7 +327,7 @@ namespace CCBS.Models
         /// <summary>
         /// Id Expiry Date (datetime)
         /// </summary>
-        public DateTime IdentificationExpiryDate { get; set; }
+        public DateTime IdentificationExpiryDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Issue Country (varchar)
@@ -337,7 +337,7 @@ namespace CCBS.Models
         /// <summary>
         /// Id Issue Date (datetime)
         /// </summary>
-        public DateTime IdentificationIssueDate { get; set; }
+        public DateTime IdentificationIssueDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Identification Number (varchar)

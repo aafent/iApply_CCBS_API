@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsCollateralDetailListRequest
+    public class CbsCollateralDetailListRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsCollateralDetailListRequest
+        // Add properties and methods for CbsCollateralDetailListRequest : BaseCbsRequestModel
     }
 }

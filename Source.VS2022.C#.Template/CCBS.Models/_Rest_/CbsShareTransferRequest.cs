@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsShareTransferRequest
+    public class CbsShareTransferRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsShareTransferRequest
+        // Add properties and methods for CbsShareTransferRequest : BaseCbsRequestModel
     }
 }

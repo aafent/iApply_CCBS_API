@@ -1,7 +1,7 @@
-namespace CCBS.Models
-{
-    public class CbsCancelInsuranceRequest
-    {
-        // Add properties and methods for CbsCancelInsuranceRequest
-    }
-}
+//namespace CCBS.Models
+//{
+//    public class CbsCancelInsuranceRequest : BaseCbsRequestModel
+//    {
+//        // Add properties and methods for CbsCancelInsuranceRequest : BaseCbsRequestModel
+//    }
+//}

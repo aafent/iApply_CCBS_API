@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsUpdateAgreementGuarrantorRequest
+    public class CbsUpdateAgreementGuarrantorRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsUpdateAgreementGuarrantorRequest
+        // Add properties and methods for CbsUpdateAgreementGuarrantorRequest : BaseCbsRequestModel
     }
 }

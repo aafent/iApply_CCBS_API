@@ -37,7 +37,7 @@
         /// <summary>
         /// Payment Date (datetime)
         /// </summary>
-        public DateTime rs_paydate { get; set; }
+        public DateTime rs_paydate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Serial Number (integer)

@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsRetrieveGuaranteeAmountResponse
+    public class CbsRetrieveGuaranteeAmountResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsRetrieveGuaranteeAmountResponse
+        // Add properties and methods for CbsRetrieveGuaranteeAmountResponse : CommonResponseModel
     }
 }

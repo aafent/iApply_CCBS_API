@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsUpdateMembershipContractualRequest
+    public class CbsUpdateMembershipContractualRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsUpdateMembershipContractualRequest
+        // Add properties and methods for CbsUpdateMembershipContractualRequest : BaseCbsRequestModel
     }
 }

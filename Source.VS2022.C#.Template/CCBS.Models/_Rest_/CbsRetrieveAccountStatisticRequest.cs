@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsRetrieveAccountStatisticRequest
+    public class CbsRetrieveAccountStatisticRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsRetrieveAccountStatisticRequest
+        // Add properties and methods for CbsRetrieveAccountStatisticRequest : BaseCbsRequestModel
     }
 }

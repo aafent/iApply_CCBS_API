@@ -26,17 +26,17 @@ namespace CCBS.Models
         /// <summary>
         /// Gets or sets the Expiry Date (datetime).
         /// </summary>
-        public DateTime CrExpDate { get; set; }
+        public DateTime CrExpDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Gets or sets the Next Review Date (datetime).
         /// </summary>
-        public DateTime CrNextRevDate { get; set; }
+        public DateTime CrNextRevDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Gets or sets the Review Date (datetime).
         /// </summary>
-        public DateTime CrRevDate { get; set; }
+        public DateTime CrRevDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Gets or sets the Credit Limit Type (varchar (15)).

@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsUpdateDynamicCustomerFormRequest
+    public class CbsUpdateDynamicCustomerFormRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsUpdateDynamicCustomerFormRequest
+        // Add properties and methods for CbsUpdateDynamicCustomerFormRequest : BaseCbsRequestModel
     }
 }

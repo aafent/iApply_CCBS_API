@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsCancelDrawdownByIdResponse
+    public class CbsCancelDrawdownByIdResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsCancelDrawdownByIdResponse
+        // Add properties and methods for CbsCancelDrawdownByIdResponse : CommonResponseModel
     }
 }

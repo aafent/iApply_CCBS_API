@@ -95,7 +95,7 @@ namespace CCBS.Models
         /// Description: Expiration Date
         /// Data Type: datetime
         /// </summary>
-        public DateTime CollExpDate { get; set; }
+        public DateTime CollExpDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: v_CBS_Collateral
@@ -109,7 +109,7 @@ namespace CCBS.Models
         /// Description: Next Review Date
         /// Data Type: datetime
         /// </summary>
-        public DateTime CollNextRevDate { get; set; }
+        public DateTime CollNextRevDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: v_CBS_Collateral
@@ -179,7 +179,7 @@ namespace CCBS.Models
         /// Description: Review Date
         /// Data Type: datetime
         /// </summary>
-        public DateTime CollRevDate { get; set; }
+        public DateTime CollRevDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: v_CBS_CollateralDet

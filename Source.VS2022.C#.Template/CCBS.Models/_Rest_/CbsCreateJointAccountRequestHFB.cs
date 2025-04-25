@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsCreateJointAccountRequestHFB
+    public class CbsCreateJointAccountRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsCreateJointAccountRequestHFB
+        // Add properties and methods for CbsCreateJointAccountRequest : BaseCbsRequestModelHFB
     }
 }

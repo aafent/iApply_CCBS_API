@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsGetBankEmployeeResponse
+    public class CbsGetBankEmployeeResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsGetBankEmployeeResponse
+        // Add properties and methods for CbsGetBankEmployeeResponse : CommonResponseModel
     }
 }

@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsCreateBBFRequest
+    public class CbsCreateBBFRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsCreateBBFRequest
+        // Add properties and methods for CbsCreateBBFRequest : BaseCbsRequestModel
     }
 }

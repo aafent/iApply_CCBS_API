@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsDeleteAgreementGuarrantorResponse
+    public class CbsDeleteAgreementGuarrantorResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsDeleteAgreementGuarrantorResponse
+        // Add properties and methods for CbsDeleteAgreementGuarrantorResponse : CommonResponseModel
     }
 }

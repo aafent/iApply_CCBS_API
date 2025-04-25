@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsSafeDepositBoxesListResponse
+    public class CbsSafeDepositBoxesListResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsSafeDepositBoxesListResponse
+        // Add properties and methods for CbsSafeDepositBoxesListResponse : CommonResponseModel
     }
 }

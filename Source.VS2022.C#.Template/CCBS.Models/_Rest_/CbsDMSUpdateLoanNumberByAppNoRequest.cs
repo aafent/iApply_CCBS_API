@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsDMSUpdateLoanNumberByAppNoRequest
+    public class CbsDMSUpdateLoanNumberByAppNoRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsDMSUpdateLoanNumberByAppNoRequest
+        // Add properties and methods for CbsDMSUpdateLoanNumberByAppNoRequest : BaseCbsRequestModel
     }
 }

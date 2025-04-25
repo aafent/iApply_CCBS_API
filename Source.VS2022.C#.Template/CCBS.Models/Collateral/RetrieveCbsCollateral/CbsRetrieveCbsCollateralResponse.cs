@@ -72,7 +72,7 @@
         /// Description: Expiration Date
         /// Data Type: datetime
         /// </summary>
-        public DateTime co_expdate { get; set; }
+        public DateTime co_expdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: cr_lacola
@@ -114,7 +114,7 @@
         /// Description: Next Review Date
         /// Data Type: datetime
         /// </summary>
-        public DateTime co_nextrevdate { get; set; }
+        public DateTime co_nextrevdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: cr_lacola
@@ -170,7 +170,7 @@
         /// Description: Review Date
         /// Data Type: datetime
         /// </summary>
-        public DateTime co_revdate { get; set; }
+        public DateTime co_revdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: cr_lacola_det

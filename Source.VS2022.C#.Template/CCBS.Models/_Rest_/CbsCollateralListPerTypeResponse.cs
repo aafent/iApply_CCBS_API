@@ -1,7 +1,7 @@
-namespace CCBS.Models
-{
-    public class CbsCollateralListPerTypeResponseRest
-    {
-        // Add properties and methods for CbsCollateralListPerTypeResponse
-    }
-}
+//namespace CCBS.Models
+//{
+//    public class CbsCollateralListPerTypeResponse : CommonResponseModelR
+//    {
+//        // Add properties and methods for CbsCollateralListPerTypeResponse : CommonResponseModel
+//    }
+//}

@@ -52,7 +52,7 @@
         /// Notes: N/A
         /// CBS: OutGrpCustDataOutGrmLoanScenarioDataInstallDt
         /// </summary>
-        public DateTime cbs_request_dt { get; set; }
+        public DateTime cbs_request_dt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A
@@ -102,7 +102,7 @@
         /// Notes: N/A
         /// CBS: OutGrpCustDataOutGrmLoanScenarioDataInstFirstDrwDt
         /// </summary>
-        public DateTime disb_date { get; set; }
+        public DateTime disb_date { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A
@@ -243,7 +243,7 @@
         /// Notes: N/A
         /// CBS: OutGrpCustDataOutGrmLoanScenarioDataFixedIntStDt
         /// </summary>
-        public DateTime la_fixed_start_dt { get; set; }
+        public DateTime la_fixed_start_dt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A
@@ -293,7 +293,7 @@
         /// Notes: N/A
         /// CBS: OutGrpCustDataOutGrmLoanScenarioDataInstallFirstDt
         /// </summary>
-        public DateTime la_insdate { get; set; }
+        public DateTime la_insdate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A
@@ -313,7 +313,7 @@
         /// Notes: N/A
         /// CBS: OutGrpCustDataOutGrmLoanScenarioDataFixedIntExpDt
         /// </summary>
-        public DateTime la_int_date { get; set; }
+        public DateTime la_int_date { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A
@@ -373,7 +373,7 @@
         /// Notes: N/A
         /// CBS: OutGrpCustDataOutGrmLoanScenarioDataAccExpDt
         /// </summary>
-        public DateTime la_matur_date { get; set; }
+        public DateTime la_matur_date { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A
@@ -383,7 +383,7 @@
         /// Notes: N/A
         /// CBS: OutGrpCustDataOutGrmLoanScenarioDataMoratorEndDt
         /// </summary>
-        public DateTime la_morat_enddt { get; set; }
+        public DateTime la_morat_enddt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A
@@ -393,7 +393,7 @@
         /// Notes: N/A
         /// CBS: OutGrpCustDataOutGrmLoanScenarioDataAccOpetDt
         /// </summary>
-        public DateTime la_open_date { get; set; }
+        public DateTime la_open_date { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A

@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsRetrieveFileResponse
+    public class CbsRetrieveFileResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsRetrieveFileResponse
+        // Add properties and methods for CbsRetrieveFileResponse : CommonResponseModel
     }
 }

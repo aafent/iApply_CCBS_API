@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsDMSUpdateMemberDocumentByAppNoRequest
+    public class CbsDMSUpdateMemberDocumentByAppNoRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsDMSUpdateMemberDocumentByAppNoRequest
+        // Add properties and methods for CbsDMSUpdateMemberDocumentByAppNoRequest : BaseCbsRequestModel
     }
 }

@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsDownloadRepInstallmentRequest
+    public class CbsDownloadRepInstallmentRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsDownloadRepInstallmentRequest
+        // Add properties and methods for CbsDownloadRepInstallmentRequest : BaseCbsRequestModel
     }
 }

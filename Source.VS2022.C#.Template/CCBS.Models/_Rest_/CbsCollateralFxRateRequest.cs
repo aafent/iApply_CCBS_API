@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsCollateralFxRateRequest
+    public class CbsCollateralFxRateRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsCollateralFxRateRequest
+        // Add properties and methods for CbsCollateralFxRateRequest : BaseCbsRequestModel
     }
 }

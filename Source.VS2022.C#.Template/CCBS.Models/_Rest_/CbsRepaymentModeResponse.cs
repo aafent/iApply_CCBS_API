@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsRepaymentModeResponse
+    public class CbsRepaymentModeResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsRepaymentModeResponse
+        // Add properties and methods for CbsRepaymentModeResponse : CommonResponseModel
     }
 }

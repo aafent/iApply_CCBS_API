@@ -6,7 +6,7 @@
         /// Seq.: 1
         /// Applicant Birth Date
         /// </summary>
-        public DateTime BirthDate { get; set; }
+        public DateTime BirthDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 2
@@ -46,19 +46,19 @@
         /// Seq.: 7
         /// Loan Expiry Date
         /// </summary>
-        public DateTime MaturityDate { get; set; }
+        public DateTime MaturityDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 8
         /// Account Open Date
         /// </summary>
-        public DateTime AccountOpenDate { get; set; }
+        public DateTime AccountOpenDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 9
         /// 1st Install.t Date
         /// </summary>
-        public DateTime FirstInstallmentDate { get; set; }
+        public DateTime FirstInstallmentDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 10
@@ -129,7 +129,7 @@
         /// Seq.: 20
         /// Grace Period Expiry Date
         /// </summary>
-        public DateTime GracePeriodExpiryDate { get; set; }
+        public DateTime GracePeriodExpiryDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 21
@@ -159,7 +159,7 @@
         /// Seq.: 24
         /// Grace Period Expiry Date
         /// </summary>
-        public DateTime DrawDownExpDate { get; set; }
+        public DateTime DrawDownExpDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 25
@@ -199,13 +199,13 @@
         /// Seq.: 29
         /// Disbursement Date
         /// </summary>
-        public DateTime DisbDate { get; set; }
+        public DateTime DisbDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq.: 30
         /// Fixed Rate Expiry Date
         /// </summary>
-        public DateTime FixedIntExpDate { get; set; }
+        public DateTime FixedIntExpDate { get; set; } =  DateTime.Parse("1800-01-01");
 
 
         /// <summary>

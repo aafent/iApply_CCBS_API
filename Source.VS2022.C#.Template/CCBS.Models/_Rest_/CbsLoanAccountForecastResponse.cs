@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsLoanAccountForecastResponse
+    public class CbsLoanAccountForecastResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsLoanAccountForecastResponse
+        // Add properties and methods for CbsLoanAccountForecastResponse : CommonResponseModel
     }
 }

@@ -8,11 +8,11 @@
 
         public string CategoryDescription { get; set; }
 
-        public DateTime CategoryTmstamp { get; set; }
+        public DateTime CategoryTmstamp { get; set; } =  DateTime.Parse("1800-01-01");
 
         public string DetailDescription { get; set; }
 
-        public int DetailSerialNum { get; set; }
+        public string DetailSerialNum { get; set; }
 
         public string HeaderParameterType { get; set; }
 

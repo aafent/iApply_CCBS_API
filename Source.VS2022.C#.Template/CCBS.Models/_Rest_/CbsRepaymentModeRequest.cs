@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsRepaymentModeRequest
+    public class CbsRepaymentModeRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsRepaymentModeRequest
+        // Add properties and methods for CbsRepaymentModeRequest : BaseCbsRequestModel
     }
 }

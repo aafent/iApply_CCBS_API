@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsLoanCalculatorRequest
+    public class CbsLoanCalculatorRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsLoanCalculatorRequest
+        // Add properties and methods for CbsLoanCalculatorRequest : BaseCbsRequestModel
     }
 }

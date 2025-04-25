@@ -6,17 +6,19 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
-		<VersionSuffix>$([System.DateTime]::UtcNow.ToString("yy.MM.ddHH.mmss"))</VersionSuffix>
+		<!--<VersionSuffix>$([System.DateTime]::UtcNow.ToString("yy.MM.ddHH.mmss"))</VersionSuffix>
 		<AssemblyVersion>$(VersionSuffix)</AssemblyVersion>
-		<Version>$(VersionSuffix)</Version>
+		<Version>$(VersionSuffix)</Version>-->
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<NoWarn>1701;1702;1591</NoWarn>
+		<DebugType>embedded</DebugType>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 		<NoWarn>1701;1702;1591</NoWarn>
+		<DebugType>embedded</DebugType>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -43,7 +45,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+		<PackageReference Include="Microsoft.OpenApi" Version="1.6.22" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+		<PackageReference Include="Ulid" Version="1.3.4" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -51,7 +55,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\CCBS.Models\CCBS.Models.csproj" />
+	  <ProjectReference Include="..\CCBS.Models\CCBS.Models.csproj" />
 	</ItemGroup>
 
 </Project>

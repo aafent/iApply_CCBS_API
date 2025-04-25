@@ -26,7 +26,7 @@
 
         public string volume { get; set; }
 
-        public DateTime waiv_dt { get; set; }
+        public DateTime waiv_dt { get; set; } =  DateTime.Parse("1800-01-01");
 
         public string waiver { get; set; }
 

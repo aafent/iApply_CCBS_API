@@ -154,7 +154,7 @@
         /// Data Type: datetime
         /// Entities: cr_curees_ip_mort
         /// </summary>
-        public DateTime notdeed_dt { get; set; }
+        public DateTime notdeed_dt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Notary Deed Number
@@ -168,7 +168,7 @@
         /// Data Type: datetime
         /// Entities: cr_curees_ip_mort
         /// </summary>
-        public DateTime reg_dt { get; set; }
+        public DateTime reg_dt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Row
@@ -196,7 +196,7 @@
         /// Data Type: datetime
         /// Entities: cr_curees_ip_mort
         /// </summary>
-        public DateTime waiv_dt { get; set; }
+        public DateTime waiv_dt { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Mortgage Waiver No

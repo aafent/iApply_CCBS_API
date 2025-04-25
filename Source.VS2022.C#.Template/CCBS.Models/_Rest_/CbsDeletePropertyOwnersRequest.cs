@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsDeletePropertyOwnersRequest
+    public class CbsDeletePropertyOwnersRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsDeletePropertyOwnersRequest
+        // Add properties and methods for CbsDeletePropertyOwnersRequest : BaseCbsRequestModel
     }
 }

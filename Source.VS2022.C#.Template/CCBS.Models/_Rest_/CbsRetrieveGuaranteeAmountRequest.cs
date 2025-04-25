@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsRetrieveGuaranteeAmountRequest
+    public class CbsRetrieveGuaranteeAmountRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsRetrieveGuaranteeAmountRequest
+        // Add properties and methods for CbsRetrieveGuaranteeAmountRequest : BaseCbsRequestModel
     }
 }

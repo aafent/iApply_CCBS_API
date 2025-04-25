@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsDeleteBBFResponse
+    public class CbsDeleteBBFResponse : CommonResponseModel
     {
-        // Add properties and methods for CbsDeleteBBFResponse
+        // Add properties and methods for CbsDeleteBBFResponse : CommonResponseModel
     }
 }

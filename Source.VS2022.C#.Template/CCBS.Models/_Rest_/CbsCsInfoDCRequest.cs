@@ -1,7 +1,7 @@
 namespace CCBS.Models
 {
-    public class CbsCsInfoDCRequest
+    public class CbsCsInfoDCRequest : BaseCbsRequestModel
     {
-        // Add properties and methods for CbsCsInfoDCRequest
+        // Add properties and methods for CbsCsInfoDCRequest : BaseCbsRequestModel
     }
 }

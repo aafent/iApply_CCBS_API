@@ -22,6 +22,8 @@
 
         public const string InformativeTag = InformativeOrder + ". " + InformativeLabel;
 
+        public const string InsuranceTag = InsuranceOrder + ". " + InsuranceLabel;
+
         public const string LGTag = LGOrder + ". " + LGLabel;
 
         public const string MortgageTag = MortgageOrder + ". " + MortgageLabel;
@@ -30,18 +32,22 @@
 
         public const string PositionTag = PositionOrder + ". " + PositionLabel;
 
+        public const string PropertiesTag = PropertiesOrder + ". " + PropertiesLabel;
+
         public const string RepaymentScheduleTag = RepaymentScheduleOrder + ". " + RepaymentScheduleLabel;
 
         public static readonly Dictionary<string, string> folders = new Dictionary<string, string> {
             { InformativeOrder, InformativeLabel },
             { CustomerOrder, CustomerLabel },
             { PositionOrder, PositionLabel },
+            { PropertiesOrder, PropertiesLabel },
             { DrawDownOrder, DrawDownLabel },
             { RepaymentScheduleOrder, RepaymentScheduleLabel },
             { CollateralOrder, CollateralLabel },
             { CreditLimitOrder, CreditLimitLabel },
             { AccountOtherOrder,AccountOtherLabel },
             { LGOrder,LGLabel },
+            { InsuranceOrder, InsuranceLabel },
             { MortgageOrder,MortgageLabel },
             { FeesOrder,FeesLabel },
             { DepositsOrder,DepositsLabel },
@@ -89,6 +95,10 @@
 
         private const string InformativeOrder = "00";
 
+        private const string InsuranceLabel = "Insurance";
+
+        private const string InsuranceOrder = "12";
+
         private const string LGLabel = "LG";
 
         private const string LGOrder = "08";
@@ -104,6 +114,10 @@
         private const string PositionLabel = "Position";
 
         private const string PositionOrder = "02";
+
+        private const string PropertiesLabel = "Properties";
+
+        private const string PropertiesOrder = "12";
 
         private const string RepaymentScheduleLabel = "Repayment Schedule";
 

@@ -20,7 +20,7 @@
 
         public decimal? CollEstAmount { get; set; }
 
-        public DateTime? CollExpDate { get; set; }
+        public DateTime? CollExpDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         public decimal? CollLimit { get; set; }
 
@@ -34,7 +34,7 @@
 
         public decimal? CollReCur { get; set; }
 
-        public DateTime? CollReDate { get; set; }
+        public DateTime? CollReDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         public string CollRefNum { get; set; }
 

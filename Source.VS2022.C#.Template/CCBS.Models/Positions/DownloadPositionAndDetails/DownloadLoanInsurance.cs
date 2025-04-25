@@ -86,7 +86,7 @@
         /// Data Type: datetime
         /// CBS: OutGrpCommitmentOutGrmIssCommitmentIssueDate
         /// </summary>
-        public DateTime in_issuedate { get; set; }
+        public DateTime in_issuedate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Loading Amount
@@ -100,7 +100,7 @@
         /// Data Type: datetime
         /// CBS: OutGrpCommitmentOutGrmIssCommitmentLastUpdateDate
         /// </summary>
-        public DateTime in_moddate { get; set; }
+        public DateTime in_moddate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Monthly Premium
@@ -128,7 +128,7 @@
         /// Data Type: datetime
         /// CBS: OutGrpCommitmentOutGrmIssCommitmentRenewalDate
         /// </summary>
-        public DateTime in_rendate { get; set; }
+        public DateTime in_rendate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Insurance Status

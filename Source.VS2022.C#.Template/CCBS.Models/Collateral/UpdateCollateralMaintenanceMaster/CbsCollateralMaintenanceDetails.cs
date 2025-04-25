@@ -102,7 +102,7 @@
         /// Notes: If CollExpDate has value
         /// CBS: InAccountCollateralAccountCollateralExpiryDt
         /// </summary>
-        public DateTime CollExpDate { get; set; }
+        public DateTime CollExpDate { get; set; } =  DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A
