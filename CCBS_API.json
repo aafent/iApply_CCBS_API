@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "CCBS Template API v1.0.230918",
-    "description": "Common Core Banking System API Bank's side.",
+    "title": "CCBS Specification API v1.0.250505",
+    "description": "Common Core Banking System API Specification (Bank's side).",
     "termsOfService": "https://www.relationalfs.com/legal-information/#",
     "contact": {
       "name": "Find CCBS on GitHub",
@@ -13955,6 +13955,7 @@
           },
           "applicationId": {
             "type": "string",
+            "description": "Application ID. \r\nKey for mock-up service",
             "nullable": true
           },
           "repaymentScheduleSimInsuranceData": {
@@ -13966,9 +13967,18 @@
           },
           "repaymentScheduleSimViews": {
             "$ref": "#/components/schemas/CbsRepaymentScheduleSimView"
+          },
+          "fees": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CbsFees"
+            },
+            "description": "Fees array",
+            "nullable": true
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Repayment Schedule Simulation - Request"
       },
       "CbsDownloadRepScheduleSimResponse": {
         "type": "object",
@@ -14125,6 +14135,33 @@
           }
         },
         "additionalProperties": false
+      },
+      "CbsFees": {
+        "type": "object",
+        "properties": {
+          "feeID": {
+            "type": "string",
+            "description": "Fee ID",
+            "nullable": true
+          },
+          "type": {
+            "type": "string",
+            "description": "Fee type\r\n1=amount, 2=presentence",
+            "nullable": true
+          },
+          "frequencyType": {
+            "type": "string",
+            "description": "Fee frequency type",
+            "nullable": true
+          },
+          "value": {
+            "type": "number",
+            "description": "Fee value",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Fees"
       },
       "CbsFinalizeAgreementRequest": {
         "type": "object",

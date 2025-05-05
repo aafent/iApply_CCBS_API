@@ -55,7 +55,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\CCBS.Models\CCBS.Models.csproj" />
+		<ProjectReference Include="..\CCBS.Models\CCBS.Models.csproj" />
 	</ItemGroup>
 
 </Project>

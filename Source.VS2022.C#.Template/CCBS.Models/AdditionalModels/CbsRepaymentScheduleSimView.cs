@@ -150,7 +150,7 @@
 
         public virtual int? TransactSm { get; set; }
 
-        public virtual decimal? Margin { get; set; }
+        public virtual decimal? Margin { get; set; }  // 2024-12-6
         #endregion Public Properties
 
         #region Public Methods

@@ -42,9 +42,9 @@ builder.Services.AddSwaggerGen(c =>
 
     c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "CCBS Template API v1.0.230918",
+        Title = "CCBS Specification API v1.0.250505",
         Version = "v1",
-        Description = "Common Core Banking System API Bank's side.",
+        Description = "Common Core Banking System API Specification (Bank's side).",
 
         TermsOfService = new Uri("https://www.relationalfs.com/legal-information/#"),
         Contact = new OpenApiContact
