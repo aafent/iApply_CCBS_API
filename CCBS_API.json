@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "CCBS Specification API v1.0.250505",
+    "title": "CCBS Specification API v1.0.250512",
     "description": "Common Core Banking System API Specification (Bank's side).",
     "termsOfService": "https://www.relationalfs.com/legal-information/#",
     "contact": {
@@ -8260,12 +8260,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "apiVersion": {
@@ -8421,6 +8424,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -8435,12 +8439,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -8450,6 +8457,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -8496,12 +8504,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "disb_amount": {
@@ -8571,6 +8582,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -8585,12 +8597,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -8600,6 +8615,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -8646,12 +8662,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "addInstalmAmnt": {
@@ -8714,6 +8733,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -8728,12 +8748,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -9085,6 +9108,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -9099,12 +9123,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -9114,6 +9141,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -9128,12 +9156,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -9143,6 +9174,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -9172,12 +9204,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "collateralList": {
@@ -9194,6 +9229,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -9208,12 +9244,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -9223,6 +9262,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -9237,12 +9277,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -9252,6 +9295,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -9266,12 +9310,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -9281,6 +9328,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -9295,12 +9343,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -9310,6 +9361,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -9324,12 +9376,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -9339,6 +9394,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -9401,12 +9457,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "crFromCbs": {
@@ -9421,6 +9480,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -9529,12 +9589,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "bank_paye": {
@@ -9641,6 +9704,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -10183,12 +10247,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "addnumcbs": {
@@ -10282,6 +10349,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -10412,12 +10480,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "addInstalmAmnt": {
@@ -10484,6 +10555,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -10498,12 +10570,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -10513,6 +10588,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -10592,12 +10668,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "clnum": {
@@ -10617,6 +10696,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -10964,12 +11044,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "addnumcbs": {
@@ -11063,6 +11146,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -11077,12 +11161,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -11092,6 +11179,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -11106,12 +11194,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -11121,6 +11212,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -11135,12 +11227,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -11150,6 +11245,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -11164,12 +11260,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -11619,7 +11718,8 @@
           "pe_exp_date": {
             "type": "string",
             "description": "Seq: 6\r\nEntity: cr_cuident\r\nDescription: Expiry Date\r\nData Type: datetime\r\nNotes: N/A\r\nCBS: OutListGrpOutGrmOtherIdExpiryDate",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "pe_idnbr": {
             "type": "string",
@@ -11634,7 +11734,8 @@
           "pe_issuon": {
             "type": "string",
             "description": "Seq: 5\r\nEntity: cr_cuident\r\nDescription: Issue Date\r\nData Type: datetime\r\nNotes: N/A\r\nCBS: OutListGrpOutGrmOtherIdIssueDate",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "pe_main": {
             "type": "string",
@@ -11814,6 +11915,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -11828,12 +11930,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -11843,6 +11948,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -11857,12 +11963,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -11872,6 +11981,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -11904,12 +12014,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -11919,6 +12032,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -11933,12 +12047,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -11948,6 +12065,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -11962,12 +12080,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -11977,6 +12098,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -11991,12 +12113,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -12006,6 +12131,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12035,12 +12161,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "co_cbsid": {
@@ -12070,6 +12199,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12084,12 +12214,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -12099,6 +12232,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12113,12 +12247,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -12128,6 +12265,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12232,12 +12370,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "co_account": {
@@ -12287,6 +12428,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12358,12 +12500,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -12373,6 +12518,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12432,12 +12578,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -12447,6 +12596,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12514,12 +12664,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -12529,6 +12682,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12583,12 +12737,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -12598,6 +12755,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12612,12 +12770,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -12627,6 +12788,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12641,12 +12803,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -12656,6 +12821,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12675,12 +12841,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "cbs_status": {
@@ -12710,6 +12879,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12724,12 +12894,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -12739,6 +12912,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12753,12 +12927,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -12768,6 +12945,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12782,12 +12960,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -12797,6 +12978,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12811,12 +12993,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -12826,6 +13011,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12840,12 +13026,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -12855,6 +13044,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -12884,12 +13074,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "cb_acc_kind": {
@@ -13116,6 +13309,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -13140,12 +13334,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "cb_arrates": {
@@ -13429,6 +13626,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -13443,12 +13641,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -13458,6 +13659,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -13472,12 +13674,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -13487,6 +13692,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -13501,12 +13707,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -13516,6 +13725,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -13530,12 +13740,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -13545,6 +13758,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -13584,52 +13798,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
-            "nullable": true
-          },
-          "cb_exp_type_tf": {
-            "type": "string",
-            "description": "TF Expiry Type (Trade Finance, accountType = 37)\r\nData Type: varchar (15)\r\nCBS: OutSelectedLgLgAccountExpirationType",
-            "nullable": true
-          },
-          "cb_lg_com_bal_lc": {
-            "type": "number",
-            "description": "LC Total Issued Amount (Letter of Credit, accountType = 39)\r\nData Type: decimal (19,3)\r\nCBS: OutSelectedLgLgAccountLgAmountBal",
-            "format": "double"
-          },
-          "cb_lg_com_bal_tf": {
-            "type": "number",
-            "description": "TF Amount (Trade Finance, accountType = 37)\r\nData Type: decimal (19,3)\r\nCBS: OutSelectedLgLgAccountLgAmountBal",
-            "format": "double"
-          },
-          "cb_lg_exp_bal_lc": {
-            "type": "number",
-            "description": "LC Initial Amount (Letter of Credit, accountType = 39)\r\nData Type: decimal (19,3)\r\nCBS: OutSelectedLgLgAccountLgInitialAmn",
-            "format": "double"
-          },
-          "cb_lg_lmt_amt_lc": {
-            "type": "number",
-            "description": "LC Limit Amount (Letter of Credit, accountType = 39)\r\nData Type: decimal (19,3)\r\nCBS: OutSelectedLgLgAccountAccLimitAmn",
-            "format": "double"
-          },
-          "cb_lg_obl_status_lc": {
-            "type": "string",
-            "description": "LC Obligation Status (Letter of Credit, accountType = 39)\r\nData Type: varchar (15)\r\nCBS: OutSelectedLgLgAccountObligationStatus",
-            "nullable": true
-          },
-          "cb_status_lc": {
-            "type": "string",
-            "description": "Account Status (Letter of Credit, accountType = 39)\r\nData Type: varchar (10)\r\nCBS: OutSelectedLgLgAccountAccStatus",
-            "nullable": true
-          },
-          "cu_id": {
-            "type": "string",
-            "description": "Customer Id\r\nData Type: varchar (15)\r\nCBS: customerId",
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "positionsList": {
@@ -13641,12 +13818,13 @@
           }
         },
         "additionalProperties": false,
-        "description": ""
+        "description": "Download Position and details - Response"
       },
       "CbsDownloadPositionRequest": {
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -13671,12 +13849,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "positionsList": {
@@ -13693,6 +13874,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -13707,12 +13889,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -13722,6 +13907,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -13748,12 +13934,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "coinsuredDataList": {
@@ -13829,6 +14018,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -13858,12 +14048,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "grace": {
@@ -13901,6 +14094,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -13925,12 +14119,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "installments": {
@@ -13947,6 +14144,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -13985,12 +14183,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "grace": {
@@ -14014,6 +14215,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14028,12 +14230,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -14043,6 +14248,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14057,12 +14263,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -14167,6 +14376,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14181,12 +14391,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -14196,6 +14409,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14388,12 +14602,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "co_account": {
@@ -14443,6 +14660,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14457,12 +14675,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -14472,6 +14693,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14534,12 +14756,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "cbsId": {
@@ -14606,6 +14831,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14620,12 +14846,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -14635,6 +14864,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14649,12 +14879,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -14664,6 +14897,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14678,12 +14912,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -14693,6 +14930,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14707,12 +14945,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -14722,6 +14963,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14736,12 +14978,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -14751,6 +14996,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14776,12 +15022,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "customerRelationships": {
@@ -14798,6 +15047,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14812,12 +15062,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -14827,6 +15080,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14841,12 +15095,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -14856,6 +15113,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14870,12 +15128,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -14885,6 +15146,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14899,12 +15161,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -14914,6 +15179,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -14938,12 +15204,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "addresses": {
@@ -15209,6 +15478,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -15233,12 +15503,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "address_no": {
@@ -15389,6 +15662,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -15403,12 +15677,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -15418,6 +15695,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -15432,12 +15710,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -15837,6 +16118,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -16027,12 +16309,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "co_account": {
@@ -16089,6 +16374,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -16103,12 +16389,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -16118,6 +16407,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -16132,12 +16422,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -16147,6 +16440,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -16616,12 +16910,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "cu_id": {
@@ -16656,6 +16953,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -16670,12 +16968,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -16685,6 +16986,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -16724,12 +17026,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "source": {
@@ -16744,6 +17049,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -16758,12 +17064,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -16773,6 +17082,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -16930,12 +17240,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "cbs_status": {
@@ -16975,6 +17288,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -16989,12 +17303,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -17004,6 +17321,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -17018,12 +17336,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -17033,6 +17354,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -17047,12 +17369,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -17062,6 +17387,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -17076,12 +17402,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -17091,6 +17420,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -17105,12 +17435,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -17120,6 +17453,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -17286,12 +17620,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "agree_status": {
@@ -17382,6 +17719,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -17444,12 +17782,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "additionalInstallmentAmntIefSuppliedNum152": {
@@ -17475,6 +17816,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -17509,12 +17851,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "clnum": {
@@ -17654,6 +17999,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -17668,12 +18014,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -17683,6 +18032,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -17697,12 +18047,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -17712,6 +18065,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -17726,12 +18080,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -17741,6 +18098,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -17755,12 +18113,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -18057,6 +18418,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -18071,12 +18433,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -18826,6 +19191,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -18840,12 +19206,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -18855,6 +19224,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -18869,12 +19239,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -18884,6 +19257,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -18898,12 +19272,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -18913,6 +19290,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -18927,12 +19305,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -18942,6 +19323,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -18956,12 +19338,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -18971,6 +19356,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -18985,12 +19371,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -19000,6 +19389,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -19014,12 +19404,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -19029,6 +19422,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -19053,12 +19447,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "retrieveCredits": {
@@ -19075,6 +19472,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -19104,12 +19502,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "agreementno": {
@@ -19534,6 +19935,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -19572,12 +19974,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "amount": {
@@ -19639,6 +20044,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -19653,12 +20059,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -19668,6 +20077,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -19682,12 +20092,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -19697,6 +20110,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -19711,12 +20125,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -19726,6 +20143,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -19740,12 +20158,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -19755,6 +20176,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -19769,12 +20191,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -19784,6 +20209,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -19802,12 +20228,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "addInstalmAmnt": {
@@ -19920,6 +20349,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -19934,12 +20364,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -19949,6 +20382,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -19963,12 +20397,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -19978,6 +20415,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -19992,12 +20430,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -20007,6 +20448,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -20021,12 +20463,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -20036,6 +20481,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -20050,12 +20496,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -20065,6 +20514,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -20084,12 +20534,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "cbs_status": {
@@ -20252,6 +20705,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -20266,12 +20720,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -20281,6 +20738,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -20295,12 +20753,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -20310,6 +20771,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -20324,12 +20786,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -20339,6 +20804,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -20353,12 +20819,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -20368,6 +20837,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -20382,12 +20852,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -20397,6 +20870,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -20411,12 +20885,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -20426,6 +20903,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -20440,12 +20918,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -20455,6 +20936,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -20469,12 +20951,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -20484,6 +20969,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -20900,12 +21386,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "agreementno": {
@@ -21195,6 +21684,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -21527,12 +22017,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "cbs_serial_num": {
@@ -21557,6 +22050,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -21571,12 +22065,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -21783,6 +22280,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -21817,12 +22315,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "customerAccounts": {
@@ -21839,6 +22340,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -21922,19 +22424,23 @@
             "nullable": true
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "CBS Search Customer - Requestr"
       },
       "CbsSearchCustomerResponse": {
         "type": "object",
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "cbsCustomerInfos": {
@@ -21951,6 +22457,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -21965,12 +22472,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -21980,6 +22490,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -21994,12 +22505,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -22009,6 +22523,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -22023,12 +22538,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -22038,6 +22556,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -22052,12 +22571,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -22067,6 +22589,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -22081,12 +22604,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -22096,6 +22622,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -22110,12 +22637,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -22125,6 +22655,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -22139,12 +22670,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -22154,6 +22688,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -22168,12 +22703,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -22183,6 +22721,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -22197,12 +22736,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -22212,6 +22754,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -22226,12 +22769,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -22426,12 +22972,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "allocationCbsId": {
@@ -22476,6 +23025,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -22490,12 +23040,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -22505,6 +23058,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -22519,12 +23073,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -22534,6 +23091,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -22596,12 +23154,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "crFromCbs": {
@@ -22616,6 +23177,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -22630,12 +23192,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -22645,6 +23210,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -22666,12 +23232,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "customerRelationships": {
@@ -22688,6 +23257,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -23119,12 +23689,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -23134,6 +23707,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -23161,12 +23735,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -23176,6 +23753,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -23190,12 +23768,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -23205,6 +23786,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -23219,12 +23801,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -23234,6 +23819,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -23459,12 +24045,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "addressSerialNum": {
@@ -23479,6 +24068,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -23625,12 +24215,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "addInstalmAmnt": {
@@ -23697,6 +24290,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -23781,12 +24375,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "clnum": {
@@ -23806,6 +24403,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -24123,12 +24721,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "addressSerialNum": {
@@ -24150,6 +24751,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -24164,12 +24766,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -24179,6 +24784,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -24193,12 +24799,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -24208,6 +24817,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -24222,12 +24832,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -24258,6 +24871,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -24425,12 +25039,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           },
           "cbs_status": {
@@ -24470,6 +25087,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -24484,12 +25102,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -24499,6 +25120,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -24513,12 +25135,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -24528,6 +25153,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -24542,12 +25168,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
@@ -24557,6 +25186,7 @@
         "type": "object",
         "properties": {
           "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
             "nullable": true
           },
           "additionals": {
@@ -24571,12 +25201,15 @@
         "properties": {
           "message": {
             "type": "string",
+            "description": "An error message to return to the caller.",
             "nullable": true
           },
           "success": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
           },
           "extensions": {
+            "description": "Extensions to the standard specification",
             "nullable": true
           }
         },
