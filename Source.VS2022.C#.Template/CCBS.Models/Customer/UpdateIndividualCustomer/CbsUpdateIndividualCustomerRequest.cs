@@ -241,7 +241,7 @@ namespace CCBS.Models
         /// Notes: N/A
         /// CBS: InActivityGenericDetailSerialNum
         /// </summary>
-        public int EmploymentCode { get; set; }
+        public string EmploymentCode { get; set; }
 
         /// <summary>
         /// Seq: N/A
@@ -331,7 +331,7 @@ namespace CCBS.Models
         /// Notes: N/A
         /// CBS: InProfessionStatusGenericDetailSerialNum
         /// </summary>
-        public int PositionCode { get; set; }
+        public string PositionCode { get; set; }
 
         /// <summary>
         /// Seq: N/A
@@ -341,7 +341,7 @@ namespace CCBS.Models
         /// Notes: N/A
         /// CBS: InProfessionGenericDetailSerialNum
         /// </summary>
-        public int ProfessionCode { get; set; }
+        public string ProfessionCode { get; set; }
 
         /// <summary>
         /// Seq: N/A

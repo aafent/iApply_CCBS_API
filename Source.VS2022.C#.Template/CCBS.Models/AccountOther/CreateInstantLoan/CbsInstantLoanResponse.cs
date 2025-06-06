@@ -62,6 +62,20 @@
         /// </summary>
         public int profitsaccountcd { get; set; }
 
+        /// <summary>
+        /// Entity: cr_ladis.iban_account
+        /// Description: Loan Account IBAN
+        /// Data Type: nvarchar(120)
+        /// </summary>
+        public string iban_account { get; set; }
+
+        /// <summary>
+        /// Entity: cr_ladis.iban_account_cd
+        /// Description: Loan Account IBAN Check Digit
+        /// Data Type: nvarchar(120)
+        /// </summary>
+        public int iban_account_cd { get; set; }
+
         #endregion Public Properties
     }
 }

@@ -94,7 +94,7 @@
 
         public virtual string EmployerCode { get; set; }
 
-        public virtual int? EmploymentCode { get; set; }
+        public virtual string? EmploymentCode { get; set; }
 
         public virtual int? FinancialSectorCode { get; set; }
 
@@ -130,9 +130,9 @@
 
         public virtual string PoliticalCBS { get; set; }
 
-        public virtual int? PositionCode { get; set; }
+        public virtual string? PositionCode { get; set; }
 
-        public virtual int? ProfessionCode { get; set; }
+        public virtual string? ProfessionCode { get; set; }
 
         public virtual string RecruiterBy { get; set; }
 

@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "CCBS Specification API v1.0.250512",
+    "title": "CCBS Specification API v1.0.250606",
     "description": "Common Core Banking System API Specification (Bank's side).",
     "termsOfService": "https://www.relationalfs.com/legal-information/#",
     "contact": {
@@ -37,6 +37,150 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/CbsAboutResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Common/CreateIndividualCustomer": {
+      "post": {
+        "tags": [
+          "01. Customer"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsCreateIndividualCustomerRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsCreateIndividualCustomerRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsCreateIndividualCustomerRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsCreateIndividualCustomerResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsCreateIndividualCustomerResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsCreateIndividualCustomerResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Common/CreateLegalCustomer": {
+      "post": {
+        "tags": [
+          "01. Customer"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsCreateLegalCustomerRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsCreateLegalCustomerRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsCreateLegalCustomerRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsCreateLegalCustomerResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsCreateLegalCustomerResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsCreateLegalCustomerResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Common/GetCustomerRelationships": {
+      "post": {
+        "tags": [
+          "01. Customer"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsGetCustomerRelationshipsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsGetCustomerRelationshipsRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsGetCustomerRelationshipsRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsGetCustomerRelationshipsResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsGetCustomerRelationshipsResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsGetCustomerRelationshipsResponse"
                 }
               }
             }
@@ -181,6 +325,150 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/CbsSearchCustomerResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Common/UpdateCustomerRelationships": {
+      "post": {
+        "tags": [
+          "01. Customer"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsUpdateCustomerRelationshipsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsUpdateCustomerRelationshipsRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsUpdateCustomerRelationshipsRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsUpdateCustomerRelationshipsResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsUpdateCustomerRelationshipsResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsUpdateCustomerRelationshipsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Common/UpdateIndividualCustomer": {
+      "post": {
+        "tags": [
+          "01. Customer"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsUpdateIndividualCustomerRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsUpdateIndividualCustomerRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsUpdateIndividualCustomerRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsUpdateIndividualCustomerResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsUpdateIndividualCustomerResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsUpdateIndividualCustomerResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Common/UpdateLegalCustomer": {
+      "post": {
+        "tags": [
+          "01. Customer"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsUpdateLegalCustomerRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsUpdateLegalCustomerRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsUpdateLegalCustomerRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsUpdateLegalCustomerResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsUpdateLegalCustomerResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsUpdateLegalCustomerResponse"
                 }
               }
             }
@@ -716,54 +1004,6 @@
         }
       }
     },
-    "/api/Common/CreateIndividualCustomer": {
-      "post": {
-        "tags": [
-          "90. More (Light Edition)"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsCreateIndividualCustomerRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsCreateIndividualCustomerRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsCreateIndividualCustomerRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsCreateIndividualCustomerResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsCreateIndividualCustomerResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsCreateIndividualCustomerResponse"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/Common/CreateInstantLoan": {
       "post": {
         "tags": [
@@ -805,54 +1045,6 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/CbsInstantLoanResponse"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Common/CreateLegalCustomer": {
-      "post": {
-        "tags": [
-          "90. More (Light Edition)"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsCreateLegalCustomerRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsCreateLegalCustomerRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsCreateLegalCustomerRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsCreateLegalCustomerResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsCreateLegalCustomerResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsCreateLegalCustomerResponse"
                 }
               }
             }
@@ -1381,54 +1573,6 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/CbsFinalizeCollateralCbsResponse"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Common/GetCustomerRelationships": {
-      "post": {
-        "tags": [
-          "90. More (Light Edition)"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsGetCustomerRelationshipsRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsGetCustomerRelationshipsRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsGetCustomerRelationshipsRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsGetCustomerRelationshipsResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsGetCustomerRelationshipsResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsGetCustomerRelationshipsResponse"
                 }
               }
             }
@@ -2156,54 +2300,6 @@
         }
       }
     },
-    "/api/Common/UpdateCustomerRelationships": {
-      "post": {
-        "tags": [
-          "90. More (Light Edition)"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsUpdateCustomerRelationshipsRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsUpdateCustomerRelationshipsRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsUpdateCustomerRelationshipsRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsUpdateCustomerRelationshipsResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsUpdateCustomerRelationshipsResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsUpdateCustomerRelationshipsResponse"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/Common/UpdateDepositAccount": {
       "post": {
         "tags": [
@@ -2300,102 +2396,6 @@
         }
       }
     },
-    "/api/Common/UpdateIndividualCustomer": {
-      "post": {
-        "tags": [
-          "90. More (Light Edition)"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsUpdateIndividualCustomerRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsUpdateIndividualCustomerRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsUpdateIndividualCustomerRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsUpdateIndividualCustomerResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsUpdateIndividualCustomerResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsUpdateIndividualCustomerResponse"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Common/UpdateLegalCustomer": {
-      "post": {
-        "tags": [
-          "90. More (Light Edition)"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsUpdateLegalCustomerRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsUpdateLegalCustomerRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsUpdateLegalCustomerRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsUpdateLegalCustomerResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsUpdateLegalCustomerResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsUpdateLegalCustomerResponse"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/Common/UpdateLGBeneficiary": {
       "post": {
         "tags": [
@@ -2485,6 +2485,246 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/CbsUpdateMortgageResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Common/exchangeRate": {
+      "post": {
+        "tags": [
+          "95. EndOfDay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsExchangeRateRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsExchangeRateRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsExchangeRateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsExchangeRatesResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsExchangeRatesResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsExchangeRatesResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Common/exchangeRates": {
+      "post": {
+        "tags": [
+          "95. EndOfDay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsExchangeRatesRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsExchangeRatesRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsExchangeRatesRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsExchangeRatesResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsExchangeRatesResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsExchangeRatesResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Common/GetBusinessDate": {
+      "post": {
+        "tags": [
+          "95. EndOfDay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsGetBusinessDateRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsGetBusinessDateRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsGetBusinessDateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsBusinessDate"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsBusinessDate"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsBusinessDate"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Common/getIBOR": {
+      "post": {
+        "tags": [
+          "95. EndOfDay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsIborRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsIborRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsIborRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsIborResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsIborResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsIborResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Common/SetBusinessDate": {
+      "post": {
+        "tags": [
+          "95. EndOfDay"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsBusinessDate"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsBusinessDate"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CbsBusinessDate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsSetBusinessDateResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsSetBusinessDateResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CbsSetBusinessDateResponse"
                 }
               }
             }
@@ -7916,54 +8156,6 @@
         }
       }
     },
-    "/api/Common/SetBusinessDate": {
-      "post": {
-        "tags": [
-          "99. Other"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsSetBusinessDateRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsSetBusinessDateRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CbsSetBusinessDateRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsSetBusinessDateResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsSetBusinessDateResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CbsSetBusinessDateResponse"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/Common/DeleteValuer": {
       "post": {
         "tags": [
@@ -8415,6 +8607,40 @@
           },
           "webSite": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CbsBusinessDate": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "description": "An error message to return to the caller.",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
+          },
+          "extensions": {
+            "description": "Extensions to the standard specification",
+            "nullable": true
+          },
+          "currentDate": {
+            "type": "string",
+            "description": "The current banking date of the CBS. (format: \"YYYY-MM-DD\")",
+            "nullable": true
+          },
+          "prevDate": {
+            "type": "string",
+            "description": "Optional, default is null, The previous banking date (format: \"YYYY-MM-DD\").",
+            "nullable": true
+          },
+          "nextDate": {
+            "type": "string",
+            "description": "Optional, default is null, The next banking date (format: \"YYYY-MM-DD\").",
             "nullable": true
           }
         },
@@ -9997,9 +10223,9 @@
             "format": "int32"
           },
           "employmentCode": {
-            "type": "integer",
+            "type": "string",
             "description": "Activity Sector (integer)",
-            "format": "int32"
+            "nullable": true
           },
           "fax": {
             "type": "string",
@@ -10145,9 +10371,9 @@
             "nullable": true
           },
           "positionCode": {
-            "type": "integer",
+            "type": "string",
             "description": "Profession Status (integer)",
-            "format": "int32"
+            "nullable": true
           },
           "postal": {
             "type": "string",
@@ -10160,9 +10386,9 @@
             "format": "int32"
           },
           "professionCode": {
-            "type": "integer",
+            "type": "string",
             "description": "Primary Occupation (integer)",
-            "format": "int32"
+            "nullable": true
           },
           "recruiterBy": {
             "type": "string",
@@ -14207,6 +14433,11 @@
               "$ref": "#/components/schemas/RepaymentScheduleSimulation"
             },
             "nullable": true
+          },
+          "dae": {
+            "type": "string",
+            "description": "the total costs of the loan in a single percentage",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -14345,6 +14576,88 @@
         },
         "additionalProperties": false
       },
+      "CbsExchangeRateRequest": {
+        "type": "object",
+        "properties": {
+          "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
+            "nullable": true
+          },
+          "additionals": {
+            "description": "Implementation of the Additionals concept",
+            "nullable": true
+          },
+          "baseCCY": {
+            "type": "string",
+            "description": "The 3-letter ISO code of the base currency(e.g., \"USD\").",
+            "nullable": true
+          },
+          "targetCCY": {
+            "type": "string",
+            "description": "The 3-letter ISO code of the target currency(e.g., \"EUR\").",
+            "nullable": true
+          },
+          "rateDate": {
+            "type": "string",
+            "description": "Optional, default is null. Date of the exchange rate (format: \"YYYY-MM-DD\").",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Request for exchangeRate"
+      },
+      "CbsExchangeRatesRequest": {
+        "type": "object",
+        "properties": {
+          "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
+            "nullable": true
+          },
+          "additionals": {
+            "description": "Implementation of the Additionals concept",
+            "nullable": true
+          },
+          "baseCCY": {
+            "type": "string",
+            "description": "The 3-letter ISO code of the base currency(e.g., \"USD\").",
+            "nullable": true
+          },
+          "rateDate": {
+            "type": "string",
+            "description": "Optional, default is null. Date of the exchange rate (format: \"YYYY-MM-DD\").",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Request of the ExchangeRates for the CBS"
+      },
+      "CbsExchangeRatesResponse": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "description": "An error message to return to the caller.",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
+          },
+          "extensions": {
+            "description": "Extensions to the standard specification",
+            "nullable": true
+          },
+          "currenciesInfo": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CurrencyInfo"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Response of the ExchangeRates for the CBS"
+      },
       "CbsFees": {
         "type": "object",
         "properties": {
@@ -14360,7 +14673,7 @@
           },
           "frequencyType": {
             "type": "string",
-            "description": "Fee frequency type",
+            "description": "Fee frequency type\r\n1 once, 2 monthly, 3 yearly",
             "nullable": true
           },
           "value": {
@@ -14954,6 +15267,28 @@
           },
           "extensions": {
             "description": "Extensions to the standard specification",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CbsGetBusinessDateRequest": {
+        "type": "object",
+        "properties": {
+          "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
+            "nullable": true
+          },
+          "additionals": {
+            "description": "Implementation of the Additionals concept",
+            "nullable": true
+          },
+          "bankGroup": {
+            "type": "string",
+            "nullable": true
+          },
+          "bankCode": {
+            "type": "string",
             "nullable": true
           }
         },
@@ -15780,6 +16115,54 @@
         },
         "additionalProperties": false
       },
+      "CbsIborRequest": {
+        "type": "object",
+        "properties": {
+          "mockupKey": {
+            "description": "Not applicable, used internally by the mock-up mechanism.",
+            "nullable": true
+          },
+          "additionals": {
+            "description": "Implementation of the Additionals concept",
+            "nullable": true
+          },
+          "iborName": {
+            "type": "string",
+            "nullable": true
+          },
+          "rateDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CbsIborResponse": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "description": "An error message to return to the caller.",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "true is the request succeed, false if an error occurred"
+          },
+          "extensions": {
+            "description": "Extensions to the standard specification",
+            "nullable": true
+          },
+          "ibors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IborInfo"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CbsIndividualCustomerView": {
         "type": "object",
         "properties": {
@@ -15971,8 +16354,7 @@
             "nullable": true
           },
           "employmentCode": {
-            "type": "integer",
-            "format": "int32",
+            "type": "string",
             "nullable": true
           },
           "financialSectorCode": {
@@ -16048,13 +16430,11 @@
             "nullable": true
           },
           "positionCode": {
-            "type": "integer",
-            "format": "int32",
+            "type": "string",
             "nullable": true
           },
           "professionCode": {
-            "type": "integer",
-            "format": "int32",
+            "type": "string",
             "nullable": true
           },
           "recruiterBy": {
@@ -17669,6 +18049,16 @@
           "profitsaccountcd": {
             "type": "integer",
             "description": "Entity: cr_ladis\r\nDescription: Loan Account Check Digit\r\nData Type: integer",
+            "format": "int32"
+          },
+          "iban_account": {
+            "type": "string",
+            "description": "Entity: cr_ladis.iban_account\r\nDescription: Loan Account IBAN\r\nData Type: nvarchar(120)",
+            "nullable": true
+          },
+          "iban_account_cd": {
+            "type": "integer",
+            "description": "Entity: cr_ladis.iban_account_cd\r\nDescription: Loan Account IBAN Check Digit\r\nData Type: nvarchar(120)",
             "format": "int32"
           }
         },
@@ -22425,7 +22815,7 @@
           }
         },
         "additionalProperties": false,
-        "description": "CBS Search Customer - Requestr"
+        "description": "CBS Search Customer - Request"
       },
       "CbsSearchCustomerResponse": {
         "type": "object",
@@ -22580,20 +22970,6 @@
           },
           "extensions": {
             "description": "Extensions to the standard specification",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "CbsSetBusinessDateRequest": {
-        "type": "object",
-        "properties": {
-          "mockupKey": {
-            "description": "Not applicable, used internally by the mock-up mechanism.",
-            "nullable": true
-          },
-          "additionals": {
-            "description": "Implementation of the Additionals concept",
             "nullable": true
           }
         },
@@ -23958,9 +24334,9 @@
             "nullable": true
           },
           "employmentCode": {
-            "type": "integer",
+            "type": "string",
             "description": "Seq: N/A\r\nEntity: v_CBS_IndividualCustomerView\r\nDescription: Activity Sector\r\nData Type: integer\r\nNotes: N/A\r\nCBS: InActivityGenericDetailSerialNum",
-            "format": "int32"
+            "nullable": true
           },
           "financialSectorCode": {
             "type": "integer",
@@ -24003,14 +24379,14 @@
             "format": "int32"
           },
           "positionCode": {
-            "type": "integer",
+            "type": "string",
             "description": "Seq: N/A\r\nEntity: v_CBS_IndividualCustomerView\r\nDescription: Profession Status\r\nData Type: integer\r\nNotes: N/A\r\nCBS: InProfessionStatusGenericDetailSerialNum",
-            "format": "int32"
+            "nullable": true
           },
           "professionCode": {
-            "type": "integer",
+            "type": "string",
             "description": "Seq: N/A\r\nEntity: v_CBS_IndividualCustomerView\r\nDescription: Primary Occupation\r\nData Type: integer\r\nNotes: N/A\r\nCBS: InProfessionGenericDetailSerialNum",
-            "format": "int32"
+            "nullable": true
           },
           "recruiterBy": {
             "type": "string",
@@ -25357,6 +25733,62 @@
         },
         "additionalProperties": false
       },
+      "CurrencyInfo": {
+        "type": "object",
+        "properties": {
+          "baseCCY": {
+            "type": "string",
+            "description": "The 3-letter ISO code of the base currency(e.g., \"USD\").",
+            "nullable": true
+          },
+          "targetCCY": {
+            "type": "string",
+            "description": "The 3-letter ISO code of the target currency(e.g., \"EUR\").",
+            "nullable": true
+          },
+          "rateDate": {
+            "type": "string",
+            "description": "Date of the exchange rate(format: \"YYYY-MM-DD\").",
+            "nullable": true
+          },
+          "rateTimestamp": {
+            "type": "integer",
+            "description": "Optional default is null.\r\nA timestamp of the rate data from the CBS.",
+            "format": "int32"
+          },
+          "midRate": {
+            "type": "number",
+            "description": "The mid-market rate(average between buy and sell).",
+            "format": "float"
+          },
+          "buyRate": {
+            "type": "number",
+            "description": "The rate at which the bank or service buys the base currency(customer sells).",
+            "format": "float"
+          },
+          "sellRate": {
+            "type": "number",
+            "description": "The rate at which the bank or service sells the base currency(customer buys).",
+            "format": "float"
+          },
+          "provider": {
+            "type": "string",
+            "description": "Optional, default is CBS\r\nName of the data source or financial institution.",
+            "nullable": true
+          },
+          "amount": {
+            "type": "integer",
+            "description": "Optional, default is 1 The amount for which the rate applies(useful for tiered rates).\r\nMany times referred as “market amount”",
+            "format": "int32"
+          },
+          "fees": {
+            "type": "number",
+            "description": "Optional,\r\nAny additional service or transaction fees.",
+            "format": "float"
+          }
+        },
+        "additionalProperties": false
+      },
       "Custcat": {
         "type": "object",
         "properties": {
@@ -25906,6 +26338,47 @@
             "type": "number",
             "description": "Entity: v_CBS_InstantLoanView\r\nDescription: Guarantor Amount\r\nData Type: decimal (15,2)",
             "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "IborInfo": {
+        "type": "object",
+        "properties": {
+          "iborName": {
+            "type": "string",
+            "description": "The iApply IBOR Name as requested",
+            "nullable": true
+          },
+          "cbsCode": {
+            "type": "string",
+            "description": "Optional, default is null,\r\nThe CBS code that is responding to the request for the IBOR iApply name.",
+            "nullable": true
+          },
+          "rateDate": {
+            "type": "string",
+            "description": "Date of the interest rate (format: \"YYYY-MM-DD\").",
+            "nullable": true
+          },
+          "rateTimestamp": {
+            "type": "integer",
+            "description": "Optional default is null.\r\nA timestamp of the rate data from the CBS.",
+            "format": "int32"
+          },
+          "interestRate": {
+            "type": "number",
+            "description": "The interest rate of the requested IBOR",
+            "format": "double"
+          },
+          "provider": {
+            "type": "string",
+            "description": "Optional, default is CBS\r\nName of the data source or financial institution.",
+            "nullable": true
+          },
+          "referenceKey": {
+            "type": "string",
+            "description": "Optional, CBS Specific reference",
+            "nullable": true
           }
         },
         "additionalProperties": false

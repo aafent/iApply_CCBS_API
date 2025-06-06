@@ -2,6 +2,10 @@
 
 namespace CCBS.Models
 {
+
+    /// <summary>
+    /// CBS Search Customer - Request
+    /// </summary>
     public class CbsSearchCustomerRequest : BaseCbsRequestModel
     {
         #region Public Properties

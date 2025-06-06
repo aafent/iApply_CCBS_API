@@ -42,7 +42,7 @@ builder.Services.AddSwaggerGen(c =>
 
     c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "CCBS Specification API v1.0.250505",
+        Title = "CCBS Specification API v1.0.250606",
         Version = "v1",
         Description = "Common Core Banking System API Specification (Bank's side).",
 

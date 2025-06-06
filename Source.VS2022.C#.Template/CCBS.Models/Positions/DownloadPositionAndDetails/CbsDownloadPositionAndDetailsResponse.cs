@@ -1,12 +1,14 @@
-﻿namespace CCBS.Models
+﻿#undef apiFix1 
+namespace CCBS.Models
 {
+
     /// <summary>
-    ///
+    /// Download Position and details - Response
     /// </summary>
     public class CbsDownloadPositionAndDetailsResponse : CommonResponseModel
     {
         #region Public Properties
-
+#if apiFix1
         /// <summary>
         /// TF Expiry Type (Trade Finance, accountType = 37)
         /// Data Type: varchar (15)
@@ -62,9 +64,9 @@
         /// CBS: customerId
         /// </summary>
         public string cu_id { get; set; }
-
+#endif 
         public List<PositionDataModel> PositionsList { get; set; }
 
-        #endregion Public Properties
+#endregion Public Properties
     }
 }

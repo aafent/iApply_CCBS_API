@@ -18,6 +18,7 @@
 
         /// <summary>
         /// Fee frequency type
+        /// 1 once, 2 monthly, 3 yearly
         /// </summary>
         public string frequencyType { get; set; } = null!;
 

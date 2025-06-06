@@ -8,6 +8,11 @@
 
         public List<RepaymentScheduleSimulation> RepaymentScheduleSimulations { get; set; } = new();
 
+        /// <summary>
+        /// the total costs of the loan in a single percentage
+        /// </summary>
+        public string dae {  get; set; }
+
         #endregion Public Properties
     }
 

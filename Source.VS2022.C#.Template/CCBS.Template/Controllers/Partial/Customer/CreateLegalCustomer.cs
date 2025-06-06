@@ -7,7 +7,7 @@ namespace IA.CCBSAPI.Controllers
     public partial class CommonController
     {
         [HttpPost("[action]")]
-        [Tags(ccbsFolders.GreenTag)]
+        [Tags(ccbsFolders.CustomerTag)]
         public CbsCreateLegalCustomerResponse CreateLegalCustomer(CbsCreateLegalCustomerRequest request)
         {
             throw new NotImplementedException();

@@ -1,8 +1,35 @@
 ﻿namespace CCBS.Models
 {
+
+    /// <summary>
+    /// Folders that the CCBS Actions are organized
+    /// </summary>
     public static class ccbsFolders
     {
-        #region Public Fields
+        /// <summary>
+        /// Dictionary with the key folder (aka order unique number) and the folder's description (as value of the key)
+        /// </summary>
+        public static readonly Dictionary<string, string> folders = new Dictionary<string, string> {
+            { InformativeOrder, InformativeLabel },
+            { CustomerOrder, CustomerLabel },
+            { PositionOrder, PositionLabel },
+            { PropertiesOrder, PropertiesLabel },
+            { DrawDownOrder, DrawDownLabel },
+            { RepaymentScheduleOrder, RepaymentScheduleLabel },
+            { CollateralOrder, CollateralLabel },
+            { CreditLimitOrder, CreditLimitLabel },
+            { AccountOtherOrder,AccountOtherLabel },
+            { LGOrder,LGLabel },
+            { InsuranceOrder, InsuranceLabel },
+            { MortgageOrder,MortgageLabel },
+            { FeesOrder,FeesLabel },
+            { DepositsOrder,DepositsLabel },
+            { EndOfDayOrder,EndOfDayLabel},
+            { GreenOrder,GreenLabel },
+            { OtherOrder, OtherLabel }
+        };
+
+        #region (+) Action Tags - Constants 
 
         public const string AccountOtherTag = AccountOtherOrder + ". " + AccountOtherLabel;
 
@@ -36,93 +63,69 @@
 
         public const string RepaymentScheduleTag = RepaymentScheduleOrder + ". " + RepaymentScheduleLabel;
 
-        public static readonly Dictionary<string, string> folders = new Dictionary<string, string> {
-            { InformativeOrder, InformativeLabel },
-            { CustomerOrder, CustomerLabel },
-            { PositionOrder, PositionLabel },
-            { PropertiesOrder, PropertiesLabel },
-            { DrawDownOrder, DrawDownLabel },
-            { RepaymentScheduleOrder, RepaymentScheduleLabel },
-            { CollateralOrder, CollateralLabel },
-            { CreditLimitOrder, CreditLimitLabel },
-            { AccountOtherOrder,AccountOtherLabel },
-            { LGOrder,LGLabel },
-            { InsuranceOrder, InsuranceLabel },
-            { MortgageOrder,MortgageLabel },
-            { FeesOrder,FeesLabel },
-            { DepositsOrder,DepositsLabel },
-            { GreenOrder,GreenLabel },
-            { OtherOrder, OtherLabel }
-        };
+        public const string EndOfDayTag = EndOfDayOrder + ". " + EndOfDayLabel;
 
-        #endregion Public Fields
+        #endregion (+) Action Tags
 
-        #region Private Fields
-
-        private const string AccountOtherLabel = "AccountOther";
-
-        private const string AccountOtherOrder = "07";
-
-        private const string CollateralLabel = "Collateral";
-
-        private const string CollateralOrder = "05";
-
-        private const string CreditLimitLabel = "CreditLimit";
-
-        private const string CreditLimitOrder = "06";
-
-        private const string CustomerLabel = "Customer";
-
-        private const string CustomerOrder = "01";
-
-        private const string DepositsLabel = "Deposits";
-
-        private const string DepositsOrder = "11";
-
-        private const string DrawDownLabel = "DrawDown";
-
-        private const string DrawDownOrder = "04";
-
-        private const string FeesLabel = "Fees";
-
-        private const string FeesOrder = "10";
-
-        private const string GreenLabel = "More (Light Edition)";
-
-        private const string GreenOrder = "90";
-
-        private const string InformativeLabel = "Informative";
+        #region (+) Private constants  
 
         private const string InformativeOrder = "00";
+        private const string InformativeLabel = "Informative";
 
-        private const string InsuranceLabel = "Insurance";
-
-        private const string InsuranceOrder = "12";
-
-        private const string LGLabel = "LG";
-
-        private const string LGOrder = "08";
-
-        private const string MortgageLabel = "Mortgage";
-
-        private const string MortgageOrder = "09";
-
-        private const string OtherLabel = "Other";
-
-        private const string OtherOrder = "99";
-
-        private const string PositionLabel = "Position";
+        private const string CustomerOrder = "01";
+        private const string CustomerLabel = "Customer";
 
         private const string PositionOrder = "02";
+        private const string PositionLabel = "Position";
+
+        private const string RepaymentScheduleOrder = "03";
+        private const string RepaymentScheduleLabel = "Repayment Schedule";
+
+        private const string DrawDownOrder = "04";
+        private const string DrawDownLabel = "DrawDown";
+
+        private const string CollateralOrder = "05";
+        private const string CollateralLabel = "Collateral";
+
+        private const string CreditLimitOrder = "06";
+        private const string CreditLimitLabel = "CreditLimit";
+
+        private const string AccountOtherOrder = "07";
+        private const string AccountOtherLabel = "AccountOther";
+
+        private const string LGOrder = "08";
+        private const string LGLabel = "LG";
+
+        private const string MortgageOrder = "09";
+        private const string MortgageLabel = "Mortgage";
+
+        private const string FeesOrder = "10";
+        private const string FeesLabel = "Fees";
+
+        private const string DepositsOrder = "11";
+        private const string DepositsLabel = "Deposits";
+
+        private const string InsuranceOrder = "12";
+        private const string InsuranceLabel = "Insurance";
+
+
+
+        private const string GreenOrder = "90";
+        private const string GreenLabel = "More (Light Edition)";
+
+        private const string EndOfDayOrder = "95";
+        private const string EndOfDayLabel = "EndOfDay";
+
+        private const string OtherOrder = "99";
+        private const string OtherLabel = "Other";
+
 
         private const string PropertiesLabel = "Properties";
 
         private const string PropertiesOrder = "12";
 
-        private const string RepaymentScheduleLabel = "Repayment Schedule";
 
-        private const string RepaymentScheduleOrder = "03";
 
-        #endregion Private Fields
+        #endregion (+) Private constants  
     }
 }

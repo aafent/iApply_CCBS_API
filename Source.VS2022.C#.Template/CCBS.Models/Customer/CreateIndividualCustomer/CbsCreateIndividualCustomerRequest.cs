@@ -292,7 +292,7 @@ namespace CCBS.Models
         /// <summary>
         /// Activity Sector (integer)
         /// </summary>
-        public int EmploymentCode { get; set; }
+        public string EmploymentCode { get; set; }
 
         /// <summary>
         /// Fax (varchar)
@@ -448,7 +448,7 @@ namespace CCBS.Models
         /// <summary>
         /// Profession Status (integer)
         /// </summary>
-        public int PositionCode { get; set; }
+        public string PositionCode { get; set; }
 
         /// <summary>
         /// Postal Code (varchar)
@@ -463,7 +463,7 @@ namespace CCBS.Models
         /// <summary>
         /// Primary Occupation (integer)
         /// </summary>
-        public int ProfessionCode { get; set; }
+        public string ProfessionCode { get; set; }
 
         /// <summary>
         /// Recruited By (varchar)
