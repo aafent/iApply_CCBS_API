@@ -67,6 +67,6 @@ namespace CCBS.Models
 #endif 
         public List<PositionDataModel> PositionsList { get; set; }
 
-#endregion Public Properties
+        #endregion Public Properties
     }
 }

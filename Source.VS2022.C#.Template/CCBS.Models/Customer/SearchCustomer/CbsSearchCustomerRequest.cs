@@ -23,6 +23,7 @@ namespace CCBS.Models
         /// <summary>
         /// Customer CBS Id (varchar)
         /// </summary>
+        [Mockup(2)]
         public string CustomerCBSId { get; set; }
 
         /// <summary>

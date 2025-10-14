@@ -1,4 +1,5 @@
 ﻿using CCBS.Attributes;
+using IA.Shared.Models;
 
 namespace CCBS.Models
 {
@@ -104,7 +105,7 @@ namespace CCBS.Models
         /// Notes: N/A
         /// CBS: InCustomerContractExpiryDate
         /// </summary>
-        public DateTime ContractDate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime ContractDate { get; set; } = DateTime.Parse("1800-01-01");
 
         public List<CbsCustomerAddress> CustomerAddresses { get; set; } = new List<CbsCustomerAddress>();
 
@@ -151,7 +152,7 @@ namespace CCBS.Models
         /// Notes: N/A
         /// CBS: InCustomerDateOfBirth
         /// </summary>
-        public DateTime DateOfBirth { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime DateOfBirth { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Seq: N/A
@@ -281,7 +282,7 @@ namespace CCBS.Models
         /// Notes: N/A
         /// CBS: InFamilyStatusGenericDetailSerialNum
         /// </summary>
-        public int MaritalStatus { get; set; }
+        public string MaritalStatus { get; set; }
 
         /// <summary>
         /// Seq: N/A
@@ -393,6 +394,8 @@ namespace CCBS.Models
         /// </summary>
         public string Title { get; set; }
 
+        // next fields are saved as extra CustomerCategories (table cu_cucateg)
+        public AMLFields amlFields { get; set; }
         #endregion Public Properties
     }
 }

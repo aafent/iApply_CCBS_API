@@ -22,12 +22,12 @@ namespace CCBS.Models
         /// <summary>
         /// Expiry Date (datetime)
         /// </summary>
-        public DateTime ExpiryDate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime ExpiryDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Issued Date (datetime)
         /// </summary>
-        public DateTime IssueDate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime IssueDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Relationship (integer)

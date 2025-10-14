@@ -41,21 +41,21 @@ namespace CCBS.Models
         /// Description: CrExpDate
         /// Data Type: datetime
         /// </summary>
-        public DateTime CrExpDate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime CrExpDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: Next Review Date
         /// Description: CrNextRevDate
         /// Data Type: datetime
         /// </summary>
-        public DateTime CrNextRevDate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime CrNextRevDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: Review Date
         /// Description: CrRevDate
         /// Data Type: datetime
         /// </summary>
-        public DateTime CrRevDate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime CrRevDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: Credit Limit Type

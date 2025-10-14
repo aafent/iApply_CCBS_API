@@ -1,5 +1,5 @@
 ﻿using CCBS.Attributes;
-using CCBS.Models.Customer.CreateIndividualCustomer;
+using IA.Shared.Models;
 
 namespace CCBS.Models
 {
@@ -10,7 +10,7 @@ namespace CCBS.Models
         /// <summary>
         /// Accommodation Date (datetime)
         /// </summary>
-        public DateTime AccDate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime AccDate { get; set; } = DateTime.MinValue;
 
         /// <summary>
         /// Street Name, Address Line 1 (varchar)
@@ -167,7 +167,7 @@ namespace CCBS.Models
         /// <summary>
         /// Contract Date (datetime)
         /// </summary>
-        public DateTime ContractDate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime ContractDate { get; set; } = DateTime.MinValue;
 
         /// <summary>
         /// County (varchar)
@@ -201,7 +201,7 @@ namespace CCBS.Models
         /// <summary>
         /// Birth Date (datetime)
         /// </summary>
-        public DateTime DateOfBirth { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime DateOfBirth { get; set; } = DateTime.MinValue;
 
         /// <summary>
         /// DelZone (varchar)
@@ -250,7 +250,7 @@ namespace CCBS.Models
         /// <summary>
         /// Total Employment (datetime)
         /// </summary>
-        public DateTime EmplDate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime EmplDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Employee No (integer)
@@ -327,7 +327,7 @@ namespace CCBS.Models
         /// <summary>
         /// Id Expiry Date (datetime)
         /// </summary>
-        public DateTime IdentificationExpiryDate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime IdentificationExpiryDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Issue Country (varchar)
@@ -337,7 +337,7 @@ namespace CCBS.Models
         /// <summary>
         /// Id Issue Date (datetime)
         /// </summary>
-        public DateTime IdentificationIssueDate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime IdentificationIssueDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Identification Number (varchar)
@@ -388,7 +388,7 @@ namespace CCBS.Models
         /// <summary>
         /// Marital Status (integer)
         /// </summary>
-        public int MaritalStatus { get; set; }
+        public string MaritalStatus { get; set; }
 
         /// <summary>
         /// MEMBCAT (varchar)
@@ -551,6 +551,11 @@ namespace CCBS.Models
         /// CountyType (varchar)
         /// If country = DEFAULT then ADDRESS else null
         /// </summary>
+        /// 
+
+        // next fields are saved as extra CustomerCategories (table cu_cucateg)
+        public AMLFields amlFields { get; set; }
+
 #nullable enable
 #nullable disable
 

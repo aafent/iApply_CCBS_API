@@ -100,7 +100,7 @@
         /// Description: Loan Expiry Date
         /// Data Type: datetime
         /// </summary>
-        public DateTime ExpiryDate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime ExpiryDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: v_CBS_InstantLoanView
@@ -114,7 +114,7 @@
         /// Description: Fixed Rate
         /// Data Type: integer
         /// </summary>
-        public int FixedInterestRate { get; set; }
+        public decimal FixedInterestRate { get; set; }
 
         /// <summary>
         /// Entity: v_CBS_InstantLoanView
@@ -135,7 +135,7 @@
         /// Description: Grace Period Expiry Date
         /// Data Type: datetime
         /// </summary>
-        public DateTime GracePeriodExpiryDate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime GracePeriodExpiryDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: v_CBS_InstantLoanView
@@ -165,11 +165,25 @@
         /// Description: Margin
         /// Data Type: decimal (15,2)
         /// </summary>
-        public decimal Margin { get; set; }
+        //public decimal Margin { get; set; }
 
         /// <summary>
+        /// the margin applied to the fixed interest rate
+        /// </summary>
+        public decimal MarginFixedIR { get; set; }
+
+        /// <summary>
+        /// the margin applied to the Floating interest rate
+        /// </summary>
+        public decimal MarginFloatingIR { get; set; }
+
+        /// <summary>
+        /// the Base Rate Id for the selected Floating Rate
+        /// </summary>
+        public string FloatingLocal { get; set; }
+        /// <summary>
         /// Entity: v_CBS_InstantLoanView
-        /// Description: Mechanism
+        /// Description: IR Code - mapped to G103
         /// Data Type: integer
         /// </summary>
         public int Mechanism { get; set; }

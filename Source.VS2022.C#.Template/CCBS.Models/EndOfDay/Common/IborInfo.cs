@@ -42,6 +42,22 @@
         /// </summary>
         public string referenceKey { get; set; }
 
+        // TODO next 3 fields must be added later on standard API
+        /// <summary>
+        /// Duration of index
+        /// </summary>
+        //public int duration {get; set; }
+
+        /// <summary>
+        /// Duration unit (0 NONE, 1 DAYS, 2 MONTHS, 3 YEARS)
+        /// </summary>
+        //public int durationUnit {get; set; }
+
+        /// <summary>
+        /// Currency ISO code
+        /// </summary>
+        //public string ccy {get; set; }
+
         #endregion Public Properties
     }
 }

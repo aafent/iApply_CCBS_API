@@ -8,7 +8,7 @@
 
         public string CategoryDescription { get; set; }
 
-        public DateTime CategoryTmstamp { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime CategoryTmstamp { get; set; } = DateTime.Parse("1800-01-01");
 
         public string DetailDescription { get; set; }
 

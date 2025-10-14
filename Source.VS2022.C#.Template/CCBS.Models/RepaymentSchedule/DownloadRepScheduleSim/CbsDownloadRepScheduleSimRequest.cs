@@ -17,7 +17,7 @@ namespace CCBS.Models
         public string ApplicationId { get; set; }
 
         public List<RepaymentScheduleSimInsuranceData> RepaymentScheduleSimInsuranceData { get; set; }
-        
+
         /// <summary>
         /// Repayment Schedule parameters (product details)
         /// </summary>
@@ -26,7 +26,7 @@ namespace CCBS.Models
         /// <summary>
         /// Fees array
         /// </summary>
-        public CbsFees[] fees { get; set; } = null; 
+        public CbsFees[] fees { get; set; } = null;
 
         #endregion Public Properties
     }

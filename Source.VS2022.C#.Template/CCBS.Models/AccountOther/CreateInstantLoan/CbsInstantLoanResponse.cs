@@ -74,7 +74,7 @@
         /// Description: Loan Account IBAN Check Digit
         /// Data Type: nvarchar(120)
         /// </summary>
-        public int iban_account_cd { get; set; }
+        public int? iban_account_cd { get; set; }
 
         #endregion Public Properties
     }

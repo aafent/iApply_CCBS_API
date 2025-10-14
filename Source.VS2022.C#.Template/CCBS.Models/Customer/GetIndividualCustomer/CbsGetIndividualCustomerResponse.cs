@@ -1,4 +1,6 @@
-﻿namespace CCBS.Models
+﻿using IA.Shared.Models;
+
+namespace CCBS.Models
 {
     public class CbsGetIndividualCustomerResponse : CommonResponseModel
     {
@@ -122,7 +124,7 @@
         /// <summary>
         /// Birth Date
         /// </summary>
-        public DateTime pe_birdt { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime pe_birdt { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Children No
@@ -147,7 +149,7 @@
         /// <summary>
         /// Marital Status
         /// </summary>
-        public int pe_famst { get; set; }
+        public string pe_famst { get; set; }
 
         /// <summary>
         /// Middle Name
@@ -190,7 +192,7 @@
         /// <summary>
         /// Contract Date
         /// </summary>
-        public DateTime pr_contrc_dt { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime pr_contrc_dt { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Education Level
@@ -251,7 +253,10 @@
         /// <summary>
         /// Total Employment
         /// </summary>
-        public DateTime pr_totemp { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime? pr_totemp { get; set; } = DateTime.Parse("1800-01-01");
+
+        // next fields are saved as extra CustomerCategories (table cu_cucateg)
+        public AMLFields amlFields { get; set; }
 
         #endregion Public Properties
     }

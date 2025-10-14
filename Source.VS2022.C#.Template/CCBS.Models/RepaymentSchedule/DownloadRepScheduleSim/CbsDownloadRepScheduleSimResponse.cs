@@ -11,7 +11,12 @@
         /// <summary>
         /// the total costs of the loan in a single percentage
         /// </summary>
-        public string dae {  get; set; }
+        public string dae { get; set; }
+
+        /// <summary>
+        /// 20251013 - after Vista request (WIVB-197) a new field for Annual fee of loan
+        /// </summary>
+        public decimal annualFee { get; set; }
 
         #endregion Public Properties
     }
@@ -63,7 +68,7 @@
         /// <summary>
         /// Birth Date (datetime)
         /// </summary>
-        public DateTime insurer_birthdate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime insurer_birthdate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Main Beneficiary (varchar (15))
@@ -113,7 +118,7 @@
         /// <summary>
         /// Payment Date (datetime)
         /// </summary>
-        public DateTime rs_paydate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime rs_paydate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Principal Payment (decimal (19,3))

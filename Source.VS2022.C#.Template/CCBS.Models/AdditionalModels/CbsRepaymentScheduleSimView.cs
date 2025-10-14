@@ -133,7 +133,6 @@
         public virtual int? ProductId { get; set; }
 
         public virtual DateTime? Request_Dt { get; set; }
-
         public virtual int? SalesUnit { get; set; }
 
         public virtual int? Seller { get; set; }
@@ -150,7 +149,27 @@
 
         public virtual int? TransactSm { get; set; }
 
-        public virtual decimal? Margin { get; set; }  // 2024-12-6
+        /// <summary>
+        /// the margin applied to the floating interest rate
+        /// </summary>
+        public virtual decimal? Margin { get; set; }
+
+        ///// rollback 20250904 keep only one margin that keeps floating margin
+        ///// <summary>
+        ///// the margin applied to the fixed interest rate
+        ///// </summary>
+        //public virtual decimal? MarginFixedIR { get; set; }  // 20250805
+
+        ///// <summary>
+        ///// the margin applied to the Floating interest rate
+        ///// </summary>
+        //public virtual decimal? MarginFloatingIR { get; set; }  // 20250805
+
+        /// <summary>
+        /// the Base Rate Id for the selected Floating Rate
+        /// Description: IR Code - mapped to G103
+        /// </summary>
+        public virtual string FloatingLocal { get; set; }
         #endregion Public Properties
 
         #region Public Methods

@@ -58,7 +58,7 @@
         /// Description: Expiration Date
         /// Data Type: datetime
         /// </summary>
-        public DateTime CollExpDate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime CollExpDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Entity: v_CBS_Collateral

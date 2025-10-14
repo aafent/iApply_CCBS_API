@@ -10,7 +10,7 @@
         /// <summary>
         /// The 3-letter ISO code of the base currency(e.g., "USD").
         /// </summary>
-        public string baseCCY {get; set;}
+        public string baseCCY { get; set; }
 
         /// <summary>
         /// The 3-letter ISO code of the target currency(e.g., "EUR").

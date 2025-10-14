@@ -1,4 +1,4 @@
-﻿namespace CCBS.Models.Customer.CreateIndividualCustomer
+﻿namespace CCBS.Models
 {
     public class Custcat
     {

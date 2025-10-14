@@ -5,7 +5,7 @@
         /// <summary>
         /// Applicant Birth Date
         /// </summary>
-        public DateTime? BirthDate { get; set; } =  DateTime.Parse("1800-01-01");
+        public DateTime? BirthDate { get; set; } = DateTime.Parse("1800-01-01");
 
         /// <summary>
         /// Main beneficiary flag	OutListGrp[]OutGrmAgreementWork.MainBenefFlg	Text
