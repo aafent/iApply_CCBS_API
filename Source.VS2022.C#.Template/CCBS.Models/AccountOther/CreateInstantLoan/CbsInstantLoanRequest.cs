@@ -1,4 +1,6 @@
-﻿namespace CCBS.Models
+﻿using CCBS.Attributes;
+
+namespace CCBS.Models
 {
     public class CbsInstantLoanRequest : BaseCbsRequestModel
     {
@@ -37,6 +39,7 @@
         /// Description: Application Id
         /// Data Type: varchar (30)
         /// </summary>
+        [Mockup(1)]
         public string Comments { get; set; }
 
         /// <summary>
@@ -44,7 +47,7 @@
         /// Description: Currency Code
         /// Data Type: integer
         /// </summary>
-        public int Currency { get; set; }
+        public string Currency { get; set; }
 
         /// <summary>
         /// Entity: v_CBS_InstantLoanView
