@@ -10,8 +10,9 @@ namespace CCBS.Models
         /// Entity: v_CBS_InstantLoanView
         /// Description: Account Officer
         /// Data Type: integer
+        /// WIVB-210-20251112 field changed from int to string
         /// </summary>
-        public int AccountOfficer { get; set; }
+        public string AccountOfficer { get; set; }
 
         /// <summary>
         /// Entity: v_CBS_InstantLoanView
@@ -81,8 +82,9 @@ namespace CCBS.Models
         /// Entity: v_CBS_InstantLoanView
         /// Description: Delay Officer
         /// Data Type: integer
+        /// WIVB-210-20251112 field changed from int to string
         /// </summary>
-        public int DelayOfficer { get; set; }
+        public string DelayOfficer { get; set; }
 
         /// <summary>
         /// Entity: v_CBS_InstantLoanView
